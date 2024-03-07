@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이크로러닝 등록 | 온라인 강의</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header class="header white">
+        <h1 class="h1"><a href="">마이크로러닝 등록</a></h1>
+        <button class="btn-prev"><span class="hide">이전</span></button>
+        <div class="right">
+        </div>
+    </header>
+    <main id="content">
+        <section class="mobile-space">
+            <h2 class="hide">마이크로러닝 등록 작성란</h2>
+            <table class="table-type3 mt24">
+                <caption class="hide">마이크로러닝 등록 작성</caption>
+                <colgroup>
+                    <col style="width: 8.8rem">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="txt2_1">상품명 <span class="required">*</span></label>
+                        </th>
+                        <td>
+                            <input type="text" id="txt2_1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="txt2_2">태그 <span class="required">*</span></label>
+                        </th>
+                        <td>
+                            <input type="text" id="txt2_2">
+                            <p class="mt8">
+                                태그 구분은 쉼표(,) 를 이용해주세요.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="txt2_3">학습시간 <span class="required">*</span></label>
+                        </th>
+                        <td>
+                            <input type="text" id="txt2_3">
+                            <p class="mt8">
+                                예) 200 (단위 : 분)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            카테고리 <span class="required">*</span>
+                        </th>
+                        <td>
+                            <select title="카테고리선택1">
+                                <option>카테고리</option>
+                            </select>
+                            <select class="mt8" title="카테고리선택2">
+                                <option>카테고리</option>
+                            </select>
+                            <select class="mt8" title="카테고리선택3">
+                                <option>카테고리</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt2_4">강의소개 <span class="required">*</span></label></th>
+                        <td>
+                            <textarea id="txt2_4" style="height: 12rem;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="file1_1">리스트이미지 <span class="required">*</span>(457*252)</label></th>
+                        <td>
+                            <div>
+                                <input type="file" id="file1_1" class="hide file-type1"><label
+                                    for="file1_1">이미지첨부</label>
+                            </div>
+                            <p class="mt8">※ 파일 재등록시 기존 파일은 삭제됩니다.</p>
+                            <div class="files mt8"><a href="">123456.jpg</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="file1_2">상세 이미지 <span class="required">*</span>(457*252)</label></th>
+                        <td>
+                            <div>
+                                <input type="file" id="file1_2" class="hide file-type1"><label
+                                    for="file1_2">이미지첨부</label>
+                            </div>
+                            <p class="mt8">※ 파일 재등록시 기존 파일은 삭제됩니다.</p>
+                            <div class="files mt8"><a href="">123456.jpg</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="vm"><label for="file1_3">콘텐츠 업로드 <span class="required">*</span></label></th>
+                        <td>
+                            <input type="file" id="file1_3" class="hide file-type1"><label for="file1_3">찾아보기</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="card-list-type4 mt48">
+                <ul class="list-type2">
+                    <li>콘텐츠 등록 후 실제 파일은 용량에 따라 시간이 소요될 수 있습니다.</li>
+                    <li class="mt8">파일 등록이 완료되면 영상 업로드 유무가 Y로 자동 변경됩니다.</li>
+                    <li class="color mt8">관리자의 검수 후 노출 처리 되면 동영상 변경이 불가능합니다.</li>
+                </ul>
+            </div>
+        </section>
+        <div class="fix-bottom type3">
+            <button class="btn-white cancle">취소</button>
+            <button class="btn-blue modify">수정</button>
+        </div>
+    </main>
+</body>

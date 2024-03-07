@@ -1,0 +1,814 @@
+.rem {
+    font-size: 2rem;
+    border: 3rem solid blue;
+    padding: 10rem;
+    width: 30rem;   
+    height: 20rem;
+}
+.px {
+    font-size: 20px;
+    border: 30px solid red;
+    padding: 100px;
+    width: 300px;   
+    height: 200px;
+}
+
+:root {
+    --white: #FFFFFF;
+    --greye1: #E1E1E1;
+    --greyfb: #FBFBFB;
+    --grey33: #333333;
+    --greybd: #BDBDBD;
+    --greyab: #ABABAB;
+    --greycc: #CCCCCC;
+    --greyd7: #D7D7D7;
+    --greyee: #EEEEEE;
+    --grey99: #999999;
+    --grey55: #555D67;
+    --greyd6: #D6D9E1;
+    --greyf4: #F4F5FB;
+    --greye5: #E5E8F0;
+    --greya5: #A5ACB8;
+    --grey83: #838A93;
+    --greyc0: #C0C4CD;
+    --redff: #FF0000;
+    --pink: #FF3D45;
+    --orange: #FF6A13;
+    --skyblue: #47BDFF;
+    --mint: #00D4EA;
+    --blue5d: #5D5FEF;
+    --blue00: #005BAC;
+    --green: #219653;
+    --navy: #1E2530;
+    --black06: #060606;
+    --black00: #000000;
+}
+
+ /* 예제1 */
+.example1 {
+    padding: 2rem 2.8rem;
+}
+.example1 .comment li {
+    display: grid;
+    grid-template-columns: 4.8rem 1fr 10.9rem;
+    gap: 1.2rem;
+}
+.example1 .comment .content {
+    grid-column: 1 / -1;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--grey33);
+}
+.example1 .write {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) 4.8rem;
+    gap: 0.8rem;
+}
+.example1 .write .column {
+    grid-column: 1 / -1;
+}
+.example1 .comment .name {
+    align-self: center;
+}
+.example1 .comment .name p {
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--grey33)
+}
+.example1 .comment .name span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--greycc);
+}
+.example1 .comment .btn {
+    align-self: end;
+    justify-self: end;
+}
+.example1 .comment .btn button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--greyab);
+    background: none;
+}
+.example1 .comment .btn .delete {
+    color: var(--redff);
+}
+.example1 .comment .btn .delete::before {
+    content: '';
+    margin: 0 0.8rem;
+    height: 1.2rem;
+    border-left: 1px solid var(--greyd7);
+}
+.example1 .comment .padding {
+    padding: 0 0 2.8rem;
+}
+.example1 .write p {
+    margin: 1.6rem 0 0;
+    padding: 4rem 0 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--grey33);
+    border-top: 1px solid var(--greyee);
+}
+.example1 .write input {
+    padding: 0 1.6rem;
+    height: 4.8rem;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+}
+.example1 .write input::placeholder {
+    color: var(--greycc);
+}
+.example1 .write textarea {
+    padding: 2.4rem 1.6rem 0;
+    height: 14rem;
+    background: var(--white);
+    border: 1px solid var(--greycc);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+}
+.example1 .write textarea::placeholder {
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--greycc);
+}
+.example1 .write .attachment {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../images/btn_inputbox.png) no-repeat;
+}
+.example1 .write .btn-write {
+    width: 100%;
+    height: 5.2rem;
+    background: url(../images/ico_write.svg) no-repeat center var(--grey33);
+    border-radius: 0.8rem;
+}
+
+/* 예제2 */
+.example2 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.2rem;
+    height: 6.8rem;
+    background: var(--white);
+}
+.example2 .nav a {
+    display: inline-flex;
+    width: 2.2rem;
+    height: 2.5rem;
+    background: url(../images/bg_logo.svg) no-repeat;
+}
+.example2 .nav button {
+    width: 2.4rem;
+    height: 1.9rem;
+    background: url(../images/btn_menu.png) no-repeat;
+}
+.example2 .thumb {
+    position: relative;
+}
+.example2 .thumb::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    left: 0; top: 0;
+    background: rgba(51, 51, 51, 0.3);
+}
+.example2 .thumb img {
+    width: 100%;
+}
+.example2 .thumb .information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    position: absolute;
+    bottom: 5.9rem;
+    left: 2.8rem; right: 3.1rem;
+    z-index: 10;
+}
+.example2 .thumb .information strong {
+    grid-column: 1 / -1;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--white);
+}
+.example2 .thumb .information p {
+    align-self: center;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: #FFFFFF;
+}
+.example2 .thumb .information .btn-arrow{
+    justify-self: end;
+}
+.example2 .thumb .information .btn-arrow button {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 3.2rem;
+    box-sizing: border-box;
+    background: url(../images/ico_arrow_right.svg) no-repeat center var(--skyblue);
+}
+.example2 .thumb .information .blue button {
+    background: url(../images/ico_arrow_right.svg) no-repeat center var(--blue5d);
+}
+.example2 .thumb .information .grey button {
+    background: url(../images/ico_arrow_right.svg) no-repeat center var(--grey99);
+}
+
+/* 예제3 */
+.example3 {
+    padding: 4rem 2.8rem 0;
+}
+.example3 img {
+    padding: 0 0 16.9rem;
+}
+.example3 .login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+.example3 .login h3 , .login-form , .login-copy {
+    grid-column: 1 / -1;
+}
+.example3 .login h3 {
+    font-weight: 900;
+    font-size: 5.4rem;
+    line-height: 4.8rem;
+    color: var(--grey33);
+}
+.example3 .login-form input {
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4.8rem;
+    background: var(--white);
+    border: 1px solid var(--greyd7);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+}
+.example3 .login-form .txt {
+    margin: 0 0 1.2rem;
+}
+.example3 .login-form ::placeholder {
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--greycc);
+}
+.example3 .btn-login button {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 100%;
+    letter-spacing: -0.06rem;
+    color: var(--white);
+    background: var(--grey33);
+    border-radius: 0.6rem;
+    text-align: center;
+    padding: 1.6rem 0;
+    margin: 2rem 0 0;
+    width: 100%;
+}
+.example3 .login-copy b {
+    display: flex;
+    gap: 0.4rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: var(--grey33);
+    margin: 0 0 1.2rem;
+}
+.example3 .login-copy b::before {
+    content: '';
+    width: 1.4rem;
+    height: 1.5rem;
+    background: url(../images/ico_warning.svg) no-repeat;
+}
+.example3 .login-copy p {
+    padding: 0 0 17.4rem;
+    font-size: 1.2rem;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: var(--greycc);
+}
+
+/* 예제4 */
+.example4 {
+    padding: 2rem;
+    background: var(--white);
+}
+.example4-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 2rem;
+    background: var(--greyfb);
+    border: 1px solid var(--greye1);
+}
+.example4-list .column {
+    grid-column: 1 / 3;
+}
+.example4-list a {
+    display: flex;
+    align-items: center;
+    height: 4.8rem;
+    padding: 0 1.2rem;
+    border: 1px solid var(--greybd);
+    background: url(../images/ico_arrow.svg) no-repeat right 1.2rem center var(--white);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: -0.05rem;
+    color: var(--grey33);
+}
+
+/* 예제5 */
+.example5 {
+    margin: 2rem;
+    padding: 2rem;
+    border: 0.4rem solid var(--blue00);
+    box-sizing: border-box;
+}
+.example5 h3 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.05rem;
+    color: var(--grey33);
+    padding: 0 0 2rem;
+}
+.example5 b {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: -0.05rem;
+    color: #333333;
+}
+
+.example5 p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.05rem;
+    color: #333333;
+    padding: 0.8rem 0 2rem;
+    margin: 0 0 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.example5 .none p {
+    margin: 0;
+    border-bottom: none;
+}
+
+/* 예제6 */
+.example6 {
+    padding: 1.3rem 1.6rem;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) 9.4rem;
+    gap: 0 0.8rem;
+}
+.example6 .column {
+    grid-column: 1 / -1;
+}
+.example6 div {
+    display: flex;
+    gap: 0.8rem;
+}
+.example6 strong {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: var(--black06);
+}
+.example6 > div {
+    padding: 2.1rem 0 0;
+}
+.example6 .arrow-up {
+    align-self: end;
+    justify-self: end;
+    width: 2rem;
+    height: 2rem;
+    background: url(../images/Ico_arrowup_6.svg) no-repeat;
+}
+.example6 div p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey55);
+}
+.example6 div b {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--green);
+}
+.example6 a {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey55);
+    padding: 2.1rem 0 0;
+}
+.example6 a::after {
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../images/Ico_arrowright_6.svg) no-repeat;
+}
+.example6 .input {
+    padding: 0 1.2rem;
+    height: 4.7rem;
+    background: var(--greyf4);
+    border: 1px solid var(--greyd6);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    text-align: right;
+    margin: 0.8rem 0 1.6rem;
+}
+.example6 .input2 {
+    padding: 0 1.2rem;
+    height: 4.7rem;
+    background: var(--white);
+    text-align: right;
+    border: 1px solid var(--greyd6);
+    border-radius: 3rem;
+    box-sizing: border-box;
+}
+.example6 .input::placeholder , .input2::placeholder{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: right;
+    color: var(--greya5);
+}
+.example6 .padding {
+    padding: 1.6rem 0 0.8rem;
+}
+.example6 .border {
+    border-top: 1px solid var(--greye5);
+}
+.example6 .btn-use {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--white);
+    height: 4.7rem;
+    background: var(--navy);
+    border-radius: 3rem;
+}
+
+/* 예제7 */
+.example7 {
+    padding: 2rem;
+}
+.example7 .example7-list > li {
+    display: grid;
+    grid-template-columns: 10.4rem 1fr;
+}
+.example7-list .title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--black00);
+    border-top: 1px solid var(--black00);
+    padding: 1rem 0 2.2rem;
+}
+.example7-list .title p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--black00);
+
+}
+.example7-list .information li {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--black00);
+}
+.example7-list .information .padding li {
+    padding: 0.5rem 0 0;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+.example7-list .information .padding li::before {
+    content: '';
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 0.3rem;
+    background: black;
+}
+.example7 .more {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--black00);
+    padding: 1rem 0 2.5rem;
+}
+.example7 .more a {
+    background: var(--white);
+    border: 1px solid var(--black00);
+    box-sizing: border-box;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--black00);
+}
+.example7 .more .apply {
+    grid-column: 1 / -1 ;
+    background: var(--black00);
+    color: var(--white);
+}
+
+/* 예제8 */
+.example8 {
+    padding: 1.6rem;
+}
+.example8-list a {
+    display: grid;
+    grid-template-columns: 9.5rem 1fr;
+    gap: 1.6rem;
+}
+.example8 strong {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: var(--black06);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.example8 strong::before {
+    content: '';
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url(../images/ico_card_travel.svg) no-repeat;
+}
+.example8-copy {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey55);
+    padding: 0.8rem 0 0;
+}
+.example8-copy span {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--orange);
+}
+.example8-list .reservation {
+    align-self: center;
+}
+.example8-list .reservation .subtitle {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--navy);
+}
+.example8-list .reservation .subtitle b {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--mint);
+}
+.example8-list .reservation .date {
+    padding: 0.2rem 0 0.8rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey55);
+}
+.example8-list .reservation .copy {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey83);
+}
+.example8-list li {
+    padding: 1.6rem;
+    background: url(../images/Ico_arrowright_8.svg) no-repeat right 1.2rem center var(--white);
+    border: 1px solid var(--greye5);
+    box-sizing: border-box;
+    box-shadow: 0 0.2rem 0.4rem rgba(6, 6, 6, 0.08);
+    border-radius: 1.2rem;
+    margin: 2rem 0;
+}
+.example8 .btn-close {
+    padding: 1.2rem 0;
+    width: 100%;
+    border: 1px solid var(--greyd6);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    background: var(--white);
+    color: var(--navy);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+/* 예제9 */
+.example9 {
+    padding: 0 1.6rem ;
+}
+.example9-login {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr 2.4rem ;
+    gap: 1.4rem;
+    padding: 1rem 0;
+}
+.example9-login h3 {
+    order: 2;
+    justify-self: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: var(--black06);
+}
+.example9-login button {
+    order: 1;
+    align-self: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../images/ico_common_back.svg) no-repeat ;
+}
+.example9-form {
+    padding: 2.4rem 0 1.2rem;
+}
+.example9-form label {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey55);
+}
+.example9-form .id input , .password input {
+    width: 100%;
+    height: 4.7rem;
+    display: block;
+    padding: 0 1.6rem;
+    border: 1px solid var(--greyd6);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    margin: 0.8rem 0 1.6rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--navy);
+}
+.example9-form .id input::placeholder , .password input::placeholder {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--greya5);
+}
+.example9-form .none {
+    display: none;
+}
+.example9-form .none:checked + .checkbox {
+    background: url(../images/ico_check_on.svg) no-repeat 0 0 / contain;
+}
+.example9-form .checkbox {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey55);
+    padding-left: 3rem;
+    background: url(../images/ico_check_off.svg) no-repeat 0 0 / contain;
+}
+.example9-form .check .login {
+    padding-right: 8.7rem;
+}
+.example9-form button {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--white);
+    background: var(--greyc0);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    padding: 1.2rem 0;
+    margin: 1.6rem 0 1.3rem;
+    transition: .4s;
+}
+.example9-form button:hover {
+    background: var(--navy);
+}
+.example9-form b {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: var(--navy);
+
+}
+
+/* 예제10 */
+.example10 {
+    padding: 1.6rem;
+}
+.example10-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+}
+.example10-list li img {
+    width: 100%;
+    border-radius: 12px;
+    padding: 0 0 0.8rem;
+}
+.example10-list .example10-sale {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--pink);
+}
+.example10-title {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--navy);
+}
+.example10-list .example10-price {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    text-decoration-line: line-through;
+    color: var(--grey83);
+}
+.example10-price2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #1E2530;
+}
+.example10-copy {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--navy);
+}
+.example10-copy2 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--orange);
+}
+.example10-list li a .span {
+    position: relative;
+}
+.example10-list li a .span span {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.7rem;
+    background: var(--navy);
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.4rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+.example10-list .cart{
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url(../images/ico_shopping_cart.svg) no-repeat 0 0 / contain;
+}
+
+
+/*  */
+.example13 a {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* line-height:줄간격; */
+}
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}

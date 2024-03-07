@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 가이드(아토믹 디자인)</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="guide">
+    <nav class="guide-nav">
+        <a href="#guide1">버튼</a>
+        <a href="#guide2">해시태그</a>
+        <a href="#guide3">표</a>
+        <a href="#guide4">폼</a>
+        <a href="#guide5">탭메뉴</a>
+        <a href="#guide6">리스트형콘텐츠</a>
+        <a href="#guide7">제목</a>
+        <a href="#guide8">게시판</a>
+        <a href="#guide9">댓글</a>
+        <a href="#guide10">정렬</a>
+        <a href="#guide11">텍스트</a>
+    </nav>
+    <h2>아토믹 디자인 작업순서</h2>
+    <ol>
+        <li>1. 헤더(header), 푸터(footer) 제작</li>
+        <li>2. main태그 생성 후 전체페이지 분석</li>
+        <li>3. 버튼제작(버튼에 아이콘이 있을 시 다중클래스로 처리)</li>
+        <li>4. 표제작(표의 내용은 코딩하지 않음)</li>
+        <li>5. 폼제작(input, select, textarea)</li>
+        <li>6. 탭메뉴</li>
+        <li>7. 리스트형 콘텐츠</li>
+        <li>8. 제목</li>
+        <li>9. 게시판(리스트, 상세보기)</li>
+        <li>10. 댓글</li>
+    </ol>
+
+    <header class="header">
+        <h1 class="h1"><a href="">온라인 과정</a></h1>
+        <button class="btn-prev"><span class="hide">이전</span></button>
+        <div class="right">
+            <button class="btn-search"><span class="hide">찾기</span></button>
+            <button class="btn-menu"><span class="hide">메뉴</span></button>
+        </div>
+    </header>
+    <main>
+        <h2 id="guide1">버튼</h2>
+        <button class="btn-category">카테고리</button>
+        <button class="btn-scrap">스크랩</button>
+        <button class="btn-white">맛보기</button>
+        <button class="btn-white cancle">취소</button>
+        <button class="btn-blue">수강신청</button>
+        <button class="btn-blue class">수강신청</button>
+        <button class="btn-blue write">문의하기</button>
+        <button class="btn-blue modify">수정</button>
+        <button class="btn-write">글쓰기</button>
+        <button class="btn-zipcode">우편번호 찾기</button>
+        <button class="btn-write2">등록</button>
+        <button class="btn-write3">등록</button>
+        <button class="btn-reply">대댓글 (14)</button>
+        <button class="btn-logout">로그아웃</button>
+        <button class="btn-more">더보기</button>
+
+
+        <h2 id="guide2">해시태그</h2>
+        <span class="hashtag">해시태그</span> <button class="hashtag">해시태그</button>
+
+
+        <h2 id="guide3">표</h2>
+        <table class="table-type1">
+            <caption class="hide">표제목</caption>
+            <colgroup>
+                <col style="width: 8.8rem">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-type2">
+            <caption class="hide">표제목</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>제목</th>
+                    <th>제목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>내용</td>
+                    <td>내용</td>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-type3">
+            <caption class="hide">표제목</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th class="vm">제목<span class="required">*</span></th>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th>제목<span class="required">*</span></th>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th>제목<span class="required">*</span></th>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2 id="guide4">폼</h2>
+        <input type="text">
+        <select>
+            <option>선택하세요</option>
+        </select>
+        <textarea placeholder="내용을 입력하세요"></textarea>
+        <input type="checkbox" id="chk1_1" class="hide check-type1"><label for="chk1_1">선택1</label>
+        <input type="checkbox" id="chk1_2" class="hide check-type1"><label for="chk1_2">선택2</label>
+
+        <input type="radio" name="rag1" id="ra1_1" class="hide radio-type1"><label for="ra1_1">정형</label>
+        <input type="radio" name="rag1" id="ra1_2" class="hide radio-type1"><label for="ra1_2">비정형</label>
+
+        <div class="sort">
+            <input type="radio" name="rag2" id="ra2_1" class="hide radio-sort-card"><label for="ra2_1"></label>
+            <input type="radio" name="rag2" id="ra2_2" class="hide radio-sort-gallery"><label for="ra2_2"></label>
+            <input type="radio" name="rag2" id="ra2_3" class="hide radio-sort-list"><label for="ra2_3"></label>
+        </div>
+
+        <input type="file" id="file1_1" class="hide file-type1"><label for="file1_1">첨부파일</label>
+
+        <div class="board-search">
+            <input type="search" placeholder="검색어를 입력하세요.">
+            <button class="btn-del"></button>
+            <button class="btn-search2">검색</button>
+        </div>
+
+        <div class="board-write">
+            <input type="text" placeholder="제목을 입력하세요">
+            <div class="select">
+                <select>
+                    <option>분류 선택</option>
+                </select>
+                <select>
+                    <option>분류 선택</option>
+                </select>
+                <textarea placeholder="내용을 입력하세요" class="grid"></textarea>
+                <div class="grid"><input type="file" id="file2_1" class="hide file-type1"><label
+                        for="file2_1">찾아보기</label></div>
+            </div>
+        </div>
+
+        <div class="tel">
+            <select title="휴대전화 앞자리">
+                <option>선택</option>
+            </select>
+            <input type="tel" title="휴대전화 중간자리"><input type="tel" title="휴대전화 뒷자리">
+        </div>
+
+        <div class="address">
+            <input type="number" title="우편번호">
+            <button class="btn-zipcode">우편번호 찾기</button>
+            <input type="text" class="grid" title="기본주소">
+            <input type="text" class="grid" title="상세주소" placeholder="상세주소를 입력하세요.">
+        </div>
+
+        <h2 id="guide5">탭메뉴</h2>
+        <nav>
+            <ul class="tab-type1">
+                <li><button>탭1</button></li>
+                <li class="active"><button>탭2</button></li>
+                <li><button>탭3</button></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="tab-type2">
+                <li><button>탭1</button></li>
+                <li class="active"><button>탭2</button></li>
+                <li><button>탭3</button></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="tab-type3">
+                <li><button>탭1</button></li>
+                <li><button>탭2</button></li>
+                <li class="active"><button>탭3</button></li>
+                <li><button>탭4</button></li>
+            </ul>
+        </nav>
+
+
+        <h2 id="guide6">리스트형 콘텐츠</h2>
+        <ul class="gallery-list">
+            <li>
+                <a href="">
+                    <img src="images/img_thumb.png" class="thumb-gallery" alt="">
+                    <div class="contents">
+                        <div class="txt-category">건축/토목기사</div>
+                        <div class="txt-title">백신의 부작용_ 그위험
+                            얼마나 클까요?</div>
+                        <div class="ratings count4"><span></span>4.0</div>
+                        <div class="hashtag-group">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                            <span class="hashtag">플립러닝</span>
+                            <span class="hashtag">교재</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="gallery-list-type2">
+            <li>
+                <a href="">
+                    <div class="play">
+                        <img src="images/img_thumb.png" class="thumb-gallery" alt="">
+                        <div class="btn-play"><span class="hide">실행</span></div>
+                    </div>
+                    <div class="contents">
+                        <div class="txt-category">건축/토목기사</div>
+                        <div class="txt-title">
+                            백신의 부작용_ 그위험 얼마나 클까요? 백신의...
+                        </div>
+                        <div class="hashtag-group line-bottom2">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                        </div>
+                        <div class="info align both">
+                            <div class="info-view">123,456</div>
+                            <div class="info-comment">10</div>
+                        </div>
+                    </div>
+                </a>
+                <button class="btn-play"></button>
+            </li>
+        </ul>
+
+        <ul class="news-list">
+            <li>
+                <a href="">
+                    <img src="images/img_thumb.png" class="thumb-news" alt="">
+                    <div class="contents">
+                        <div class="txt-title">백신의 부작용_ 그위험
+                            얼마나 클까요?</div>
+                        <div class="hashtag-group">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                            <span class="hashtag">플립러닝</span>
+                            <span class="hashtag">교재</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img_thumb.png" class="thumb-news" alt="">
+                    <div class="contents">
+                        <div class="txt-title">백신의 부작용_ 그위험
+                            얼마나 클까요?</div>
+                        <div class="hashtag-group">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                            <span class="hashtag">플립러닝</span>
+                            <span class="hashtag">교재</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img_thumb.png" class="thumb-news" alt="">
+                    <div class="contents">
+                        <div class="txt-title">백신의 부작용_ 그위험
+                            얼마나 클까요?</div>
+                        <div class="hashtag-group">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                            <span class="hashtag">플립러닝</span>
+                            <span class="hashtag">교재</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="card-list">
+            <li>
+                <a href="">
+                    <img src="images/img_thumb.png" class="thumb-card" alt="">
+                    <div class="contents">
+                        <div class="txt-title">백신의 부작용_ 그위험
+                            얼마나 클까요?</div>
+                        <div class="hashtag-group">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                            <span class="hashtag">플립러닝</span>
+                            <span class="hashtag">교재</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img_noimage.png" class="thumb-card" alt="">
+                    <div class="contents">
+                        <div class="txt-title">백신의 부작용_ 그위험
+                            얼마나 클까요?</div>
+                        <div class="hashtag-group">
+                            <span class="hashtag">필수</span>
+                            <span class="hashtag">초급</span>
+                            <span class="hashtag">NSC인증</span>
+                            <span class="hashtag">플립러닝</span>
+                            <span class="hashtag">교재</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="card-list-type2">
+            <li>
+                <strong>내용</strong>
+                <p>내용</p>
+            </li>
+            <li>
+                <strong>내용</strong>
+                <p>내용</p>
+            </li>
+            <li>
+                <strong>내용</strong>
+                <p>내용</p>
+            </li>
+        </ul>
+
+        <ul class="card-list-type3">
+            <li>내용</li>
+            <li>
+                <p>내용</p>
+                <span>내용</span>
+            </li>
+            <li>
+                <p>내용</p>
+                <span>내용</span>
+            </li>
+        </ul>
+
+        <div class="card-list-type4">
+            <ul>
+                <li>내용</li>
+                <li>내용</li>
+                <li>내용</li>
+            </ul>
+        </div>
+
+        <ul class="bar-list-type1">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li>
+        </ul>
+        <ul class="bar-list-type2">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li>
+        </ul>
+        <ul class="bar-list-type3">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li>
+        </ul>
+
+        <ul class="list-type1">
+            <li>내용</li>
+            <li>내용</li>
+        </ul>
+
+        <div class="border-box"></div>
+
+        <ul class="list-type2">
+            <li>내용</li>
+            <li>내용</li>
+            <li class="color">내용</li>
+        </ul>
+
+
+        <h2 id="guide7">제목</h2>
+        <h2 class="h2">제목</h2>
+        <h2 class="h2_type2">제목</h2>
+        <h3 class="h3">제목</h3>
+        <h3 class="h3_type2">제목</h3>
+
+
+        <h2 id="guide8">게시판</h2>
+        <ul class="board-list">
+            <li>
+                <a href="">
+                    <div class="txt-title">독서통신_스러지는 제국의 기록 속에서, 고대와 근대의
+                        유럽을 읽다.</div>
+                    <ul class="bar-list-type2">
+                        <li>관*자</li>
+                        <li>2021-01-01</li>
+                    </ul>
+                    <div class="info">
+                        <div class="info-view">123,456</div>
+                        <div class="info-comment">10</div>
+                        <div class="info-more"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="txt-title">독서통신_스러지는 제국의 기록 속에서, 고대와 근대의
+                        유럽을 읽다.</div>
+                    <ul class="bar-list-type2">
+                        <li>관*자</li>
+                        <li>2021-01-01</li>
+                    </ul>
+                    <div class="info">
+                        <div class="info-view">123,456</div>
+                        <div class="info-comment">10</div>
+                        <div class="info-more"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="txt-title">독서통신_스러지는 제국의 기록 속에서, 고대와 근대의
+                        유럽을 읽다.</div>
+                    <ul class="bar-list-type2">
+                        <li>관*자</li>
+                        <li>2021-01-01</li>
+                    </ul>
+                    <div class="info">
+                        <div class="info-view">123,456</div>
+                        <div class="info-comment">10</div>
+                        <div class="info-more"></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="board-list-type2">
+            <li>
+                <a href="">
+                    <b>독서통신_스러지는 제국의 기록 속에서, 고대와 근대의
+                        유럽을 읽다.</b>
+                    <p>내용</p>
+                    <span>2021.07.09</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <b>독서통신_스러지는 제국의 기록 속에서, 고대와 근대의
+                        유럽을 읽다.</b>
+                    <p>내용</p>
+                    <span>2021.07.09</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="board-view">
+            <div>
+                <h2 class="h2">독서통신_스러지는 제국의 기록 속에서, 고대와 근대의 유럽을 읽다.</h2>
+            </div>
+            <div>
+                <ul class="bar-list-type2">
+                    <li>관리자</li>
+                    <li>2021-07-20</li>
+                    <li>조회수 : 13027</li>
+                    <li>추천수 : 13027</li>
+                </ul>
+            </div>
+            <div class="control">
+                <div class="files">
+                    <strong>첨부파일</strong>
+                    <a href="">123456.jpg</a>
+                </div>
+                <ul class="bar-list-type2">
+                    <li><button class="board-modify">수정</button></li>
+                    <li><button class="board-delete">삭제</button></li>
+                </ul>
+            </div>
+            <div class="contents">
+
+            </div>
+        </div>
+
+
+        <h2 id="guide9">댓글</h2>
+        <h3 class="h3_type2">댓글 (16)</h3>
+        <div class="reply-write">
+            <textarea title="댓글작성"></textarea>
+            <button class="btn-write2">등록</button>
+        </div>
+
+        <ul class="comment-list">
+            <li>
+                <div class="depth1">
+                    <div class="name">
+                        <strong class="h3_type2">소*영</strong>
+                        <a href="" class="btn-declar">신고</a>
+                    </div>
+                    <div class="comment-date">2021. 07. 22 / 09:58</div>
+                    <div class="comment-content">
+                        내가 만든 디자인을 최대한 효과적으로 보여줄 수 있는 방법을 연구하고 고민하셔야 합니다. 가장 큰 맥락은 면접관이 편하게 볼 수 있어야 하고, 내 디자인이 잘 보여야
+                        합니다. 포트폴리오는 내 분신과 같다고 생각해요 면접관과의 비대면 첫 만남이에요 포트폴리오를 어떻게 만드냐에 따라 내 디자인이 더 잘해 보일 수도 있고 더 못해 보일 수도
+                        있습니다.
+                    </div>
+                    <button class="btn-reply">대댓글 (14)</button>
+                </div>
+                <ul class="depth2">
+                    <li class="comment-write">
+                        <strong class="h3_type2">소*영님에게 댓글쓰기</strong>
+                        <textarea title="댓글내용" placeholder="내용을 입력하세요"></textarea>
+                        <div class="comment-count"><b>10</b> / 2000</div>
+                        <button class="btn-write3">등록</button>
+                    </li>
+                    <li class="recomment-content">
+                        <strong class="h3_type2 declar">소*영</strong>
+                        <div class="comment-date">2021. 07. 22 / 09:58</div>
+                        <div class="comment-content">
+                            내가 만든 디자인을 최대한 효과적으로 보여줄 수 있는 방법을 연구하고 고민하셔야 합니다. 가장 큰 맥락은 면접관이 편하게 볼 수 있어야 하고, 내 디자인이 잘 보여야
+                            합니다. 포트폴리오는 내 분신과 같다고 생각해요 면접관과의 비대면 첫 만남이에요 포트폴리오를 어떻게 만드냐에 따라 내 디자인이 더 잘해 보일 수도 있고 더 못해 보일
+                            수도 있습니다.
+                        </div>
+                        <ul class="bar-list-type2">
+                            <li><button class="board-modify">수정</button></li>
+                            <li><button class="board-delete">삭제</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2 id="guide10">정렬</h2>
+        <div class="align both">
+            <div>좌</div>
+            <div>우</div>
+        </div>
+        <div class="align center">
+            <div>가운데</div>
+        </div>
+        <div class="align right">
+            <div>오른쪽</div>
+        </div>
+        <div class="align vt">
+            <div>위</div>
+        </div>
+        <div class="align vm">
+            <div>중앙</div>
+        </div>
+        <div class="align vb">
+            <div>아래</div>
+        </div>
+
+
+        <h2 id="guide11">텍스트</h2>
+        <p class="txt-type1">텍스트</p>
+        <p class="txt-type2">텍스트</p>
+        <p class="txt-type3">텍스트</p>
+        <a href="" class="txt-type4">텍스트</a>
+        <p class="txt-type5">텍스트</p>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <p>COPYRIGHT ⓒ 2000 <b>Rebehayan</b> ALL RIGHTS RESERVED.</p>
+        <div class="footer-line">
+            <a href="">개인정보처리방침</a>
+            <div><b>교육담당</b> : 홍길동 02-1234-5678</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

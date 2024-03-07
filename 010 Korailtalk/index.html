@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>승차권 예매 | 코레일톡</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color-f5">
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header>
+        <section>
+            <div class="header">
+                <h1 class="h1"><a href="javascript:void(0)">승차권 예매</a></h1>
+                <div>
+                    <button class="none"></button>
+                </div>
+                <button class="btn-menu"><span class="hide">메뉴</span></button>
+            </div>
+        </section>
+        <section>
+            <div class="tab">
+                <h2 class="hide">메뉴 탭</h2>
+                <nav>
+                    <ul class="header2 fix-bottom">
+                        <li><button class="active">승차권예매</button></li>
+                        <li><button>할인ㆍ정기권</button></li>
+                        <li><button>관광상품</button></li>
+                        <li><button>승차권확인</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main id="content">
+        <div class="tab-content active">
+            <div class="tab-type1__wrap">
+                <nav>
+                    <ul class="tab-type1">
+                        <li><button>편도</button></li>
+                        <li><button class="active">왕복</button></li>
+                    </ul>
+                </nav>
+                <div class="tab-type1__content">
+                    <ul class="list-type3">
+                        <li>
+                            <div class="list-type3__content">
+                                <div>
+                                    <p>출발</p>
+                                    <b>동대구</b>
+                                </div>
+                                <div class="list-type3__bg">
+                                    <div class="btn-alt"><button><span class="hide">바꾸기</span></button></div>
+                                </div>
+                                <div>
+                                    <p>도착</p>
+                                    <b>행신</b>
+                                </div>
+                                <button class="btn-white">ktx역 선택 지도</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-type3__btn">
+                                <button>
+                                    <span class="txt-type7">출발일</span>
+                                    <span class="txt-type8">2023년 6월 16일 (금) 10:40</span>
+                                </button>
+                            </div>
+                            <div style="display: none;">
+                                <div class="date-choose">
+                                    <button class="btn-white">달력에서 날짜 선택</button>
+                                    <div class="swiper slide-date">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day active">07</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">08</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">09</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">10</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">11</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">12</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">13</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day">14</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">15</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">16</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">17</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">18</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">19</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">20</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day">21</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">22</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">23</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">24</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">25</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">26</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">27</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper slide-time">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><button class="btn-date active">00시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">01시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">02시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">03시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">04시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">05시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">06시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">07시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">08시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">09시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">10시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">11시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">12시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">13시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">14시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">15시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">16시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">17시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">18시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">19시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">20시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">21시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">22시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">23시</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-type3__btn">
+                                <button>
+                                    <span class="txt-type7">승객 연령 및 좌석수</span>
+                                    <span class="txt-type8">어른 1명</span>
+                                </button>
+                            </div>
+                            <div style="display: none;">
+                                <div class="personnel-list__wrap">
+                                    <p>최소 1명 ~ 최대 9명</p>
+                                    <ul class="personnel-list">
+                                        <li>
+                                            <p>어른(만 13세 이상)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>1</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>어린이(만 6-12세)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>유아(만 6세 미만)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>경로(만 65세 이상)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>중증 장애인</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>경증 장애인</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-type3__btn">
+                                <button>
+                                    <span class="txt-type7">상세 옵션</span>
+                                    <span class="txt-type8">인접역 표출, SR 연계 표출</span>
+                                </button>
+                            </div>
+                            <div style="display: none;">
+                                <div class="index-radio">
+                                    <div>
+                                        <b>인접역 표출</b>
+                                        <div class="index-radio__btn">
+                                            <div>
+                                                <input type="radio" name="rag3" id="ra3_1"
+                                                    class="hide radio-type2"><label for="ra3_1">포함</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="rag3" id="ra3_2" class="hide radio-type2">
+                                                <label for="ra3_2">미포함</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <b>SR 연계 표출</b>
+                                        <div class="index-radio__btn">
+                                            <div>
+                                                <input type="radio" name="rag4" id="ra4_1"
+                                                    class="hide radio-type2"><label for="ra4_1">포함</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="rag4" id="ra4_2" class="hide radio-type2">
+                                                <label for="ra4_2">미포함</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-type1__content  active">
+                    <ul class="list-type3">
+                        <li>
+                            <div class="list-type3__content">
+                                <div>
+                                    <p>출발</p>
+                                    <b>행신</b>
+                                </div>
+                                <div class="list-type3__bg">
+                                    <div class="btn-alt"><button><span class="hide">바꾸기</span></button></div>
+                                </div>
+                                <div>
+                                    <p>도착</p>
+                                    <b>동대구</b>
+                                </div>
+                                <button class="btn-white">ktx역 선택 지도</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-type3__btn">
+                                <button>
+                                    <span class="txt-type7">가는날</span>
+                                    <span class="txt-type8">2023년 6월 16일 (금) 10:40</span>
+                                </button>
+                            </div>
+                            <div style="display: none;">
+                                <div class="date-choose">
+                                    <button class="btn-white">달력에서 날짜 선택</button>
+                                    <div class="swiper slide-date">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day active">07</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">08</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">09</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">10</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">11</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">12</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">13</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day">14</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">15</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">16</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">17</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">18</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">19</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">20</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day">21</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">22</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">23</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">24</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">25</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">26</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">27</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper slide-time">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><button class="btn-date active">00시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">01시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">02시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">03시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">04시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">05시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">06시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">07시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">08시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">09시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">10시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">11시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">12시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">13시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">14시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">15시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">16시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">17시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">18시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">19시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">20시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">21시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">22시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">23시</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-type3__btn">
+                                <button>
+                                    <span class="txt-type7">오는날</span>
+                                    <span class="txt-type8">2023년 6월 16일 (금) 10:40</span>
+                                </button>
+                            </div>
+                            <div style="display: none;">
+                                <div class="date-choose">
+                                    <button class="btn-white">달력에서 날짜 선택</button>
+                                    <div class="swiper slide-date">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day active">07</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">08</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">09</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">10</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">11</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">12</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">13</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day">14</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">15</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">16</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">17</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">18</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">19</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">20</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>월</p>
+                                                <button class="btn-day">21</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>화</p>
+                                                <button class="btn-day">22</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>수</p>
+                                                <button class="btn-day">23</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>목</p>
+                                                <button class="btn-day">24</button>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p>금</p>
+                                                <button class="btn-day">25</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sat">
+                                                <p>토</p>
+                                                <button class="btn-day">26</button>
+                                            </div>
+                                            <div class="swiper-slide btn-sun">
+                                                <p>일</p>
+                                                <button class="btn-day">27</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper slide-time">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><button class="btn-date active">00시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">01시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">02시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">03시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">04시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">05시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">06시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">07시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">08시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">09시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">10시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">11시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">12시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">13시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">14시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">15시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">16시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">17시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">18시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">19시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">20시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">21시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">22시</button></div>
+                                            <div class="swiper-slide"><button class="btn-date">23시</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-type3__btn">
+                                <button>
+                                    <span class="txt-type7">승객 연령 및 좌석수</span>
+                                    <span class="txt-type8">어른 1명</span>
+                                </button>
+                            </div>
+                            <div style="display: none;">
+                                <div class="personnel-list__wrap">
+                                    <p>최소 1명 ~ 최대 9명</p>
+                                    <ul class="personnel-list">
+                                        <li>
+                                            <p>어른(만 13세 이상)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>1</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>어린이(만 6-12세)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>유아(만 6세 미만)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>경로(만 65세 이상)</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>중증 장애인</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>경증 장애인</p>
+                                            <div class="personnel">
+                                                <button class="btn-minus"><span class="hide">인원삭제</span></button>
+                                                <b>0</b>
+                                                <button class="btn-plus"><span class="hide">인원추가</span></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-blue mt40 fix-bottom2">열차 조회하기</button>
+        </div>
+    </main>
+
+    <div class="megamenu__wrap">
+        <div class="megamenu" style="--zindex:900;">
+            <div class="megamenu__header">
+                <b><span>000</span> 고객님!</b>
+                <div class="megamenu__header__btn">
+                    <button class="btn-logout"></button>
+                    <button class="btn-alarm"></button>
+                    <button class="btn-setting"></button>
+                </div>
+            </div>
+            <div class="megamenu__gnb">
+                <ul>
+                    <li>
+                        <button class="btn-megamenu">마이 페이지</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">회원정보/쿠폰ㆍ할인증</a></li>
+                            <li><a href="javascript:void(0)">장바구니</a></li>
+                            <li><a href="javascript:void(0)">승차권 확인</a></li>
+                            <li><a href="javascript:void(0)">승차권 구입이력</a></li>
+                            <li><a href="javascript:void(0)">마일리지 적립/사용내역</a></li>
+                            <li><a href="javascript:void(0)">KTX 동행자 마일리지 적립</a></li>
+                            <li><a href="javascript:void(0)">알림설정</a></li>
+                            <li><a href="javascript:void(0)">멤버십카드</a></li>
+                            <li><a href="javascript:void(0)">열차운행중지 및 지연배상 신청</a></li>
+                            <li><a href="javascript:void(0)">지연료 계좌반환 신청</a></li>
+                            <li><a href="javascript:void(0)">지연확인증 발급</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">승차권 예매</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">승차권 예매</a></li>
+                            <li><a href="javascript:void(0)">할인ㆍ정기권</a></li>
+                            <li><a href="javascript:void(0)">예약 승차권 조회ㆍ취소</a></li>
+                            <li><a href="javascript:void(0)">여행상품 예약 및 확인</a></li>
+                            <li><a href="javascript:void(0)">KTX공항버스 예매</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">승차권 반환</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">승차권 반환</a></li>
+                            <li><a href="javascript:void(0)">역 구입 승차권 반환 신청</a></li>
+                            <li><a href="javascript:void(0)">전화반환접수 전용전화 연결<br>(1544-8787)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">고객센터</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                            <li><a href="javascript:void(0)">이용안내</a></li>
+                            <li><a href="javascript:void(0)">유실물 신고</a></li>
+                            <li><a href="javascript:void(0)">고객센터 전화연결<br>상담시간(06:00~22:00) <br>(1544-7788, 1599-7878)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">철도범죄신고</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">철도범죄신고 전화연결(1588-7722)</a></li>
+                            <li><a href="javascript:void(0)">철도범죄신고 앱연결</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">KTX특송/주차장</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">KTX특송</a></li>
+                            <li><a href="javascript:void(0)">주차장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">설정</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">즐겨찾는구간 설정</a></li>
+                            <li><a href="javascript:void(0)">간편구매 정보 등록</a></li>
+                            <li><a href="javascript:void(0)">토스자동결제 설정</a></li>
+                            <li><a href="javascript:void(0)">자주쓰는 카드 설정</a></li>
+                            <li><a href="javascript:void(0)">보훈번호 설정</a></li>
+                            <li><a href="javascript:void(0)">언어 설정(Language)</a></li>
+                            <li><a href="javascript:void(0)">버전 정보</a></li>
+                            <li><a href="javascript:void(0)">로그인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="megamenu__footer">
+                <b>한국철도공사</b>
+                <div class="footer__information">
+                    <b>대표 000, 대전광역시 동구 중앙로 240</b><br>
+                    <b>사업자등록번호 314-82-10024</b><br>
+                    <b>통신판매업신고 대전동구-0233호</b><br>
+                    <b>고객센터 1544-7788</b>
+                </div>
+                <b class="footer__txt">개인정보처리방침 <span>여객운송약관</span></b>
+                <p>COPYRIGHT ⓒ Korail All rights reserved.</p>
+            </div>
+        </div>
+        <div class="dimmed" style="--zindex:899;"></div>
+    </div>
+    <div class="notice__wrap" style="--zindex:1000;">
+        <div class="notice bg-color-blue">
+            <div class="notice__top">
+                <img src="images/img_logo.png" alt="korail">
+                <h2 class="h2-type2">
+                    안전하고 편리한 철도이용 <br><span>한국철도가 함께합니다</span>
+                </h2>
+            </div>
+            <ul class="notice-list mobile-space mt26">
+                <li>
+                    <div class="notice-list__img">
+                        <img src="images/img_airplane.png" alt="">
+                    </div>
+                    <div>
+                        <b>KTX승차권과 항공권을 한번에!</b>
+                        <ul class="list-type7">
+                            <li>
+                                <div>
+                                    <span>대상항공사</span>:아시아나, 카타르항공 등 12개 사
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>구매처</span>:항공사 홈페이지(앱), 제휴여행사
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>특별 프로모션</span>:KTX + 아시아나 항공권 구매 고객 대상 항공권 할인 및 선착순 KTX 할인쿠폰 제공
+                                    <p>
+                                        -자세한 내용은 공지사항 참고
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="notice-list__img">
+                        <img src="images/img_escalator.png" alt="">
+                    </div>
+                    <div>
+                        <b>안전한 에스컬레이터 이용 방법</b>
+                        <ul class="list-type7">
+                            <li>
+                                <div>
+                                    <span>손잡이</span>를 꼭 잡으세요
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>걷거나 뛰지마세요</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    어린이나 노약자는 <span>보호자와 함께</span> 이용하세요
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    무거운 짐이 있거나 거동이 불편하신 고객은 <span>엘리베이터</span>를 이용해주세요
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>안전선 안</span>에 서 주세요
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                <li>
+                    <div class="notice-list__img">
+                        <img src="images/img_cctv.png" alt="">
+                    </div>
+                    <div>
+                        <b>안전한 에스컬레이터 이용 방법</b>
+                        <ul class="list-type7">
+                            <li>
+                                <div>
+                                    <span>철도범죄 예방</span> 및 <span>고객 보호</span>를 위해 열차 내에 CCTV를 설치하고 있습니다
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="notice__copy">
+                <p class="txt-type3">탄소중립의 시작은 열차타기입니다.(KTX 서울~부산 노선)</p>
+            </div>
+            <div class="fix-bottom">
+                <button class="btn-blue">닫기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>활동소식 | 한진칼</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header class="header">
+        <div class="header__wrap">
+            <h1 class="header__logo"><a href="index.html"><span class="hide">hanjin kal</span></a></h1>
+            <div class="header__btn">
+                <button class="btn-all-menu">전체메뉴</button>
+                <button class="btn-language">English</button>
+            </div>
+            <button class="header__responsive__menu"><span class="hide">메뉴</span></button>
+            <h2 class="hide">메뉴</h2>
+            <nav>
+                <ul class="header__gnb">
+                    <li>
+                        <a href="javascript:void(0)">한진그룹</a>
+                        <ul class="header__gnb__list" style="display: none;">
+                            <li>
+                                <a href="greetings.html">인사말씀</a>
+                                <ul>
+                                    <li><a href="greetings.html">인사말씀</a></li>
+                                    <li><a href="javascript:void(0)">경영철학</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">그룹역사</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">한진70년</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">창업회장관</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">정석 조중훈</a></li>
+                                    <li><a href="javascript:void(0)">사업은 예술이다</a></li>
+                                    <li><a href="javascript:void(0)">전기 다운로드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">한진의미래</a>
+                            </li>
+                            <li>
+                                <a href="hangin-network.html">한진네트워크</a>
+                                <ul>
+                                    <li><a href="hangin-network_company.html">지주회사</a></li>
+                                    <li><a href="javascript:void(0)">항공부문</a></li>
+                                    <li><a href="hangin-network_01.html">육운부문</a></li>
+                                    <li><a href="javascript:void(0)">관광/호텔/부동산부문</a></li>
+                                    <li><a href="javascript:void(0)">정보서비스부문</a></li>
+                                    <li><a href="javascript:void(0)">비영리법인부문</a></li>
+                                    <li><a href="hangin-network_02.html">해외법인부문</a></li>
+                                    <li><a href="javascript:void(0)">글로벌네트워크</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">한진칼</a>
+                        <ul class="header__gnb__list header-gnb2" style="display: none;">
+                            <li>
+                                <a href="javascript:void(0)">회사 소개</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">기업개요</a></li>
+                                    <li><a href="javascript:void(0)">연혁</a></li>
+                                    <li><a href="javascript:void(0)">CI</a></li>
+                                    <li><a href="javascript:void(0)">찾아오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">투자자정보</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">재무정보</a></li>
+                                    <li><a href="javascript:void(0)">주식정보</a></li>
+                                    <li><a href="javascript:void(0)">IR자료실</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">ESG경영</a>
+                        <ul class="header__gnb__list header-gnb3" style="display: none;">
+                            <li>
+                                <a href="javascript:void(0)">지속가능경영</a>
+                                <ul>
+                                    <li><a href="hangin-esg_01.html">윤리경영</a></li>
+                                    <li><a href="hangin-network_02.html">인재경영</a></li>
+                                    <li><a href="javascript:void(0)">안전경영</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">기업지배구조</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">기업지배구조헌장</a></li>
+                                    <li><a href="javascript:void(0)">이사회</a></li>
+                                    <li><a href="javascript:void(0)">위원회</a></li>
+                                    <li><a href="javascript:void(0)">정관</a></li>
+                                    <li><a href="javascript:void(0)">기타 관련 정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사회공헌</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">나눔경영</a></li>
+                                    <li><a href="javascript:void(0)">상생경영</a></li>
+                                    <li><a href="javascript:void(0)">육영사업</a></li>
+                                    <li><a href="javascript:void(0)">의료복지</a></li>
+                                    <li><a href="activity-news.html">활동소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">환경경영</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">기후변화 대응</a></li>
+                                    <li><a href="javascript:void(0)">친환경 경영</a></li>
+                                    <li><a href="javascript:void(0)">활동소식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">한진인</a>
+                        <ul class="header__gnb__list header-gnb4" style="display: none;">
+                            <li><a href="javascript:void(0)">한진의 인재상</a></li>
+                            <li><a href="javascript:void(0)">인재육성</a></li>
+                            <li><a href="javascript:void(0)">인사제도</a></li>
+                            <li><a href="javascript:void(0)">복리후생</a></li>
+                            <li><a href="javascript:void(0)">채용정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">홍보센터</a>
+                        <ul class="header__gnb__list header-gnb5" style="display: none;">
+                            <li>
+                                <a href="group-news.html">그룹사소식</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">광고모음</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">광고영상</a></li>
+                                    <li><a href="javascript:void(0)">지면광고</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">정기간행물</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">한진그룹 SNS</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header__box"></div>
+
+    <main id="content">
+        <div class="visual-subpage__wrap">
+            <section class="visual-subpage">
+                <div class="visual-subpage__left">
+                    <button class="btn-visual-prev">의료복지</button>
+                </div>
+                <h2 class="visual-subpage__title">활동소식</h2>
+                <div class="visual-subpage__right visual-btn-none">
+                    <button class="btn-visual-next"></button>
+                </div>
+            </section>
+            <section class="list-type3__wrap">
+                <h2 class="hide">탭메뉴</h2>
+                <div class="list-type3__wrap">
+                    <div class="list-type3__box"></div>
+                    <ul class="list-type3">
+                        <li><a href="index.html" class="list-type3__home"><span class="hide">홈</span></a></li>
+                        <li>
+                            <button class="btn-tab active-tab">ESG경영</button>
+                            <ul class="list-type3__list">
+                                <li><a href="javascript:void(0)">지속가능경영</a></li>
+                                <li><a href="javascript:void(0)">기업지배구조</a></li>
+                                <li class="active"><a href="javascript:void(0)">사회공헌</a></li>
+                                <li><a href="javascript:void(0)">환경경영</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn-tab">사회공헌</button>
+                            <ul class="list-type3__list">
+                                <li><a href="javascript:void(0)">나눔경영</a></li>
+                                <li><a href="javascript:void(0)">상생경영</a></li>
+                                <li><a href="javascript:void(0)">육영사업</a></li>
+                                <li><a href="javascript:void(0)">의료복지</a></li>
+                                <li class="active"><a href="activity-news.html">활동소식</a></li>
+                            </ul>
+                        </li>
+                        <li><button class="btn-tab">활동소식</button></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="list-type3-2__wrap">
+            <h2 class="hide">탭메뉴-모바일</h2>
+            <ul class="list-type3-2">
+                <li class="list-type3-2__home"><a href="index.html"><span class="hide">홈</span></a></li>
+                <li>
+                    <button>활동소식</button>
+                    <ul class="tab-menu">
+                        <li><a href="javascript:void(0)">나눔경영</a></li>
+                        <li><a href="javascript:void(0)">상생경영</a></li>
+                        <li><a href="javascript:void(0)">육영사업</a></li>
+                        <li><a href="javascript:void(0)">의료복지</a></li>
+                        <li><a href="activity-news.html" class="active">활동소식</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <div class="activity-news__content">
+            <section class="select-box">
+                <h2 class="hide">선택 및 검색어 입력</h2>
+                <select title="활동분야 선택">
+                    <option>활동분야 선택</option>
+                    <option>나눔경영</option>
+                    <option>육영사업</option>
+                    <option>환경경영</option>
+                    <option>의료복지</option>
+                </select>
+                <select title="그룹사 선택">
+                    <option>그룹사 선택</option>
+                    <option>대한항공</option>
+                    <option>(주)한진</option>
+                    <option>진에어</option>
+                    <option>한국공항</option>
+                    <option>한진공항</option>
+                    <option>에어코리아</option>
+                    <option>한진관광</option>
+                    <option>칼호텔네트워크</option>
+                    <option>항공종합서비스</option>
+                    <option>정석기업</option>
+                    <option>한진정보통신</option>
+                    <option>토파스여행정보</option>
+                    <option>싸이버스카이</option>
+                    <option>한국글로발로지스틱스시스템</option>
+                    <option>한국항공대학교</option>
+                    <option>인하대학교</option>
+                    <option>인하공전</option>
+                    <option>인하대병원</option>
+                    <option>일우재단</option>
+                    <option>한진칼</option>
+                    <option>Waikiki Resort Hotel</option>
+                    <option>한진그룹</option>
+                </select>
+                <select title="전체">
+                    <option>전체</option>
+                    <option>제목</option>
+                    <option>내용</option>
+                </select>
+                <div class="select-box__search">
+                    <div>
+                        <input type="text" placeholder="검색어를 입력하세요" title="검색어 입력">
+                    </div>
+                    <div class="select-box__btn">
+                        <button class="btn-search">검색</button>
+                        <button class="btn-reset"><span class="hide">초기화</span></button>
+                    </div>
+                </div>
+            </section>
+            <section class="activity-news__list">
+                <h2 class="hide">활동소식 정보</h2>
+                <ul class="list-type5">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_activity_news1" alt="">
+                            <div class="list-type5__txt">
+                                <strong class="list-type5__title">
+                                    [환경경영] 진에어, 국내 저비용항공업계 최초로 CCM 인증 획득
+                                </strong>
+                                <p class="list-type5__copy">
+                                    진에어, 국내 저비용항공업계최초로 CCM 인증 획득 공정거래 위원회 인증 한국소비자원이 운영하는 '소비자중심경영 인증' 획득
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2022-12-12</li>
+                                    <li>진에어</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_activity_news2" alt="">
+                            <div class="list-type5__txt">
+                                <strong class="list-type5__title">
+                                    [환경경영] 진에어, 적극적인 환경보호 활동 위해 '반려해변' 입양
+                                </strong>
+                                <p class="list-type5__copy">
+                                    [환경경영] 진에어, 적극적인 환경보호 활동 위해 '반려해변' 입양 제주시 환경면 '엉알해안'과 '검은모래해변'을 반려해변으로 입양
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2022-11-29</li>
+                                    <li>진에어</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_activity_news3" alt="">
+                            <div class="list-type5__txt">
+                                <strong class="list-type5__title">
+                                    [환경경영] 진에어, 2022년 'ESG 평가'서 저비용항공사 중 최고 등급
+                                </strong>
+                                <p class="list-type5__copy">
+                                    [환경경영] 진에어, 2022년 'ESG 평가'서 저비용항공사 중 최고 등급 받아 평가 대상 저비용항공사 중 최고 등급인 B+(통합) 획득
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2022-11-25</li>
+                                    <li>진에어</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_activity_news4" alt="">
+                            <div class="list-type5__txt">
+                                <strong class="list-type5__title">
+                                    [환경경영] (주)한진, 신규 친환경 포장재 '그린와플' 론칭 ... 친환경 물류 트렌드
+                                </strong>
+                                <p class="list-type5__copy">
+                                    [환경경영] (주)한진, 신규 친환경 포장재 '그린와플' 론칭 ... 친환경 물류 트렌드 이끌어 지난 '20년 친환경 택배박스 '날개박스'에 이어
+                                    친환경 택배 포장재...'
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2022-11-18</li>
+                                    <li>(주)한진</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_activity_news5" alt="">
+                            <div class="list-type5__txt">
+                                <strong class="list-type5__title">
+                                    [환경경영] 진에어, 청수곶자왈 제주 수월봉에서 환경 정화 봉사활동 진행
+                                </strong>
+                                <p class="list-type5__copy">
+                                    [환경경영] 진에어, 청수곶자왈 제주 수월봉에서 환경 정화 봉사활동 진행 11/2 (수), 청수곶자왈 및 제주 수월봉에서 환경 정화 봉사활동 진행
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2022-11-03</li>
+                                    <li>진에어</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_activity_news3" alt="">
+                            <div class="list-type5__txt">
+                                <strong class="list-type5__title">
+                                    [환경경영] 진에어, 제 19회 에너지의 날 맞이해 '불을 끄고 별을 켜다'
+                                </strong>
+                                <p class="list-type5__copy">
+                                    [환경경영] 진에어, 제 19회 에너지의 날 맞이해 '불을 끄고 별을 켜다' 캠페인 참여 22일 저녁 9시부터 5분간 진행되는 '불을 끄다 별을 켜다'
+                                    캠페인
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2022-09-06</li>
+                                    <li>진에어</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <nav class="paging">
+                    <button class="btn-prev2"><span class="hide">처음으로</span></button>
+                    <button class="btn-prev"><span class="hide">이전</span></button>
+                    <ol>
+                        <li><a href="javascript:void(0)" class="paging--active">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                    </ol>
+                    <button class="btn-next"><span class="hide">다음</span></button>
+                    <button class="btn-next2"><span class="hide">마지막으로</span></button>
+                </nav>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <h2 class="hide">약관 및 사이트 정보</h2>
+            <div class="footer__left">
+                <div class="footer__link">
+                    <a href="javascript:void(0)">법적고지</a>
+                    <a href="javascript:void(0)">이메일주소무단수집거부</a>
+                    <a href="javascript:void(0)">사이트맵</a>
+                </div>
+                <div class="footer__address">
+                    서울특별시 중구 서소문로 117
+                    <p>Tel. 02-726-6166</p>
+                </div>
+            </div>
+            <p>COPYRIGHT HANJIN KAL. All Rights Reserved.</p>
+            <div class="footer__gnb">
+                <h2 class="hide">계열사 바로가기</h2>
+                <div class="footer__gnb__list">
+                    <button>계열사 바로가기</button>
+                    <ul class="footer__gnb__content">
+                        <li>
+                            지주회사
+                            <ul>
+                                <li><a href="javascript:void(0)">한진칼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            항공부문
+                            <ul>
+                                <li><a href="javascript:void(0)">대한항공</a></li>
+                                <li><a href="javascript:void(0)">진에어</a></li>
+                                <li><a href="javascript:void(0)">한국공항</a></li>
+                                <li><a href="javascript:void(0)">에어코리아</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            육운부문
+                            <ul>
+                                <li><a href="javascript:void(0)">(주)한진</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            관광/호텔/부동산 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">한진관광</a></li>
+                                <li><a href="javascript:void(0)">칼호텔 네트워크</a></li>
+                                <li><a href="javascript:void(0)">항공종합서비스</a></li>
+                                <li><a href="javascript:void(0)">정석기업</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            정보서비스 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">한진정보통신</a></li>
+                                <li><a href="javascript:void(0)">토파스 여행정보</a></li>
+                                <li><a href="javascript:void(0)">싸이버 스카이</a></li>
+                                <li><a href="javascript:void(0)">한국글로발로지스틱스시스템</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            비영리법인 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">한국항공대학교</a></li>
+                                <li><a href="javascript:void(0)">인하대 병원</a></li>
+                                <li><a href="javascript:void(0)">일우재단</a></li>
+                                <li><a href="javascript:void(0)">인하대학교</a></li>
+                                <li><a href="javascript:void(0)">인하공업전문대학교</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            해외법인 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">와이키키 리조트 호텔</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="megamenu__wrap">
+        <div class="megamenu" style="--zindex:30; display: none;">
+            <div class="megamenu-list">
+                <div class="megamenu-list__top">
+                    <p>ENGLISH</p>
+                    <button class="btn-menu-close"></button>
+                </div>
+                <ul class="megamenu-list__bottom">
+                    <li>
+                        <button class="btn-megamenu">한진그룹</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">인사말씀</a></li>
+                            <li><a href="javascript:void(0)">그룹역사</a></li>
+                            <li><a href="javascript:void(0)">창업화장관</a></li>
+                            <li><a href="javascript:void(0)">한진의미래</a></li>
+                            <li><a href="javascript:void(0)">한진네트워크</a></li>
+                            <li><a href="javascript:void(0)">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">한진칼</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">회사 소개</a></li>
+                            <li><a href="javascript:void(0)">투자자정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">ESG경영</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">지속가능경영</a></li>
+                            <li><a href="javascript:void(0)">기업지배구조</a></li>
+                            <li><a href="javascript:void(0)">사회공헌</a></li>
+                            <li><a href="javascript:void(0)">환경경영</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">한진인</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">한진의 인재상</a></li>
+                            <li><a href="javascript:void(0)">인재육성</a></li>
+                            <li><a href="javascript:void(0)">인사제도</a></li>
+                            <li><a href="javascript:void(0)">복리후생</a></li>
+                            <li><a href="javascript:void(0)">채용정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">홍보센터</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">그룹사소식</a></li>
+                            <li><a href="javascript:void(0)">광고모음</a></li>
+                            <li><a href="javascript:void(0)">정기간행물</a></li>
+                            <li><a href="javascript:void(0)">한진그룹 SNS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dimmed" style="--zindex:29; display: none;"></div>
+    </div>
+</body>
+
+</html>

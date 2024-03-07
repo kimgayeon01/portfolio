@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인서식 연습</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>폼 제작</h1>
+
+    <br>
+    <h2>폼1</h2>
+    <div class="login">
+        <div class="login-bg">
+            <h3>로그인</h3>
+            <p class="login-copy">R.POINT 통합 회원은 리베서비스를 하나의 ID로 이용할 수 있습니다.</p>
+            <div class="login-form">
+                <div>
+                    <label for="txt23_1">아이디</label>
+                    <input type="text" id="txt23_1" placeholder="아이디 또는 이메일을 입력해주세요.">
+                </div>
+                <div>
+                    <label for="txt23_2">비밀번호</label>
+                    <input type="text" id="txt23_2" placeholder="비밀번호를 입력해주세요.">
+                </div>
+            </div>
+            <button>로그인</button>
+            <ul class="bar-list">
+                <li><a href="">아이디찾기</a></li>
+                <li><a href="">비밀번호찾기</a></li>
+                <li><a href="">가입하기</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <h2>폼2</h2>
+    <div class="login2">
+        <h3>로그인</h3>
+        <div class="information">
+            <ul>
+                <li>
+                    리베에서 제공하는 보다많은 정보와 서비스 이용을 원하신다면 로그인을 해주시기 바랍니다.
+                </li>
+                <li>
+                    리베 홈페이지 비회원 직원 및 가족 여러분께서는 회원 가입 후 로그인하여 주시기 바랍니다.
+                </li>
+            </ul>
+        </div>
+        <div class="log-box">
+            <div class="log-left">
+                <div>
+                    <label for="txt21_1">아이디</label>
+                    <input type="text" id="txt21_1">
+                </div>
+                <div>
+                    <label for="txt21_2">패스워드</label>
+                    <input type="password" id="txt21_2">
+                </div>
+                <button>로그인</button>
+            </div>
+            <div class="log-right">
+                <div>
+                    <b>회원가입</b>
+                    <p>리베하 회원만이 누릴 수 있는 각종 서비스와 정보를 누려보세요.</p>
+                    <a href="">회원가입</a>
+                </div>
+                <div>
+                    <b>아이디 찾기/비밀번호 재발급</b>
+                    <p>본인 확인 후 아이디와 비밀번호를 메일로 보내드립 니다.</p>
+                    <a href="">아이디 찾기/비밀번호 재발급</a>
+                </div>
+            </div>
+        </div>
+        <p class="p">개인정보수정은 로그인 후 상단에 위치한 마이페이지를 선택하셔서 수정하시면 됩니다.</p>
+    </div>
+
+    <br>
+    <div class="form3">
+        <h2>폼3</h2>
+        <div>
+            <ul class="nav">
+                <li><button>내국인</button></li>
+                <li><button class="active">외국인 및 재외국인</button></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="email">
+                <div>
+                    <b>아이디(이메일) 찾기</b>
+                    <div class="flex">
+                        <label for="txt22_1">성명</label>
+                        <input type="text" id="txt22_1">
+                    </div>
+                    <div class="flex">
+                        <label for="txt22_2">생년월일</label>
+                        <input type="date" id="txt22_2">
+                    </div>
+                    <div>
+                        <p>*예시:YYYY-MM-DD</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="find">찾기</button>
+                </div>
+            </div>
+            <div class="password">
+                <b>비밀번호 찾기</b>
+                <div>
+                    <div class="flex">
+                        <label for="txt22_3">아이디(이메일)</label>
+                        <input type="text" id="txt22_3">
+                    </div>
+                    <div class="flex">
+                        <label for="txt22_4">이름</label>
+                        <input type="text" id="txt22_4">
+                    </div>
+                    <div class="flex">
+                        <label for="txt22_5">생년월일</label><input type="date" id="txt22_5">
+                    </div>
+                    <div>
+                        <P>*예시:YYYY-MM-DD</P>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="find">찾기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h2>폼4</h2>
+    <div class="form4">
+        <div class="chk1">
+            <div class="copy1">
+                <b>채용구분</b>
+                <div class="chk2">
+                    <div><input type="checkbox" id="chk7" class="none"><label for="chk7">전체</label></div>
+                    <div><input type="checkbox" id="chk7_1" class="none"><label for="chk7">신입</label></div>
+                    <div><input type="checkbox" id="chk8" class="none"><label for="chk8">경력</label></div>
+                    <div><input type="checkbox" id="chk9" class="none"><label for="chk9">Foreigner </label></div>
+                    <div><input type="checkbox" id="chk10" class="none"><label for="chk10">계약 </label><br></div>
+                </div>
+            </div>
+            <div class="copy2">
+                <b>직군구분</b>
+                <div class="chk3">
+                    <div><input type="checkbox" checked id="chk11" class="none"><label for="chk11">전체</label></div>
+                    <div><input type="checkbox" id="chk12" class="none"><label for="chk12">Engineering</label></div>
+                    <div><input type="checkbox" id="chk13" class="none"><label for="chk13">Design</label></div>
+                    <div><input type="checkbox" id="chk14" class="none"><label for="chk14">Business</label></div>
+                    <div><input type="checkbox" id="chk15" class="none"><label for="chk15">Staff</label></div>
+                    <div><input type="checkbox" id="chk16" class="none"><label for="chk16">기타</label></div>
+                </div>
+            </div>
+        </div>
+        <div class="find">
+            <input type="search" title="검색어입력"><button>찾기</button>
+        </div>
+    </div>
+
+    <br>
+    <h2>폼5</h2>
+    <div class="form5">
+        <table>
+            <caption>주문</caption>
+            <colgroup>
+                <col style="width: 120px;">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr class="choose">
+                    <th>
+                        상품선택
+                    </th>
+                    <td>
+                        <input type="checkbox" id="chk1" checked class="none"><label for="chk1">전체</label>
+                        <input type="checkbox" id="chk2" class="none"><label for="chk2">리모델링</label>
+                        <input type="checkbox" id="chk3" class="none"><label for="chk3">부엌</label>
+                        <input type="checkbox" id="chk4" class="none"><label for="chk4">욕실</label>
+                        <input type="checkbox" id="chk5" class="none"><label for="chk5">빌트인수납</label>
+                        <input type="checkbox" id="chk6" class="none"><label for="chk6">가구</label>
+                        <p>*중복선택가능합니다.</p>
+                    </td>
+                </tr>
+                <tr class="name">
+                    <th>
+                        <label for="txt2_1">이름</label>
+                    </th>
+                    <td>
+                        <input type="text" id="txt2_1" placeholder="이름을 적어주세요">
+                        <p>*정확한 상담을 위해 실명으로 부탁드립니다.</p>
+                    </td>
+                </tr>
+                <tr class="adress">
+                    <th>
+                        주소
+                    </th>
+                    <td>
+                        <input type="number" title="우편번호" placeholder="우편번호">
+                        <button>검색</button>
+                        <input type="text" title="상세주소" class="adr">
+                    </td>
+                </tr>
+                <tr class="tel">
+                    <th>
+                        연락처
+                    </th>
+                    <td>
+                        <select title="휴대전화 앞자리">
+                            <option>선택해주세요</option>
+                        </select>
+                        <input type="tel" title="휴대전화 중간자리"> <input type="tel" title="휴대전화 뒷자리">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <h2>폼6</h2>
+    <div class="form6">
+        <table>
+            <caption></caption>
+            <colgroup>
+                <col style="width:120px">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>주거형태</th>
+                    <td>
+                        <input type="checkbox" id="chk17_1" class="none"><label for="chk17_1">아파트</label>
+                        <input type="checkbox" checked id="chk17_2" class="none"><label for="chk17_2">연립/빌라</label>
+                        <input type="checkbox" id="chk17_3" class="none"><label for="chk17_3">단독주택</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>분야</th>
+                    <td>
+                        <input type="checkbox" id="chk17_4" class="none"><label for="chk17_4">리모델링</label>
+                        <input type="checkbox" id="chk17_5" class="none"><label for="chk17_5">키친&바스</label>
+                        <input type="checkbox" id="chk17_6" class="none"><label for="chk17_6">빌트인수납</label>
+                        <input type="checkbox" id="chk17_7" class="none"><label for="chk17_7">가구</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="top">비용</th>
+                    <td>
+                        <input type="checkbox" id="chk17_9" class="none"><label for="chk17_9">500~1000만원</label>
+                        <input type="checkbox" id="chk17_8" class="none"><label for="chk17_8">500만원 미만</label>
+                        <input type="checkbox" id="chk17_10" class="none"><label for="chk17_10">1000~2000만원</label>
+                        <input type="checkbox" id="chk17_11" class="none"><label for="chk17_11">2000~3000만원</label>
+                        <input type="checkbox" id="chk17_12" class="none"><label for="chk17_12">3000~4000만원</label>
+                        <input type="checkbox" id="chk17_13" class="none"><label for="chk17_13">4000~5000만원</label>
+                        <input type="checkbox" id="chk17_14" class="none"><label for="chk17_14">5000만원 이상</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>스타일</th>
+                    <td>
+                        <input type="checkbox" id="chk17_15" class="none"><label for="chk17_15">모던</label>
+                        <input type="checkbox" id="chk17_16" class="none"><label for="chk17_16">클래식</label>
+                        <input type="checkbox" id="chk17_17" class="none"><label for="chk17_17">내추럴</label>
+                        <input type="checkbox" checked id="chk17_18" class="none"><label for="chk17_18">화이트</label>
+                        <input type="checkbox" id="chk17_19" class="none"><label for="chk17_19">모노톤</label>
+                        <input type="checkbox" id="chk17_20" class="none"><label for="chk17_20">파스텔</label>
+                        <input type="checkbox" id="chk17_21" class="none"><label for="chk17_21">로맨틱</label>
+                        <input type="checkbox" id="chk17_22" class="none"><label for="chk17_22">유니크</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>평형대</th>
+                    <td>
+                        <input type="checkbox" id="chk17_23" class="none"><label for="chk17_23">20평형</label>
+                        <input type="checkbox" id="chk17_24" class="none"><label for="chk17_24">30평형</label>
+                        <input type="checkbox" checked id="chk17_25" class="none"><label for="chk17_25">40평형</label>
+                        <input type="checkbox" id="chk17_26" class="none"><label for="chk17_26">50평형</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn">
+            <button class="btn-1">선택 적용하기</button>
+            <button class="btn-2">초기화</button>
+        </div>
+    </div>
+
+    <br>
+    <h2>폼7</h2>
+    <h3>필수 정보</h3>
+    <p>필수 입력 항목입니다.</p>
+    <table>
+        <caption>회원가입 필수정보</caption>
+        <colgroup>
+            <col style="width: 140px;">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th><label for="txt18">아이디</label></th>
+                <td>
+                    <input type="text" id="txt18"> <button>중복확인</button>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt18_2">패스워드</label></th>
+                <td>
+                    <input type="password" id="txt18_2">
+                    <p>※비밀번호는 영문/숫자/특수문자를 조합하여 8~16자로 입력해주세요.</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt18_3">패스워드 확인</label></th>
+                <td>
+                    <input type="password" id="txt18_3">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt18_4">이름</label></th>
+                <td>
+                    <input type="text" id="txt18_4">
+                </td>
+            </tr>
+            <tr>
+                <th>휴대전화</th>
+                <td>
+                    <select title="통신사 선택">
+                        <option>선택</option>
+                    </select>
+                    <input type="tel" title="휴대전화 중간자리">
+                    <input type="tel" title="휴대전화 뒷자리">
+                </td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td>
+                    <input type="text" title="이메일 아이디">
+                    @
+                    <input type="text" title="이메일 주소">
+                    <select title="이메일 선택">
+                        <option>직접입력</option>
+                    </select>
+                    <p>※ 기업 그룹웨어 메일인 경우 문자가 깨질수도 있습니다. 한메일 사용자의 경우 수신이 원할하지 않을수 있습니다.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td>
+                    <input type="number" title="우편번호">
+                    <button>우편 번호 검색</button><br>
+                    <input type="text" title="기본주소">
+                    <input type="text" title="상세주소">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>선택 정보</h3>
+    <table>
+        <caption>회원가입 선택정보</caption>
+        <colgroup>
+            <col style="width: 140px">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th><label for="txt19_1">추천인 아이디</label></th>
+                <td>
+                    <input type="text" id="txt19_1">
+                    <button>추천인아이디확인</button>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt19_2">생년월일</label></th>
+                <td>
+                    <input type="date" id="txt19_2">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt19_3">성별</label></th>
+                <td>
+                    <input type="radio" name="rag" id="ra2_1"><label for="ra2_1">남</label>
+                    <input type="radio" checked name="rag" id="ra2_2"><label for="ra2_2">여</label>
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <button>취소</button>
+    <button>회원가입 완료</button>
+
+    <br><br>
+    <h2>폼8</h2>
+    <input type="checkbox" id="chk1_1" class="none">
+    <label for="chk1_1" class="checkbox">
+        리스토리 서비스 이용 약관, 개인정보 수집 및 이용동의에 모두 동의합니다. <span>(전체동의)</span>
+    </label><br>
+    <div class="border"></div>
+    <input type="checkbox" checked id="chk1_2" class="none">
+    <label for="chk1_2" class="checkbox">
+        리스토리 서비스 이용 약관
+    </label>
+    <div class="overflow">
+        <ol class="list-type5">
+            <li>제 1 조 (목적)
+                <p>이 이용약관(이하 '약관')은 ㈜휴넷 (이하 회사라 합니다)와 이용 고객(이하 '회원')간에 회사가 제공하는 서비스의 가입조건 및 이용에 관한 제반 사항과 경영지식몰의 상품 구입,
+                    기타
+                    필요한 사항을 구체적으로 규정함을 목적으로 합니다.
+                </p>
+            </li>
+            <li>
+                제 2 조 (이용약관의 효력 및 변경)
+                <ol>
+                    <li>(1) 이 약관은 휴넷 웹사이트(http://www.hunet.co.kr) 에서 온라인으로 공시함으로써 효력을 발생하며, 합리적인 사유가 발생할 경우 관련법령에 위배되지
+                        않는 범위
+                        안에서 개정될
+                        수 있습니다. 개정된 약관은 온라인에서 공지함으로써 효력을 발휘하며, 이용자의 권리 또는 의무 등 중요한 규정의 개정은 사전에 공지합니다.</li>
+                    <li>(2) 회사는 합리적인 사유가 발생될 경우에는 이 약관을 변경할 수 있으며, 약관을 변경할 경우에는 지체 없이 이를 사전에 공시합니다.</li>
+                    <li>(3) 회사가 약관을 변경할 경우에는 적용일자 및 변경사유를 명시하여 현행약관과 함께 사이트 초기화면에 그 적용일자 7일(이용자에게 불리한 변경 또는 중대한 사항의 변경은
+                        30일)
+                        이전부터 적용일자 이후 상당한 기간 동안 공지하고, 기존 회원에게는 변경될 약관, 적용일자 및 변경사유(중요내용에 대한 변경인 경우 이에 대한 설명을 포함)를 이메일 또는
+                        문자
+                        메시 발송합니다.</li>
+                    <li class="padding">(4) 회원은 변경된 약관에 동의하지 않을 경우 회원 탈퇴(해지)를 요청할 수 있으며, 변경된 약관의 효력 발생일로부터 7일 이후에도 거부의사를
+                        표시하지 아니하고 서비스를 계속
+                        사용
+                        할 경우 약관의 변경 사항에 동의한 것으로 간주됩니다.</li>
+                </ol>
+            </li>
+            <li>
+                제 3 조 (약관외 준칙)
+                <ol>
+                    <li>① 이 약관은 회사가 제공하는 개별서비스에 관한 이용안내(이하 서비스별 안내라 합니다)와 함께 적용합니다.</li>
+                    <li class="padding">② 이 약관에 명시되지 아니한 사항에 대해서는 관계법령 및 서비스별 안내의 취지에 따라 적용할 수 있습니다.</li>
+                </ol>
+            </li>
+            <li>
+                제 4 조 (용어의 정의)
+                <ol>
+                    <li>
+                        ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                        <ol>
+                            <li>1.'몰'이라 함은 ㈜휴넷이 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의
+                                영업장을
+                                말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.</li>
+                            <li>2. '회원'이라 함은 회원제서비스를 이용하는 이용자를 말하며, "몰"이 제공하는 서비스를 지속적으로 이용할 수 있는 자를 말합니다.</li>
+                            <li>3. '이용계약'이라 함은 서비스 이용과 관련하여 회사와 이용고객 간에 체결 하는 계약을 말합니다.</li>
+                            <li>4. '이용자번호(ID)'라 함은 이용고객의 식별과 이용고객의 서비스 이용을 위하여 이용고객이 선정하고 회사가 부여하는 문자와 숫자의 조합을 말합니다.
+                            </li>
+                            <li>5. '비밀번호'라 함은 이용고객이 부여 받은 이용자번호와 일치된 이용고객 임을 확인하고 이용고객의 권익보호를 위하여 이용고객이 선정한 문자와 숫자의 조합을
+                                말합니다.
+                            </li>
+                            <li>6. '해지'라 함은 회사 또는 회원이 이용계약을 해약하는 것을 말합니다.</li>
+                        </ol>
+                    </li>
+                    <li class="padding">
+                        ②이 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계법령 및 서비스별 안내에서 정하는 바에 의합니다.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <input type="checkbox" id="chk1_3" class="none">
+    <label for="chk1_3" class="checkbox">
+        개인정보 수집 및 이용 동의
+    </label>
+    <div class="overflow"></div>
+    </div>
+    <div class="btn-right">
+        <button class="btn-cancle">취소</button>
+        <button class="btn-next">다음</button>
+    </div>
+
+    <br>
+    <h2>폼9</h2>
+    <h3>회원 정보 입력</h3>
+    <table>
+        <caption>회원정보</caption>
+        <colgroup>
+            <col style="width: 161px">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th><label for="txt20_1">아이디</label></th>
+                <td><input type="email" id="txt20_1" placeholder="이메일 주소를 입력해주세요 (인증 시 필요)"></td>
+            </tr>
+            <tr>
+                <th><label for="txt20_2">비밀번호</label></th>
+                <td><input type="password" id="txt20_2" placeholder="영문, 숫자, 특수문자를 조합하여 10자 이상 적어주세요."></td>
+            </tr>
+            <tr>
+                <th><label for="txt20_3">비밀번호 확인</label></th>
+                <td><input type="password" id="txt20_3" placeholder="비밀번호를 한번더 입력해주세요"></td>
+            </tr>
+            <tr>
+                <th><label for="txt20_4">닉네임</label></th>
+                <td><input type="text" id="txt20_4" placeholder="회원님을 나타내는 닉네임을 지어주세요"></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>블로그 정보 입력</h3>
+    <table>
+        <caption>블로그 정보</caption>
+        <colgroup>
+            <col style="width: 161px;">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th><label for="txt20_5">블로그 이름</label></th>
+                <td>
+                    <input type="text" id="txt20_5" placeholder="회원님의 블로그를 잘 설명하는 이름을 적어 주세요">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt20_6">블로그 주소</label></th>
+                <td>
+                    <input type="url" id="txt20_6" placeholder="영문 소문자, 숫자, 하이픈 만 입력 가능 (개설 후 변경 불가)">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button>이전</button>
+    <button>다음</button>
+
+    <br><br>
+    <h2>폼10</h2>
+    <table border="1" width="100%">
+        <caption>게시물 입력</caption>
+        <colgroup>
+            <col style="width: 161px;">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>분류선택</th>
+                <td>
+                    <input type="radio" name="rag1" id="ra1_1" checked> <label for="ra1_1">블로그 운영팁</label>
+                    <input type="radio" name="rag1" id="ra1_2"> <label for="ra1_2">블로그 소개</label>
+                    <input type="radio" name="rag1" id="ra1_3"> <label for="ra1_3">스킨</label>
+                    <input type="radio" name="rag1" id="ra1_4"> <label for="ra1_4">기타</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt1_1">제목</label></th>
+                <td><input type="text" id="txt1_1" placeholder="제목을 입력하세요">0/30</td>
+            </tr>
+            <tr>
+                <th><label for="txt1_2">내용</label></th>
+                <td>
+                    <textarea id="txt1_2" placeholder="내용을 입력하세요"></textarea>0/1000
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt1_3">파일첨부</label></th>
+                <td>
+                    <input type="file" id="txt1_3" placeholder="사진은 3장까지만 첨부 가능합니다 (용량 10MB 미만)">
+                    <button><img src="images/btn_file.svg" alt="첨부파일 추가"></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>온라인서식의 제목</legend>
+            <ul>
+                <li><input type="text"> 한줄 글상자</li>
+                <li><input type="password"> 비밀번호 입력</li>
+                <li><input type="file"> 첨부파일</li>
+                <li>
+                    <input type="checkbox"> 선택 1
+                    <input type="checkbox"> 선택 2
+                    <input type="checkbox"> 선택 3
+                </li>
+                <li>
+                    <input type="radio" name="radiogroup"> 선택 1
+                    <input type="radio" name="radiogroup"> 선택 2
+                    <input type="radio" name="radiogroup1"> 선택 3
+                    <input type="radio" name="radiogroup1"> 선택 4
+                </li>
+                <li><input type="ur1"> 도메인주소 입력 </li>
+                <li><input type="email"> 이메일 입력</li>
+                <li><input type="number"> 숫자 입력</li>
+                <li><input type="tel"> 전화번호 입력</li>
+                <li><input type="search"> 검색어 입력</li>
+                <li><input type="date"> 월별 선택</li>
+                <li>
+                    <select>
+                        <option>선택하세요1</option>
+                        <option>선택하세요2 선택하세요2 선택하세요2</option>
+                        <option>선택하세요3</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea> 여러줄글상자</textarea>
+                </li>
+                <li><button type="reset">초기화</button></li>
+                <li><button type="submit">전송</button></li>
+                <li><button>범용</button></li>
+                <li><button type="button">범용</button></li>
+                <li>
+                    버튼(button)은 기능이 있는 것 <br>
+                    링크(a)는 이동이 가능한 것
+                </li>
+                <li>
+                    <input type="text" readonly value="이름"> 읽기전용 <br>
+                    <input type="text" disabled value="이름"> 비활성화 <br>
+                    <input type="text" placeholder="아이디를 입력하세요"> 예시(설명)텍스트 <br>
+                    <input type="text" value="아무개"> 작성된 텍스트 <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="chk1"><label for="chk1">아파트</label>
+                    <input type="checkbox" id="chk2"><label for="chk2">연립/빌라</label>
+                    <input type="checkbox" id="chk3"><label for="chk3">단독주택</label>
+                </li>
+                <li>
+                    <input type="radio" name="radiogroup2" id="ra1"><label for="ra1">블로그 운영팁</label>
+                    <input type="radio" name="radiogroup2" id="ra2"><label for="ra2">블로그 소개</label>
+                    <input type="radio" name="radiogroup2" id="ra3"><label for="ra3">스킨</label>
+                    <input type="radio" name="radiogroup2" id="ra4"><label for="ra4">기타</label>
+                </li>
+                <li>
+                    <label for="txt1">비밀번호</label>
+                    <input type="password" id="txt1" placeholder="영문, 숫자, 특수문자를 조합하여 10자 이상 적어주세요.">
+                </li>
+                <li>
+                    이메일
+                    <input type="text" title="이메일 아이디 입력">
+                    @
+                    <input type="text" title="이메일 주소 입력">
+                    <select title="이메일 주소 선택">
+                        <option>직접입력</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

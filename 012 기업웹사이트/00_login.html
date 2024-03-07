@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | 기업웹사이트</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="background-color">
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__left">
+                <h1 class="header__logo"><a href=""><span class="hide">Rebehayan</span></a></h1>
+                <h2 class="hide">메뉴</h2>
+                <nav>
+                    <ul class="header__gnb">
+                        <li>
+                            <a href="">소년소녀부</a>
+                            <ul class="header__gnb__list" style="display: none;">
+                                <li>
+                                    <a href="" class="active">소년소녀부 소개</a>
+                                    <ul>
+                                        <li><a href="" class="active1">선생님과의 역사</a></li>
+                                        <li><a href="">활동방향</a></li>
+                                        <li><a href="">캐릭터 소개</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">해돋이 부원회</a></li>
+                                <li><a href="">해돋이 합창그룹</a></li>
+                                <li>
+                                    <a href="">인재육성 구룹</a>
+                                    <ul>
+                                        <li><a href="">광역 해돋이 합창단</a></li>
+                                        <li><a href="">글로리아 리틀잼버 오케스트라</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">미래부</a>
+                        </li>
+                        <li>
+                            <a href="">미래본부 및 사명회</a>
+                        </li>
+                        <li>
+                            <a href="">교육부</a>
+                        </li>
+                        <li>
+                            <a href="">미래부 자료실</a>
+                        </li>
+                        <li>
+                            <a href="">커뮤니티</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__btn__mobile">
+                <h1 class="header__logo2"><a href=""><span class="hide">Rebehayan</span></a></h1>
+                <button class="btn-search"><span class="hide">찾기</span></button>
+                <button class="btn-menu2"><span class="hide">메뉴</span></button>
+            </div>
+            <div class="header__btn">
+                <button class="btn-login">로그인</button>
+                <button class="btn-menu">사이트맵</button>
+            </div>
+        </div>
+    </header>
+    <div class="header__box"></div>
+    <main id="content">
+        <section class="login index-visual">
+            <h2 class="hide">광고/배너</h2>
+            <img src="images/img_index_visual_login.png" alt="">
+            <div class="index-visual__txt">
+                <strong class="index-visual__title">BE BRAVE</strong>
+                <p class="index-visual__copy">우리는 빛나는 보물, 2030년 세계의 리더로 성장하자!
+                </p>
+            </div>
+        </section>
+        <section class="login-form">
+            <div class="login__txt mt6">
+                <h2 class="login__title">로그인</h2>
+                <p class="login__copy">
+                    웹사이트에 오신 여러분을 환영합니다. <br>
+                    아이디와 비밀번호를 입력하여 로그인하세요
+                </p>
+                <span class="login__copy2">홈페이지 계정으로 로그인 하세요.</span>
+            </div>
+            <div class="login__form">
+                <input type="text" value="Rebehayan" title="아이디 입력">
+                <input type="password" placeholder="비밀번호를 입력하세요." title="비밀번호 입력">
+            </div>
+            <div class="login__checkbox">
+                <input type="checkbox" id="chk1_1" class="hide">
+                <label for="chk1_1">아이디 저장</label>
+            </div>
+            <button class="login__btn">로그인</button>
+            <ul class="bar-list">
+                <li><a href="">회원가입</a></li>
+                <li><a href="">아이디찾기</a></li>
+                <li><a href="">비밀번호찾기</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer mt30">
+        <img src="images/img_footer.jpg" alt="">
+        <div class="footer__box">
+            <strong>리베하얀</strong>
+            <div class="footer__address">
+                <b>
+                    <span>(06586) 서울특별시 구로구 공원로 66 리베하얀</span>(06586) 66, Gongwon-ro, Guro-gu, Seoul, Korea
+                </b>
+            </div>
+            <div class="footer__information">
+                <span>TEL : 1566-1234</span>
+                <span>FAX : 02-5555-7300</span>
+            </div>
+            <p>Copyright ⓒ Rebehayan. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="dialog" style="--zindex:30;  display: none;">
+        <button class="btn-close"><span class="hide">닫기</span></button>
+        <h2 class="dialog__title">일치하는 회원정보가 없습니다.</h2>
+        <p class="dialog__txt mt1">입력하신 정보와 일치하는 회원정보가 없습니다. <br>
+            정확한 로그인정보를 입력하세요.</p>
+        <button class="btn-yellow mt3">확인</button>
+    </div>
+    <!-- <div class="dialog" style="--zindex:30; display: none;">
+            <button class="btn-close"><span class="hide">닫기</span></button>
+            <h2 class="dialog__title">정확한 정보를 입력하세요.</h2>
+            <p class="dialog__txt mt1">아이디 및 비밀번호를 입력하세요.
+                미 입력시 로그인이 불가합니다.</p>
+            <button class="btn-yellow mt3">확인</button>
+        </div> -->
+    <div class="dimmed" style="--zindex:29; display: none;"></div>
+</body>
+
+</html>

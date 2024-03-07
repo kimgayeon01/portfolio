@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 폼8 */
+.none {
+    display: none;
+}
+.none:checked + .checkbox {
+    background: url(../images/ico_check_on.svg) no-repeat left center;
+}
+.checkbox {
+    padding:0 0 0 28px;
+    background: url(../images/ico_check_off.svg) no-repeat left center;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+.border {
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 41px;
+    margin-bottom: 39px;
+}
+.checkbox span {
+    color: #727272;
+}
+.overflow {
+    overflow: auto;
+    width: 100%;
+    height: 142px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    margin: 16px 0 39px;
+}
+.list-type5 li {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: #777777;
+}
+.list-type5 li p {
+    padding-bottom: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: #777777;
+}
+.list-type5 li ol {
+    padding-left: 16px ;
+    text-indent: -16px;
+}
+.list-type5 li ol li {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: #777777;
+}
+.list-type5 li ol li ol {
+    padding-left: 7px;
+}
+.list-type5 .padding {
+    padding-bottom: 63px;
+}
+.btn-cancle {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    width: 120px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+}
+.btn-next {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    width: 120px;
+    height: 40px;
+    background: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+}
+.btn-right {
+    text-align: center;
+}
+
+/* 폼1 */
+.login {
+    background: #F4EFEB;
+    padding: 180px;
+}
+.login-bg {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 64px 80px 72px;
+}
+.login-bg button {
+    cursor: pointer;
+    width: 100%;
+    height: 58px;
+    background: #957963;
+    border-radius: 29px;
+    border: none;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin: 50px 0 26px;
+    transition: .5s;
+    border: 2px solid #957963;
+    box-sizing: border-box;
+}
+.login-bg button:hover {
+    background:  #FFFFFF;
+    color: #957963;
+    /* border: 2px solid #957963;  -> 색이 똑같이 유지되면 쓸 필요가 없음*/
+}
+.login h3 {
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 48px;
+    color: #000000;
+    padding: 0 0 42px;
+}
+.login .login-copy {
+    font-size: 16px;
+    line-height: 23px;
+    color: #777777;
+    padding: 0 0 35px;
+}
+.login-form label {
+    text-align: left;
+    width: 118px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #777777;
+}
+.login-form > div {
+    display: flex;
+    align-items: center;
+}
+.login-form > div + div {
+    padding: 24px 0 0;
+}
+.login-form input {
+    flex: 1;
+    height: 56px;
+    border: 1px solid #E2E2E2;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 0 0 0 20px;
+    outline: none;
+    transition: .4s;
+}
+.login-form input:focus {
+    /* 
+    focus -> a, button, input, select, textarea 만 가능
+    */
+    border: 1px solid #aaa;
+}
+.login-form input::placeholder {
+    color: #AAAAAA;
+}
+.bar-list {
+    display: flex;
+    justify-content: center;
+}
+.bar-list a {
+    font-size: 16px;
+    line-height: 23px;
+    color: #777777;
+}
+.bar-list li ~ li::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    border-right: 1px solid #DBDBDB;
+    margin: 0 20px;
+    vertical-align: -1px;
+}
+
+
+/* 폼2 */
+.login2 h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 65px;
+    color: #000000
+} 
+.login2 .information {
+    margin: 45px 0 30px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #666666;
+}
+.login2 .log-box {
+    border-top: 2px solid #333333;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    height: 455px;
+}
+.login2 .log-left {
+    background: #FFFFFF;
+    padding: 98px 100px;
+}
+.login2 .log-left label {
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    color: #333333;
+}
+.login2 .log-left input {
+    width: 400px;
+    height: 45px;
+    border: 1px solid #CCCCCC;
+}
+.login2 .log-left button {
+    margin: 30px 0 98px;
+    width: 100%;
+    height: 60px;
+    background: #005891;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.login2 .log-right {
+    background: #F5F5F5;
+    padding: 50px 40px;
+}
+.login2 .log-right div {
+    display: grid;
+    gap: 20px;
+}
+.login2 .log-right div:last-child {
+    margin: 38px 0 0;
+}
+.login2 .log-right b {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #005891;
+}
+.login2.log-right p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #666666;
+}
+.login2 .log-right a {
+    display: inline-block;
+    text-align: center;
+    margin: 3px 0 0;
+    padding: 12px 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    background: #F5F5F5;
+    border: 1px solid #666666;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #666666;
+}
+.login2 .p {
+    margin: 26px 0 0;
+    font-size: 14px;
+    line-height: 32px;
+    color: #666666;
+}
+
+
+/* 폼3 */
+.form3 .nav {
+    display: flex;
+}
+.form3 .nav button {
+    cursor: pointer;
+    padding: 14px 0;
+    width: 221px;
+    height: 51px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #777777;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+.form3 .nav .active {
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #DA0029;
+}
+.form3 .box {
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #CECECE;
+    display: flex;
+    padding: 40px 0;
+}
+.form3 .email {
+    padding: 38px 62px 0;
+    width: 100%;
+}
+.form3 b {
+    display: inline-block;
+    margin: 0 0 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #DA0029;
+}
+.form3 .flex {
+    display: flex;
+}
+.form3 label {
+    width: 120px;
+    font-size: 16px;
+    line-height: 35px;
+    color: #222222;
+}
+.form3 input {
+    width: 250px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    flex: 1;
+}
+.form3  div p {
+    margin: 0 0 0 120px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;
+}
+.form3 .password {
+    border-left: 1px solid #CECECE;
+    padding: 38px 58px 0;
+    width: 100%;
+}
+.form3 .find {
+    cursor: pointer; 
+    margin: 30px 0 0;
+    width: 67px;
+    height: 43px;
+    border: none;
+    background: #DA0029;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.form3 .right {
+    text-align: right;
+}
+
+
+/* 폼4 */
+.form4 .chk1 {
+    padding: 17px 19px 19px;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+.form4 .copy1 {
+    display: flex;
+    margin-bottom: 15px;
+}
+.form4 .chk2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 21px;
+    width: 377px;
+    height: 20px;
+}
+.form4 .chk2 input {
+    margin-right: 5px ;
+}
+.form4 .copy2 {
+    display: flex;
+}
+.form4 .chk3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 21px;
+    width: 508px;
+    height: 21px;
+}
+.form4 .chk3 input {
+    margin-right: 5px ;
+}
+.form4 b {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    border-right: 1px solid #CECECE;
+    padding:  0 17px 0 0;
+}
+.form4 label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;
+}
+.form4 .find {
+    display: flex;
+    margin: 10px 0 0;
+}
+.form4 .find input {
+    flex: 1;
+    width: 905px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+.form4 .find button {
+    cursor: pointer;
+    width: 85px;
+    height: 40px;
+    border: none;
+    background: #DA0029;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.form4 .none {
+    display: none;
+}
+.form4 label {
+    padding-left: 18px;
+    background: url(../images/ico_form4_check_off.svg) no-repeat left center;
+}
+.form4 input[type="checkbox"]:checked + label {
+    background: url(../images/ico_form4_check_on.svg) no-repeat left center;
+
+}
+
+/* 폼5 */
+.form5 tbody {
+    height: 258px;
+    border-top: 1px solid #9EA0A3;
+    border-bottom: 1px solid #E1E4E8;
+}
+.form5 tr {
+    height: 57px;
+    border-bottom: 1px solid #E1E4E8;
+}
+.form5 th {
+    text-align: left;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    background: url(../images/ico_check.svg) no-repeat left 20px center #F8F8F8;
+}
+.form5 td {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6A6A6A;
+}
+.form5 .choose td {
+    display: flex;
+    padding: 18px 20px;
+}
+.form5 .none {
+    display: none;
+}
+.form5 .choose label {
+    padding-right: 20px;
+    padding-left: 25px;
+    background: url(../images/ico_form5_check_off.svg) no-repeat left center;
+}
+.form5 .choose input[type="checkbox"]:checked + label {
+    background: url(../images/ico_form5_check_on.svg) no-repeat left center;
+}
+.form5 .name th {
+    padding-top: 18px;
+    vertical-align: top;
+    background-position: 18px 24px;
+}
+.form5 .name td {
+    padding: 10px 20px 14px;
+}
+.form5 .name input {
+    width: 500px;
+    height: 36px;
+    margin: 0 0 8px;
+    width: 500px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+}
+.form5 input::placeholder {
+    padding: 8px 15px 7px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.form5 .adress td {
+    padding: 10px 20px 11px;
+}
+.form5 .adress input {
+    margin-right: 3px;
+    width: 123px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+}
+.form5 .adress .adr {
+    margin-left: 10px;
+    width: 313px;
+}
+.form5 button {
+    cursor: pointer;
+    width: 58px;
+    height: 36px;
+    background: #F8F8F8;
+    border: 1px solid #D7D7D7;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6A6A6A;
+}
+.form5 .tel td {
+    padding: 10px 20px 11px;
+}
+.form5 .tel select {
+    text-align: center;
+    width: 123px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6A6A6A;
+}
+.form5 .tel input {
+    width: 123px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+}
+
+
+/* 폼6 */
+.form6 tbody{
+    height: 268px;
+    border-top: 1px solid #E5E5E5;
+}
+.form6 tbody tr {
+    border-bottom: 1px solid #E5E5E5;
+}
+.form6 tbody th {
+    background: #F7F7F7;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #555555;
+}
+.form6 .top {
+    padding: 13px 0 43px;
+}
+.form6 tbody td {
+    padding: 13px 20px 16px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #555555;
+}
+.form6 .none {
+    display: none;
+}
+.form6 tr td label {
+    padding-left: 25px;
+    padding-right: 25px;
+    background: url(../images/ico_form6_check_off.svg) no-repeat left center;
+}
+.form6 tr td input[type="checkbox"]:checked + label {
+    background: url(../images/ico_form6_check_on.svg) no-repeat left center;
+}
+.form6 .btn {
+    text-align: center;
+    margin-top: 17px;
+    padding: 6px 10px;
+}
+.form6 .btn-1 {
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    width: 107px;
+    height: 34px;
+    background: #7D7D7D;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.form6 .btn-2 {
+    cursor: pointer;
+    width: 62px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #7D7D7D;
+    font-size: 15px;
+    line-height: 22px;
+    color: #070707;
+}
+

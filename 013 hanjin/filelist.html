@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>한진칼 파일리스트</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>한진칼 퍼블리싱 현황</h1>
+            <div class="top clear">
+                <ul>
+                    <li>구분 : </li>
+                    <li><span class="state r"></span></li>
+                    <li>반응형</li>
+                    <li><span class="state w"></span></li>
+                    <li>WEB</li>
+                    <li><span class="state m"></span></li>
+                    <li>모바일&nbsp;&nbsp;&nbsp;</li>
+                    <li>상태 : </li>
+                    <li><span class="state end"></span></li>
+                    <li>완료</li>
+                    <li><span class="state ing"></span></li>
+                    <li>진행중</li>
+                    <li><span class="state modify"></span></li>
+                    <li>수정</li>
+                </ul>
+                <div class="status"><span id="progress"><em></em></span> <span id="total"></span></div>
+            </div>
+        </header>
+        <div class="content">   
+            <table>
+                <thead>
+                    <tr>
+                        <th>페이지</th>
+                        <th>파일명</th>
+                        <th>시작일</th>
+                        <th>웹표준</th>
+                        <th>호환성</th>
+                        <th>웹접근성</th>
+                        <th>구분</th>
+                        <th>상태</th>
+                        <th>참고사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="list">
+                        <td>StyleGuide</td>
+                        <td><a href="style.html" target="_blank">style.html</a></td>
+                        <td>2023.07.10</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em"></p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>Main</td>
+                        <td><a href="index.html" target="_blank">index.html</a></td>
+                        <td>2023.07.11</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - index visual 부분 swiper > autoplay , delay를 사용하여 slide되게 만들어주었고 css에서 animation 효과도 주었다. <br>
+                                - 화면 사이즈가 줄어들 때 텍스트가 밑으로 떨어지지 않게 하기위해 white-space : nowrap (index visual 부분에 적용) <br>
+                                - 사진 높이 X > aspect-ratio: 16 / 5; object-fit: cover;- > 종횡비 주고 사진 잘리더라도 빈 영역없이 꽉차게 하는 object-fit cover 써주었다.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>Megamenu</td>
+                        <td><a href="megamenu.html" target="_blank">megamenu.html</a></td>
+                        <td>2023.07.12</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - removeclass를 사용하여 메뉴 중 하나가 열리면 다른 하나는 닫힐 수 있게 해주었다.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category" colspan="6">한진그룹</th>
+                    </tr>
+                    <tr class="list">
+                        <td>인사말씀</td>
+                        <td><a href="greetings.html" target="_blank">greetings.html</a></td>
+                        <td>2023.07.11</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - 비주얼 부분에 슬라이드 버튼과 제목을 함께 묶어 grid해주고 버튼이 하나가 없어도 자리 움직임없이 그대로 있을 수 있게 만들어주었다. (버튼 필요없을때 display none사용하여 없애줘도 위치가 바뀌지 않게끔..) order를 써서 순서를 정해줌 <br>
+                                - 가로스크롤이 생겨서 화면 넘어가지 않도록 조심해주기
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category" colspan="6">한진네트워크</th>
+                    </tr>
+                    <tr class="list">
+                        <td>한진네트워크</td>
+                        <td><a href="hangin-network.html" target="_blank">hangin-network.html</a></td>
+                        <td>2023.07.12</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - list부분 화면 크기 줄어들 때 li가 떨어지도록 할 때 flex-wrap:wrap 사용해주었다.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>지주회사</td>
+                        <td><a href="hangin-network_company.html" target="_blank">hangin-network_company.html</a></td>
+                        <td>2023.07.12</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - 스타일가이드를 사용하여 손쉽게 만들 수 있었다.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>육운부문</td>
+                        <td><a href="hangin-network_01.html" target="_blank">hangin-network_01.html</a></td>
+                        <td>2023.07.13</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - table의 col width 바꾸기위해서 css에서 colgroup col 원하는 자식 선택하고 width값 important 써줘야했다.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>해외법인부문</td>
+                        <td><a href="hangin-network_02.html" target="_blank">hangin-network_02.html</a></td>
+                        <td>2023.07.13</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - table에서 홈페이지 td부분 글씨가 표 밖으로 튀어나가는데 이유를 찾지는 못했다..
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category" colspan="6">ESG경영</th>
+                    </tr>
+                    <tr class="list">
+                        <td>윤리경영</td>
+                        <td><a href="hangin-esg_01.html" target="_blank">hangin-esg_01.html</a></td>
+                        <td>2023.07.14</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><spa class="state r"></spa n></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em"></p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>인재경영</td>
+                        <td><a href="hangin-esg_02.html" target="_blank">hangin-esg_02.html</a></td>
+                        <td>2023.07.14</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - 스타일가이드를 사용하여 손쉽게 제작할 수 있었다.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>활동소식</td>
+                        <td><a href="activity-news.html" target="_blank">activity-news.html</a></td>
+                        <td>2023.07.14</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category" colspan="6">홍보센터</th>
+                    </tr>
+                    <tr class="list">
+                        <td>그룹사소식</td>
+                        <td><a href="group-news.html" target="_blank">group-news.html</a></td>
+                        <td>2023.07.13</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state r"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - paging부분 다시 확인하기 > 화면크기 줄어들면 가로스크롤생김
+                            </p>
+                        </td>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    </div>
+    <style type="text/css">
+        * { margin: 0;padding: 0;box-sizing: border-box;list-style: none; font-style: normal;}
+        a {color: #666; text-decoration: underline;}
+        img {border: 0;}
+        label,input {vertical-align: middle;}
+        input {outline: none}
+        table {width: 100%; border-collapse: collapse;border-spacing: 0;}
+        caption {width: 100%;height: 30px;}
+        body {padding: 0 50px;font-size: 12px;font-family: 'Noto Sans KR', sans-serif;}
+        p {line-height: 1.5;}
+        .clear:after {content: '';display: block;clear: both;}
+        .wrapper {width: 100%;margin: auto;}
+        table {border-bottom: 1px solid #f4f4f4;margin-bottom: 50px;border-top: 3px solid #d2d6de;}
+        h1 {font-size: 1.5rem;font-weight: normal;margin: 40px 0 20px;}
+        h2 {font-size: 1rem;font-weight: normal;margin-bottom: 20px;}
+        hr {margin-bottom: 50px;}
+        table tr th {font-weight: normal;border-right: 1px solid #f4f4f4;border-bottom: 1px solid #f4f4f4;background-color: #fff;}
+        table tr td:first-child {width: 20%;padding-left: 15px;text-align: left; color: #000;}
+        table tr td:nth-of-type(2) {width: 17%;}
+        table tr td:nth-of-type(3) {width: 10%;}
+        table tr td:nth-of-type(4) {width: 10%;}
+        table tr td:nth-of-type(5) {width: 7%;}
+        table tr td:nth-of-type(6) {width: 7%;}
+        table tr td:nth-of-type(7) {width: 7%;}
+        table tr td:nth-of-type(8) {width: 5%;}
+        table tr td:nth-of-type(9) {width: 5%;}
+        table tr td:last-child {width: 40%;text-align: left;}
+        table tr th,
+        table tr td {padding: 10px;font-size: 13px;text-align: center;}
+        table tr th:last-child {border-right: none;}
+        table tr td {padding: 5px;font-size: 12px;border-bottom: 1px solid #f4f4f4;border-right: 1px solid #f4f4f4;color: #666;}
+        table tr td:last-child {border-right: none;}
+        table tr td a {display: block;width: 100%;height: 100%;}
+        table tr td.category {position: relative;padding: 10px;text-align: left;font-size: 15px;background-color: #f9f9f9;color: #1d1e25;}
+        table tr td.category:before {position: absolute;top: 0;left: 0;display: inline-block;width: 3px;height: 100%;background-color: #d2d6de;content: '';}
+        table tr:last-child td {border-bottom: none;}
+        .top ul {float: left;margin-bottom: 20px;}
+        .top ul li {float: left;margin-right: 10px;line-height: 25px;}
+        .top ul li:first-child,.top ul li:nth-of-type(8) {font-size: 0.8rem; font-weight: 600;}
+        .top ul li:nth-of-type(2) span,
+        .top ul li:nth-of-type(4),
+        .top ul li:nth-of-type(6),
+        .top ul li:nth-of-type(9),
+        .top ul li:nth-of-type(11) {text-align: center;border-radius: 50%;}
+        .header .list {padding: 0 0 50px 0;line-height: 30px;}
+        .state {color: #fff;display: inline-block;width: 25px;height: 25px;border-radius: 50%;line-height: 25px;}
+        .state.r {background-color: #a55eea;}
+        .state.r:before {content: 'R';}
+        .state.w {background-color: #20bf6b;}
+        .state.w:before {content: 'W';}
+        .state.m {background-color: #f7b731;}
+        .state.m:before {content: 'M';}
+        .state.end {background-color: #eb3b5a;font-weight: bold;}
+        .state.end:before {content: '완';}
+        .state.ing {background-color: #2d98da;font-weight: bold;}
+        .state.ing:before {content: '진';}
+        .state.modify {padding: 0 5px;border-radius: 30px;font-weight: bold;background-color: #39c4cd;text-align: center;}
+        .state.modify:before {content: '수정';}
+        .t_em {color: #e10e0e;}
+        .t_re {color: #046ac9;}
+        .t_pu {color: #17ae03;}
+        .t_lg {color: #c904b4;}
+        .status {float: right;width: 300px}
+        .status span {font-size: 13px;color: #000;}
+        .status #progress {overflow: hidden;float: left;display: block;width: 100%;height: 20px;margin-bottom: 5px;background: #eee;border-radius: 30px;}
+        .status #progress em {display: block;height: 100%;background: #eb3b5a;border-radius: 30px;}
+        .status #finish {color: #1352a2}
+        .status #total {display: block;}
+        .status .percent {display: block;float: right;}
+        .list.none a {text-decoration: line-through;color: #aeaeae;cursor: not-allowed;}
+        
+        *::-webkit-scrollbar {
+            width: 5px;
+            background-color: transparent;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            width: 0.5rem;
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 0.5rem;
+        }
+        
+        *::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        
+            </style>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+            <script>
+                $(function() {
+                    var $content = $(".content table"),
+                        total = $content.find(".list").length,
+                        finish = $content.find(".list .end").length,
+                        progress = Math.floor((finish) / total * 100);
+        
+                    $("#progress em").css("width", progress + "%");
+                    $("#total").html(finish + " / " + total + "page" + "<span class='percent'>진행률 " + progress + "%</span>");
+                });
+            </script>
+        </body>
+        
+        </html>
+        

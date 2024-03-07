@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY LOUNGE 팝업 | E-Learning</title>
+    <script  src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#content"  class="skip-navigation">본문바로가기</a>
+    <header class="header">
+        <div>
+            <h1 class="logo"><a href=""><span class="hide">Rebehayan Learning Platform</span></a></h1>
+            <h2 class="hide">메뉴</h2>
+            <nav>
+                <ul class="gnb"> <!-- Global Navigation Bar / LNB (Local Navigation Bar) -->
+                    <li><a href="">Rebehayan</a></li>
+                    <li><a href="">배움라운지</a></li>
+                    <li><a href="">인(in)맥</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <h2 class="hide">프로필</h2>
+            <div class="profile">
+                <b>하성필님</b> 안녕하세요!
+                <button class="alram">
+                    <img src="images/img_profile.png" alt="">
+                    <span>12</span>
+                </button>
+                <div class="alram-popup">
+                    <ul class="alram-popup__list">
+                        <li>
+                            <div class="btn-alram">
+                                <button class="btn-alram-close"></button>
+                            </div>
+                            <span>2021. 01. 28</span>
+                            <span>멘토</span>
+                            <p>
+                                홍길동님이 세우신 성장계획에 여유가 없네요 <br>
+                                여유를 가지고 계획을 세워 보는건 어떨까요?
+                            </p>
+                        </li>
+                        <li>
+                            <div class="btn-alram">
+                                <button class="btn-alram-close"></button>
+                            </div>
+                            <span>2021. 01. 28</span>
+                            <span>관리자</span>
+                            <p>
+                                축하합니다. 홍길동님에게 500 Credit이 지급되었습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="btn-alram">
+                                <button class="btn-alram-close"></button>
+                            </div>
+                            <span>2021. 01. 28</span>
+                            <span>관리자</span>
+                            <p>
+                                축하합니다. 홍길동님에게 500 Credit이 지급되었습니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="index-visual-2">
+            <h2 class="hide"> 광고/배너 </h2>
+            <img src="images/img_index_visual2.png" alt="">
+            <div class="index-visual-2-txt">
+                <strong>배움라운지</strong>
+                <p>
+                    Rebehayan은 콘텐츠 경쟁력을 바탕으로 국내외 성장을 지속하고 있습니다. <br>
+                    공정한 IR 커뮤니케이션을 통해 투자가 여러분과 함께하겠습니다.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="hide">탭메뉴</h3>
+            <div class="nav3">
+                <nav>
+                    <ul>
+                        <li><a href="">홈</a></li>
+                        <li class="nav3-txt"><a href="">러닝라운지</a></li>
+                        <li class="txt-diylounge"><a href="">DIY LOUNGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <div class="diylounge-form">
+            <h3>DIY LOUNGE</h3>
+            <table class="form">
+                <caption>diylounge</caption>
+                <colgroup>
+                    <col style="width: 200px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th><label for="txt1">구분</label></th>
+                        <td><select id="txt1" style="width: 270px;">
+                                <option>선택</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt1_1">분야</label></th>
+                        <td><select id="txt1_1" style="width: 270px;">
+                                <option>선택</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt1_2">프로그램명</label></th>
+                        <td><input type="text" id="txt1_2" style="width: 800px;" placeholder="정보를 입력하세요"></td>
+                    </tr>
+                    <tr>
+                        <th>신청기간</th>
+                        <td>
+                            <input type="date" title="년도" style="width: 160px;" class="date"
+                                data-placeholder="YYYY.MM.DD" required>
+                            <select title="일" style="width: 100px;">
+                                <option>00</option>
+                            </select>
+                            <select title="월" style="width: 100px;">
+                                <option>00</option>
+                            </select>
+                            ~
+                            <input type="date" title="년도" style="width: 160px;" class="date margin-left" data-placeholder="YYYY.MM.DD" required>
+                            <select title="월" style="width: 100px;">
+                                <option>00</option>
+                            </select>
+                            <select title="일" style="width: 100px;">
+                                <option>00</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>총학습일/학습시간</th>
+                        <td>
+                            <select title="학습일" style="width: 140px;">
+                                <option>선택</option>
+                            </select>
+                            일
+                            <input type="text" title="학습시간" class="margin-left" style="width: 120px;">
+                            시간
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>인당비용</th>
+                        <td>
+                            <input type="text" title="인당비용정보" placeholder="정보를 입력하세요" style="width: 270px;">
+                            원
+                            <select title="환급과정선택" style="width: 140px;" class="margin-left">
+                                <option>환급과정</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt1_3">시행기관/연락처</label></th>
+                        <td>
+                            <input type="text" id="txt1_3" placeholder="정보를 입력하세요." style="width: 470px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt1_4">URL</label></th>
+                        <td>
+                            <input type="url" id="txt1_4" placeholder="http://" style="width: 470px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>시행장소</th>
+                        <td>
+                            <input type="number" title="우편번호" placeholder="우편번호" style="width: 270px;">
+                            <button class="btn-adress">주소 검색</button>
+                            <input type="text" class="adress" title="주소" placeholder="주소" style="width: 800px;">
+                            <input type="text" title="상세주소" placeholder="상세주소" style="width: 800px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt1_5">상세내용 <br>
+                                (자세히 기입요망)</label></th>
+                        <td>
+                            <textarea class="placeholder" id="txt1_5" style="width: 1000px; height: 400px;" placeholder="해당 교육이 자신의 성장 / 자기 개발 과정에 왜 필요한지 신청 목적을 작성합니다.
+1.. [연관성] 자신이 현재 수행하고 있거나 향후 시도해보고 싶은  業/직무와의 연관성
+2. [Timing] 시기적으로 올해 해당 교육 참여를 신청한 이유"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="txt1_6">목적 및 기대효과 <br>
+                                (자세히 기입요망)</label></th>
+                        <td>
+                            <textarea class="placeholder" id="txt1_6" style="width: 1000px; height: 200px;"
+                                placeholder="[기대효과] 참여 후 기대할 수 있는 Insight 또는 구체적 결과물 (Certification 등)"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>교육자료</th>
+                        <td class="upload">
+                            <button class="btn-choice">학습자 선택</button>
+                            <input type="file" class="hide" id="txt_7"><label for="txt_7">학습자 업로드</label>
+                            <input type="file" class="hide upload-file" id="txt_8"><label for="txt_8">파일 업로드</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-right">
+                <button class="btn-submit">제출</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="hide">약관 및 사이트 정보</h2>
+        <div class="footer-top">
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="">법적고지</a></li>
+                    <li><a href="">영상정보처리기기운영/관리방침</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">이메일무단수집거부</a></li>
+                    <li><a href="">찾아오시는길</a></li>
+                </ul>
+            </nav>
+            <button class="btn-family">
+                FAMILY SITE
+            </button>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <h2 class="hide">회사정보</h2>
+                <ul>
+                    <li><strong>Rebehayan</strong> : 서울시 서초구 871-13</li>
+                    <li><strong>Rebehayan 교육</strong> : 서울시 마포구 68</li>
+                    <li><strong>대표이사</strong> : 하성필</li>
+                    <li><strong>사업자등록번호</strong> : 741-81-51510</li>
+                </ul>
+                <p>&copy; Rebehayan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="submit-popup">
+        <button class="btn-close-submit"></button>
+        <p>
+            프로그램 신청이 완료되었습니다. <br>
+            승인 여부는 마이페이지에서 확인하시기 바랍니다. <br>
+            (최대 일주일 소요)
+        </p>
+        <div class="btn-center">
+            <button class="btn-close-check">확인</button>
+        </div>
+    </div>
+    <div class="dimmed"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>승차권 정보 확인 | 코레일톡</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color-f5">
+    <a href="#content"  class="skip-navigation">본문바로가기</a>
+    <header>
+        <div class="header">
+            <h1 class="h1"><a href="javascript:void(0)">승차권 정보 확인</a></h1>
+            <button class="btn-prev"><span class="hide">이전</span></button>
+            <button class="btn-menu"><span class="hide">메뉴</span></button>
+        </div>
+    </header>
+    <main id="content">
+        <div class="ticket-information">
+            <section class="border-bottom bg-color-fe">
+                <h2 class="hide">승차권 예약 정보</h2>
+                <div class="ticket-information__copy mt5">
+                    <p class="txt-type4">2023년 6월 19일 (월)</p>
+                    <b class="txt-type2">1매</b>
+                </div>
+                <div class="mt10">
+                    <b class="txt-type2">[KTX-산천 235] 분천 15:42 - 강릉 18:22</b>
+                    <p class="txt-type5 mt10">특실 1호차 9A</p>
+                    <p class="txt-type6 mt10">
+                        결제기한 :11시 29분 <br>
+                        10분 이내 미결제시 승차권이 자동으로 취소됩니다.
+                    </p>
+                </div>
+                <div class="grid mt10">
+                    <button class="btn-white">예약취소</button>
+                    <button class="btn-white">장바구니</button>
+                </div>
+            </section>
+            <section class="ticket-information__bottom">
+                <h2 class="hide">승차권 예약시 주의할 점</h2>
+                <div class="border-bottom">
+                    <ul class="list-type7">
+                        <li>
+                            결제하지 않으면 예약이 취소됩니다.
+                        </li>
+                        <li>
+                            승차권을 발권받은 스마트폰에서만 확인할 수 있습니다.
+                        </li>
+                        <li>
+                            할인승차권 이용시에는 관련 신분증 또는 증명서를 소지하셔야 합니다.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt5">
+                    <p class="txt-type8">꼭 알아두세요!</p>
+                    <ul class="list-type7 mt15">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <b class="txt-type6">승차권 환불(반환) 위약금 확인하기</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <b class="txt-type6">휴대품 세부 승차기준</b>
+                            </a>
+                        </li>
+                        <li>
+                            코레일톡에서 구매한 승차권은 역창구에서 변경 시 할인이 취소될 수 있습니다.
+                        </li>
+                        <li>
+                            할인 승차권의 할인율은 별도 공지 없이 변경될 수 있습니다.
+                        </li>
+                        <li>
+                            <div>
+                                할인은 운임에만 적용하고 요금은 미적용 (<strong class="txt-type6">특실/우등실은 운임과 요금으로 구분</strong>)되며, 최저운임 이하로 할인하지 않습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                승차 시 해당열차 승차권을 소지해야 하며, <strong class="txt-type6">사진이나 캡쳐한 화면은 유효한 승차권이 아닙니다.</strong>
+                            </div>
+                        </li>
+                        <li>
+                            반려동물은 다른 고객에게 불편을 주지 않도록 케이스(이동장)에 반드시 넣어주시기 바라며, 신체 일부가 밖으로 나오지 않도록 해야 합니다.
+                        </li>
+                        <li>
+                            반려동물의 동반좌석이 필요한 경우에는 정상운임을 내고 좌석을 지정받아 이용할 수 있습니다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="fix-bottom type1">
+            <button class="btn-blue">제휴상품</button>
+            <button class="btn-blue">결제하기</button>
+        </div>
+    </main>
+    <div class="megamenu__wrap">
+        <div class="megamenu" style="--zindex:1000;">
+            <div class="megamenu__header">
+                <b><span>000</span> 고객님!</b>
+                <div class="megamenu__header__btn">
+                    <button class="btn-logout"></button>
+                    <button class="btn-alarm"></button>
+                    <button class="btn-setting"></button>
+                </div>
+            </div>
+            <div class="megamenu__gnb">
+                <ul>
+                    <li>
+                        <button class="btn-megamenu">마이 페이지</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">회원정보/쿠폰ㆍ할인증</a></li>
+                            <li><a href="javascript:void(0)">장바구니</a></li>
+                            <li><a href="javascript:void(0)">승차권 확인</a></li>
+                            <li><a href="javascript:void(0)">승차권 구입이력</a></li>
+                            <li><a href="javascript:void(0)">마일리지 적립/사용내역</a></li>
+                            <li><a href="javascript:void(0)">KTX 동행자 마일리지 적립</a></li>
+                            <li><a href="javascript:void(0)">알림설정</a></li>
+                            <li><a href="javascript:void(0)">멤버십카드</a></li>
+                            <li><a href="javascript:void(0)">열차운행중지 및 지연배상 신청</a></li>
+                            <li><a href="javascript:void(0)">지연료 계좌반환 신청</a></li>
+                            <li><a href="javascript:void(0)">지연확인증 발급</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">승차권 예매</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">승차권 예매</a></li>
+                            <li><a href="javascript:void(0)">할인ㆍ정기권</a></li>
+                            <li><a href="javascript:void(0)">예약 승차권 조회ㆍ취소</a></li>
+                            <li><a href="javascript:void(0)">여행상품 예약 및 확인</a></li>
+                            <li><a href="javascript:void(0)">KTX공항버스 예매</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">승차권 반환</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">승차권 반환</a></li>
+                            <li><a href="javascript:void(0)">역 구입 승차권 반환 신청</a></li>
+                            <li><a href="javascript:void(0)">전화반환접수 전용전화 연결<br>(1544-8787)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">고객센터</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                            <li><a href="javascript:void(0)">이용안내</a></li>
+                            <li><a href="javascript:void(0)">유실물 신고</a></li>
+                            <li><a href="javascript:void(0)">고객센터 전화연결<br>상담시간(06:00~22:00) <br>(1544-7788, 1599-7878)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">철도범죄신고</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">철도범죄신고 전화연결(1588-7722)</a></li>
+                            <li><a href="javascript:void(0)">철도범죄신고 앱연결</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">KTX특송/주차장</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">KTX특송</a></li>
+                            <li><a href="javascript:void(0)">주차장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">설정</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">즐겨찾는구간 설정</a></li>
+                            <li><a href="javascript:void(0)">간편구매 정보 등록</a></li>
+                            <li><a href="javascript:void(0)">토스자동결제 설정</a></li>
+                            <li><a href="javascript:void(0)">자주쓰는 카드 설정</a></li>
+                            <li><a href="javascript:void(0)">보훈번호 설정</a></li>
+                            <li><a href="javascript:void(0)">언어 설정(Language)</a></li>
+                            <li><a href="javascript:void(0)">버전 정보</a></li>
+                            <li><a href="javascript:void(0)">로그인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="megamenu__footer">
+                <b>한국철도공사</b>
+                <div class="footer__information">
+                    <b>대표 000, 대전광역시 동구 중앙로 240</b>
+                    <b>사업자등록번호 314-82-10024</b>
+                    <b>통신판매업신고 대전동구-0233호</b>
+                    <b>고객센터 1544-7788</b>
+                </div>
+                <b class="footer__txt">개인정보처리방침 <span>여객운송약관</span></b>
+                <p>COPYRIGHT ⓒ Korail All rights reserved.</p>
+            </div>
+        </div>
+        <div class="dimmed" style="--zindex:999;"></div>
+    </div>
+</body>
+</html>

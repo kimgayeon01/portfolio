@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일가이드(아토믹디자인)</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="guide">
+    <nav class="guide-nav">
+        <a href="#guide1">버튼</a>
+        <a href="#guide2">해시태그</a>
+        <a href="#guide3">표</a>
+        <a href="#guide4">폼</a>
+        <a href="#guide5">탭메뉴</a>
+        <a href="#guide6">리스트형콘텐츠</a>
+        <a href="#guide7">제목</a>
+        <a href="#guide8">게시판</a>
+        <a href="#guide9">댓글</a>
+        <a href="#guide10">정렬</a>
+        <a href="#guide11">텍스트</a>
+    </nav>
+
+    <header class="header fix-top">
+        <h1 class="h1"><a href="">승차권 예매</a></h1>
+        <button class="btn-prev"></button>
+        <button class="btn-menu"></button>
+    </header>
+    
+    <header>
+        <div class="header">
+            <h1 class="h1"><a href="">설정</a></h1>
+            <button class="btn-prev"></button>
+            <button class="btn-menu"></button>
+        </div>
+        <div class="tab">
+            <h2 class="hide">메뉴 탭</h2>
+            <nav>
+                <ul class="header2 fix-bottom">
+                    <li><button class="active">승차권예매</button></li>
+                    <li><button>할인ㆍ정기권</button></li>
+                    <li><button>관광상품</button></li>
+                    <li><button>승차권확인</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 id="guide1">버튼</h2>
+        <button class="btn-white">KTX역 선택 지도</button>
+        <button class="btn-blue">열차 조회하기</button>
+        <button class="btn-price">6,900원</button>
+        <button class="btn-next--able">다음날</button>
+        <button class="btn-next--disabled">이전날</button>
+        <button class="btn-next-white"></button>
+        <button class="btn-detail">상세</button>
+        <button class="btn-check">다음날 (7월 2일) 조회하기</button>
+        <button class="btn-add">할인/회원 쿠폰 추가하기</button>
+        <button class="btn-product">정기관광열차 여행상품</button>
+        <button class="btn-information"></button>
+        <div class="btn-calendar"><button></button></div>
+        <button class="btn-alt2"></button>
+        <div class="btn-alt"><button></button></div>
+        <button class="btn-more">더보기</button>
+        <div class="fix-bottom type1">
+            <button class="btn-blue">제휴상품</button>
+            <button class="btn-blue">결제하기</button>
+        </div>
+        <div class=" fix-bottom-type2">
+            <button class="btn-bottom">일반승차권 예약</button>
+        </div>
+        <ol class="pagnation">
+            <li><button></button></li>
+            <li><button></button></li>
+            <li class="pagnation--active"><button></button></li>
+        </ol>
+
+        <ul class="btn-type1">
+            <li><a href="">1인용</a></li>
+            <li><a href="">2인용</a></li>
+            <li><a href="">3인용</a></li>
+        </ul>
+
+        <div class="train-check__date">
+            <b>2023년 7월 1일 (토)</b>
+            <button class="btn-next--disabled">이전날</button>
+            <button class="btn-next--able">다음날</button>
+        </div>
+
+        <div class="calendar"><a href=""><span class="hide">캘린더</span></a></div>
+
+        <button class="btn-logout"></button>
+        <button class="btn-alarm"></button>
+        <button class="btn-setting"></button>
+
+        <div class="personnel">
+            <button class="btn-minus"><span class="hide">인원삭제</span></button>
+            <b>1</b>
+            <button class="btn-plus"><span class="hide">인원추가</span></button>
+        </div>
+
+
+        <h2 id="guide2">해시태그</h2>
+
+        <h2 id="guide3">표</h2>
+        <table class="table-type">
+            <caption class="hide">표제목</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th class="vm">제목</th>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-type2">
+            <caption class="hide">표제목</caption>
+            <colgroup>
+                <col style="width: 9.3rem;">
+                <col style="width: 6.3rem;">
+                <col style="width: 8.5rem;">
+                <col style="width: 6rem;">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>제목</th>
+                    <th>제목</th>
+                    <th>제목</th>
+                    <th>제목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td>내용</td>
+                    <td>내용</td>
+                    <td>내용</td>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2 id="guide4">폼</h2>
+        <input type="text" placeholder="보훈번호 8자리">
+        <select>
+            <option>선택하세요</option>
+        </select>
+
+        <input type="checkbox" id="chk1_1" class="hide check-type1"><label for="chk1_1">개인정보수집</label>
+
+        <input type="checkbox" id="chk2_1" class="hide check-type2"><label for="chk2_1">구매 가능한 상품 보기</label>
+
+        <input type="radio" name="rag1" id="ra1_1" class="hide radio-type1"><label for="ra1_1">일반석</label>
+        <input type="radio" name="rag1" id="ra1_2" class="hide radio-type1"><label for="ra1_2">유아동반</label>
+
+        <input type="radio" name="rag2" id="ra2_1" class="hide radio-type2"><label for="ra2_1">개인</label>
+        <input type="radio" name="rag2" id="ra2_2" class="hide radio-type2"><label for="ra2_2">법인</label>
+
+        <div class="index-radio">
+            <div>
+                <b>인접역 표출</b>
+                <div class="index-radio__btn">
+                    <div>
+                        <input type="radio" name="rag3" id="ra3_1" class="hide radio-type2"><label for="ra3_1">포함</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rag3" id="ra3_2" class="hide radio-type2">
+                        <label for="ra3_2">미포함</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <b>SR 연계 표출</b>
+                <div class="index-radio__btn">
+                    <div>
+                        <input type="radio" name="rag4" id="ra4_1" class="hide radio-type2"><label for="ra4_1">포함</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rag4" id="ra4_2" class="hide radio-type2">
+                        <label for="ra4_2">미포함</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="form-type1">
+            <p>내용</p>
+            <select>
+                <option>선택하세요</option>
+            </select>
+        </div>
+
+        <h2 id="guide5">탭메뉴</h2>
+        <nav>
+            <ul class="tab-type1">
+                <li><button>탭1</button></li>
+                <li class="tab-type1--active"><button>탭2</button></li>
+            </ul>
+        </nav>
+
+        <div class="tab2">
+            <nav>
+                <ul class="fix-top2">
+                    <li><button class="btn-card active">특가 상품</button></li>
+                    <li><button class="btn-card">정기승차권</button></li>
+                    <li><button class="btn-card">N카드</button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2 id="guide6">리스트형콘텐츠</h2>
+        <ul class="gallery-list-type1">
+            <li>
+                <div class="gallery-list-type1__grid">
+                    <strong>청소년 드림</strong>
+                    <button class="btn-information"></button>
+                    <p>만 13~만 24세<br> 청소년에게 KTX 운임<br> 할인</p>
+                    <div class="img"></div>
+                </div>
+                <div class="btn-ticketing"><a href="">예매하기</a></div>
+            </li>
+            <li>
+                <div class="gallery-list-type1__padding">
+                    <div class="gallery-list-type1__grid">
+                        <strong>청소년 드림</strong>
+                        <button class="btn-information"></button>
+                        <p>만 13~만 24세<br> 청소년에게 KTX 운임<br> 할인</p>
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <div class="btn-ticketing soldout"><a href="">예매하기</a></div>
+            </li>
+        </ul>
+
+        <div class="gallery-list-type2">
+        <ul class="gallery-list-type2__content">
+            <li>
+                <a href="">
+                    <img src="images/img_thumb.png" class="thumb-gallery" alt="">                                    
+                    <div class="gallery-list-type2__copy">
+                        <b>동해산타열차</b>
+                        <p>동해의 바다 경관을 즐기며 백두대간을 가로질러 분천산타마을까지 가족, 친구, 연인과 함께 떠나는 여행</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <button class="btn-next-white"></button>
+        </div>
+
+        <ul class="gallery-list-type3">
+            <li>
+                <div class="gallery-list-type3__thumb">
+                    <img src="images/img_thumb.png" alt="">
+                    <div class="btn-calendar"><button></button></div>
+                </div>
+                <a href="" class="gallery-list-type3__content">
+                    <p>(2023 여행가는 달) [대원]KTX 타고 떠나는 DMZ 연천&철원 기차여행(1박2일)</p>
+                    <b>0원~</b>
+                </a>
+            </li>
+            <li>
+                <div class="gallery-list-type3__thumb">
+                    <img src="images/img_thumb.png" alt="">
+                    <div class="btn-calendar"><button></button></div>
+                </div>
+                <a href="" class="gallery-list-type3__content">
+                    <p>(2023 여행가는 달) [대원]KTX 타고 떠나는 DMZ 연천&철원 기차여행(1박2일)</p>
+                    <b>0원~</b>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="card-list-type1">
+            <li>
+                <div class="card-list-type1__padding">
+                    <div class="card-list-type1__grid">
+                        <strong>기간자유형 정기권</strong>
+                        <button class="btn-information"></button>
+                        <p>10일 이상 이용, 주중만 또는 휴일 포함 이용 선택</p>
+                    </div>
+                </div>
+                <div class="btn-ticketing"><a href="">예매하기</a></div>
+            </li>
+            <li>
+                <div class="card-list-type1__padding">
+                    <div class="card-list-type1__grid">
+                        <strong>기간자유형 정기권</strong>
+                        <button class="btn-information"></button>
+                        <p>10일 이상 이용, 주중만 또는 휴일 포함 이용 선택</p>
+                    </div>
+                </div>
+                <div class="btn-ticketing"><a href="">예매하기</a></div>
+            </li>
+        </ul>
+
+        <ul class="card-list-type2">
+            <li>
+                <div class="card-list-type2__padding">
+                    <div class="card-list-type2__grid">
+                        <strong>기간자유형 정기권</strong>
+                        <button class="btn-information"></button>
+                        <p>10일 이상 이용, 주중만 또는 휴일 포함 이용 선택</p>
+                    </div>
+                </div>
+                <ul class="btn-type1">
+                    <li><button>1인용</button></li>
+                    <li><button>2인용</button></li>
+                    <li><button>3구간용</button></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="card-list-type3">
+            <li>
+                <div class="card-list-type3__grid">
+                    <strong>내일로 두번째 이야기</strong>
+                    <button class="btn-information"></button>
+                    <p>자유롭게 여행할 수 있는 철도여행패스</p>
+                </div>
+                <div class="btn-ticketing"><a href="">예매하기</a></div>
+            </li>
+        </ul>
+
+        <ul class="bar-list-type1">
+            <li>내용</li>
+            <li>내용</li>
+        </ul>
+
+        <ul class="list-type1">
+            <li><a href="">내용</a></li>
+            <li><a href="">내용</a></li>
+            <li><a href="">내용</a></li>
+        </ul>
+
+        <ul class="list-type2">
+            <li>동해</li>
+            <li>동해</li>
+            <li>동해</li>
+        </ul>
+
+        <ul class="list-type3">
+            <li>
+                <div class="list-type3__content">
+                    <div>
+                        <p>출발</p>
+                        <b>행신</b>
+                    </div>
+                    <div class="list-type3__bg">
+                        <div class="btn-alt"><button></button></div>
+                    </div>
+                    <div>
+                        <p>도착</p>
+                        <b>동대구</b>
+                    </div>
+                    <button class="btn-white">ktx역 선택 지도</button>
+                </div>
+            </li>
+            <li>
+                <div class="list-type3__btn">
+                    <button>
+                        <span class="txt-type7">출발일</span>
+                        <span>2023년 6월 16일 (금) 11:34</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <div class="list-type3__btn">
+                    <button>
+                        <span class="txt-type7">출발일</span>
+                        <span>2023년 6월 16일 (금) 11:34</span>
+                    </button>
+                </div>
+                <div class="list-type3__rag">
+                    <div class="list-type3__content2">
+                        <input type="radio" name="rag3" id="ra3_1" class="hide radio-type1"><label for="ra3_1">일반석</label>
+                        <input type="radio" name="rag3" id="ra3_2" class="hide radio-type1"><label for="ra3_2">유아동반</label>
+                        <input type="radio" name="rag3" id="ra3_3" class="hide radio-type1"><label for="ra3_3">유아동반</label>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="list-type4">
+
+            <section>
+                <h2 class="h2">추천 이벤트</h2>
+                <p class="txt-type1">코레일에서 추천하는 이벤트</p>
+                <div></div>
+            </section>
+
+            <section>
+                <h2 class="h2">추천 이벤트</h2>
+                <p class="txt-type1">코레일에서 추천하는 이벤트</p>
+                <div></div>
+            </section>
+        </div>
+
+        <ul class="list-type5">
+            <li>
+                <a href="">
+                    <img src="images/img_thumb2.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img_thumb2.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img_thumb2.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="list-type6">
+            <li>
+                <div class="h2">내용</div>
+                <p class="txt-type1">내용</p>
+                <div></div>
+            </li>
+            <li>
+                <div class="h2">내용</div>
+                <p class="txt-type1">내용</p>
+                <div></div>
+            </li>
+        </ul>
+
+        <ul class="list-type7">
+            <li>
+                <div>
+                    내용<span>내용</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    내용
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list-type8">
+            <li>
+                <button>제목</button>
+                <div class="list-type8__content">
+                    <div class="list-type8__copy">
+                        <b>내용</b>
+                        <span>내용내용내용내용내용내용내용내용</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+        <h2 id="guide7">제목</h2>
+        <h2 class="h2">제목</h2>
+        <h2 class="h2_type2">제목</h2>
+
+        <h2 id="guide8">게시판</h2>
+        <div class="slide">
+            <div class="slide-wrap">
+                <div class="slide-item">
+                    <img src="images/img_thumb.png" alt="">
+                    <div class="btn-calendar"><button></button></div>
+                    <div class="slide-item__txt">
+                        <a href="">
+                            <b>
+                                (레일텔-캡슐호텔)KTX(왕복)+더캡슐 레일텔-1박2일 <br>
+                                <span>55,600원~</span>
+                            </b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ol class="pagnation text-center mt10">
+                <li><button></button></li>
+                <li><button></button></li>
+                <li class="pagnation--active"><button></button></li>
+            </ol>
+        </div>
+
+        <div class="slide2">
+            <div class="slide2-wrap">
+                <div class="slide2-item">
+                    <img src="images/img_thumb.png" class="thumb-gallery2" alt="">
+                    <button class="btn-next-white"></button>
+                </div>
+                <div class="slide2-item__txt">
+                    <b class="txt-type2">[철도의 날 기념] 무료 숙박권 증정 이벤트</b>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="guide9">댓글</h2>
+
+        <h2 id="guide10">정렬</h2>
+        <div class="align both">
+            <div>좌</div>
+            <div>우</div>
+        </div>
+        <div class="align center">
+            <div>가운데</div>
+        </div>
+        <div class="align right">
+            <div>오른쪽</div>
+        </div>
+        <div class="align vt">
+            <div>위</div>
+        </div>
+        <div class="align vm">
+            <div>중앙</div>
+        </div>
+        <div class="align vb">
+            <div>아래</div>
+        </div>
+
+
+        <h2 id="guide11">텍스트</h2>
+        <p class="txt-type1">텍스트</p>
+        <b class="txt-type2">텍스트</b>
+        <p class="txt-type3">텍스트</p>
+
+        <br><br><br>
+    </main>
+</body>
+
+</html>

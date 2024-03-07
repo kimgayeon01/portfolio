@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <style>
+        html {
+            font-size: 31.25%;
+        }
+    </style>
+
+    <h2>List1</h2>
+    <ul class="list-type1">
+        <li>
+            <a href="">
+                <strong class="list-type1__title">소년소녀부</strong>
+                <p class="list-type1__copy">
+                    근행창제를 성실히 실천하여 <br>
+                    사자왕의 마음을 갖는 소년소녀부
+                </p>
+                <div class="list-type1__btn"></div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <strong class="list-type1__title">미래부</strong>
+                <p class="list-type1__copy">
+                    근행창제를 성실히 실천하여 <br>
+                    사자왕의 마음을 갖는 소년소녀부
+                </p>
+                <div class="list-type1__btn"></div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <strong class="list-type1__title">미래본부</strong>
+                <p class="list-type1__copy">
+                    학회라는 궁극적인 인간주의 <br>
+                    뜰에서 크고 풍요롭게 육성합니다
+                </p>
+                <div class="list-type1__btn"></div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <strong class="list-type1__title">교육부</strong>
+                <p class="list-type1__copy">
+                    소년소녀부와 미래부에 신심을 <br>
+                    계승하고 인재로 육성합니다
+                </p>
+                <div class="list-type1__btn"></div>
+            </a>
+        </li>
+    </ul>
+    <div class="review">
+        <b>느낀점/배운점 :</b>
+        <p>
+            리스트의 전체가 클릭되어야하기 때문에 a로 감싸주고 a안에 padding을 줘서 클릭이 되게 해줌 li에 해주면 영역 클릭이 되지 않기 때문에 ,,
+        </p>
+    </div>
+
+
+    <h2>List3</h2>
+    <h3 class="h3">미래본부 사명</h3>
+    <ul class="list-type3 mt20">
+        <li>
+            <strong>신심계승 도모</strong>
+            <p>각 가정에서의 심신계승 도모</p>
+        </li>
+        <li>
+            <strong>연대 강화</strong>
+            <p>미래부원과의 일대일 연대를 강화</p>
+        </li>
+        <li>
+            <strong>지원체계 확립</strong>
+            <p>소년소녀부 전담 및 미래부 지원체계 확립</p>
+        </li>
+    </ul>
+
+    <h2>Content6</h2>
+    <div class="content-type6">
+        <div class="content-type6__img">
+            <div class="content-type6__logo"></div>
+            <img src="images/img_thumb.png" alt="">
+        </div>
+        <div class="content-type6__txt">
+            <div class="content-type6__txt__logo">
+                <img src="images/img_logo2.png" alt="">
+            </div>
+            <div>
+                <strong class="content-type6__txt__title">Rebehayan</strong>
+                <p class="content-type6__txt__copy">
+                    Rebehayan, which started its business in Korea in 2012, provides relevant camping equipment in all
+                    aspects. We believe our products with the right function, design and price are only a means, and not
+                    the purpose of enjoying outdoors. <br>
+                    <br>
+                    Minimalworks provides products and services that help you focus fully on nature and people outdoors
+                    by removing what is unnecessary. <br>
+                    <br>
+                    We will continue to improve and develop relevant functions and designs as our lifestyles change and
+                    become your partners, sharing the surprises and deep emotions we felt outdoors.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <b>느낀점/배운점 :</b>
+        <p>
+            사진위에 로고 position에서 중앙으로 배치할 때 기준 top과 left로 잡아줌 <br>
+            왼쪽에서 중앙으로 배치되어야하기 때문에 left 50%해주고 x축을 기준으로 -50% translate해주어야함 (-> translateX)
+        </p>
+    </div>
+
+
+    <h2>Form1</h2>
+    <div class="form1">
+        <table class="form-type1">
+            <caption class="hide">제목</caption>
+            <colgroup>
+                <col style="width: 20rem;">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>
+                        <label for="txt1_1">글제목</label>
+                    </th>
+                    <td>
+                        <input type="text" id="txt1_1" placeholder="제목을 입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="txt1_2">상세내용</label>
+                    </th>
+                    <td>
+                        <textarea id="txt1_2" placeholder="내용을 입력하세요"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="txt1_3" class="form-type1__txt">파일첨부</label>
+                    </th>
+                    <td>
+                        <div class="form-type1__btn">
+                            <input type="text" id="txt1_3">
+                            <button class="form-type1__find">파일<span>찾기</span>
+                                <span class="attach">첨부</span>
+                            </button>
+                            <button class="form-type1__more"></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="review">
+        <b>느낀점/배운점 :</b>
+        <p>
+            button 안에 p 들어갈 수 없다..까먹지 말자
+        </p>
+    </div>
+
+
+    <h2>List2</h2>
+    <nav class="list-type2-wrap">
+        <ul class="list-type2">
+            <li><a href="">홈</a></li>
+            <li><a href="">소년소녀부</a></li>
+            <li><a href="">소년소녀부 소개</a></li>
+            <li><a href="">캐릭터 소개</a></li>
+        </ul>
+    </nav>
+    <ul class="list-type2-2">
+        <li class="list-type2-2__border"><a href="">소년소녀부</a></li>
+        <li><a href="">캐릭터 소개</a></li>
+    </ul>
+
+    <h2>List4</h2>
+    <ul class="list-type4">
+        <li class="list-type4__pre">
+            <a href="">
+                <p>이전글</p>
+                <span>10월 해돋이 행사 식순자료 업데이트 되었습니다.</span>
+            </a>
+        </li>
+        <li class="list-type4__next">
+            <a href="">
+                <p>다음글</p>
+                <span>자료가 없습니다</span>
+            </a>
+        </li>
+    </ul>
+
+    <h2>Form4</h2>
+    <div class="form-type4">
+        <h2>도입문의</h2>
+        <ul class="form-type4__list">
+            <li>
+                <label for="txt3_1">회사명</label>
+                <input type="text" id="txt3_1" placeholder="회사명을 입력하세요.">
+            </li>
+            <li>
+                <label for="txt3_2">임직원 수</label>
+                <input type="text" id="txt3_2" placeholder="임직원수를 선택하세요.">
+            </li>
+            <li>
+                <label for="txt3_3">담당자명</label>
+                <input type="text" id="txt3_3" placeholder="담당자명을 입력하세요.">
+            </li>
+            <li>
+                <label for="txt3_4">전화번호</label>
+                <input type="tel" id="txt3_4" placeholder="전화번호를 입력하세요.">
+            </li>
+            <li>
+                <label for="txt3_5">이메일 주소</label>
+                <input type="email" id="txt3_5" placeholder="이메일주소를 입력하세요.">
+            </li>
+            <li class="form-type4__textarea">
+                <label for="txt3_6">내용</label>
+                <textarea id="txt3_6" placeholder="이곳에 상세내용을 남겨주세요."></textarea>
+            </li>
+        </ul>
+        <div class="form-type4__checkbox">
+            <input type="checkbox" id="chk1_1" class="hide check-type1"><label for="chk1_1">개인정보 수집 및 이용에
+                동의합니다(필수)</label>
+        </div>
+        <div class="form-type4__btn">
+            <button class="btn-request">도입문의 요청</button>
+        </div>
+    </div>
+    <div class="review">
+        <b>느낀점/배운점 :</b>
+        <p>
+            가로스크롤이 자꾸 생겼는데 box-sizing을 넣지 않아서 생겼음 주의할것
+        </p>
+    </div>
+
+
+    <h2>Form5</h2>
+    <div class="form-type5__wrap">
+        <ul class="form-type5">
+            <li>
+                <div class="form-type5__select">
+                    <select>
+                        <option>결재함</option>
+                    </select>
+                </div>
+                <div class="form-type5__write">
+                    <input type="number" placeholder="문서번호 입력">
+                    <input type="text" placeholder="작성자 입력">
+                </div>
+                <div class="form-type5__date">
+                    <div class="form-type5__input1">
+                        <input type="date" data-placeholder="기간(시작)" required>
+                    </div>
+                    <span>~</span>
+                    <div class="form-type5__input2">
+                        <input type="date" data-placeholder="기간(종료)" required>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <input type="text" placeholder="문서제목 입력">
+            </li>
+        </ul>
+        <button class="form-type5__btn">검색</button>
+    </div>
+    <div class="review">
+        <b>느낀점/배운점 :</b>
+        <p>
+            select에 기본으로 있는 화살표를 없앨 때 appearance:none해서 없애고 background로 다른 아이콘 삽입해줌 <br>
+            input:date에 pllaceholder 넣을 때 data-placeholder="" required까지 넣고 css에서 input type date before에서 텍스트 꾸밈해줌
+            (content:attr(data-placeholder);과 width:100%;도 들어가줘야함)
+        </p>
+    </div>
+
+
+    <h2>Content8</h2>
+    <header class="header">
+        <div class="header__wrap">
+            <h1 class="content-type8__logo"><a href=""></a></h1>
+            <nav>
+                <ul class="gnb active">
+                    <li class="active">
+                        <a href="">블랙리본</a>
+                        <ul>
+                            <li><a href="">주요서비스</a></li>
+                            <li><a href="">주요기능</a></li>
+                            <li><a href="">B.I.</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">상품안내</a>
+                        <ul>
+                            <li><a href="">기본 상품</a></li>
+                            <li><a href="">프리미엄 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">도입문의</a>
+                        <ul>
+                            <li><a href="">도입문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                        <ul>
+                            <li><a href="">자주하는 질문</a></li>
+                            <li><a href="">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-mega active"></button>
+        </div>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 리스트1 */
+.list-type1 {
+    display: flex;
+    background: #F0F0F0;
+}
+.list-type1 li {
+    flex: 1;
+}
+.list-type1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 37px;
+    border: 1px solid #E1E1E1;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+}
+.list-type1 .active {
+    background: #FFFFFF;
+    color: #333;
+    border: 1px solid #333;
+    border-bottom: 1px solid #fff;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+
+/* 리스트2 */
+.list-type2 {
+    display: flex;
+    background: #F3F3F3;
+}
+.list-type2 li {
+    flex: 1;
+}
+.list-type2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+.list-type2 .active {
+    background: #F26E50;
+    box-shadow: 0px 9px 14px rgba(242, 110, 80, 0.9);
+    color: #FFFFFF;
+}
+.tab2-content {
+    display: none;
+}
+.tab2-content.active {
+    display: block;
+}
+
+/* 리스트7 */
+.list-type7 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-type7 li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.list-type7 .border {
+    padding-bottom: 57px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.list-type7 .title {
+    width: 236px;
+    padding: 23px 0 13px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+.list-type7 .information {
+    width: 236px;
+}
+.list-type7 .information li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    color: #898989;
+}
+.list-type7 .information span {
+    width: 61px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+
+/* 리스트8 */
+.list-type8 h3 {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 36px;
+    color: #000000;
+}
+.list-type8 .find {
+    padding: 14px 0 35px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: #AD8A70;
+}
+.list-type8 ul {
+    display: flex;
+    gap: 27px;
+}
+.list-type8 li {
+    position: relative;
+    width: 315px;
+    height: 434px;
+}
+.list-type8 .date {
+    padding: 28px 0 19px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+}
+.list-type8 .title {
+    font-size: 19px;
+    line-height: 28px;
+    color: #000000;
+}
+.list-type8 .information {
+    padding: 7px 0 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #847A74;
+}
+.list-type8 .btn-view {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #B5967E;
+}
+
+/* 리스트9 */
+.list-type9 {
+    border-top: 2px solid #333333;
+}
+.list-type9 li {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    border-bottom: 1px solid #E5E5E5; 
+    padding: 30px 0;
+}
+.list-type9 .title {
+    display: block;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    padding: 8px 0 14px;
+}
+.list-type9 .subtitle {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    padding: 0 0 36px;
+}
+.list-type9 .copy {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #005891;
+    padding: 0 0 13px;
+}
+.list-type9 .information {
+    font-size: 15px;
+    line-height: 24px;
+    color: #666666;
+}
+.list-type9 .btn-homepage {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    padding: 0 31px;
+    /* width: 176px; */
+    height: 40px;
+    border: 1px solid #005891;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #005891;
+}
+
+/* 리스트10 */
+.list-type10 h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 48px;
+    color: #999999;
+}
+.list-type10 h3 span {
+    color: rgba(0, 0, 0, 1);
+}
+.list-type10 .subtitle {
+    text-align: center;
+    padding: 36px 0 10px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #999999;
+}
+.list-type10 .navi {
+    display: flex;
+    justify-content: center;
+}
+.list-type10 .navi li:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: #000;
+}
+.list-type10 .navi li a {
+    font-size: 14px;
+    color: #3C2E30;
+}
+.list-type10 .navi li:not(:last-child) {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.list-type10 .navi li:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 12px;
+    background: #E6E6E6;
+}
+.list-type10 .navi li:last-child {
+    padding-left: 14px;
+}
+.list-type10 .list li {
+    width: calc(33.33% - 35px);
+    box-sizing: border-box; 
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 0 41px;
+}
+.list-type10 .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 35px; 
+    padding: 5.1rem 0 0;
+}
+.list-type10 .list img {
+    width: 100%;
+}
+.list-type10 div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 11px;
+    width: 57px;
+    height: 54px;
+    border-radius: 50px;
+    background: #FCFBFB;
+}
+.list-type10 div p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #676767;
+}
+.list-type10 .title {
+    padding: 18px 0 7px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    color: #3C2E30;
+}
+.list-type10 li span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3C2E30;
+    text-decoration: line-through;
+}
+.list-type10 li b {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333333
+}
+
+
+/* 리스트13 */
+.list-type13-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-type13-align h3 {
+    margin-bottom: 16px ;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    color: #121314;
+}
+.list-type13-align .btn-email {
+    display: inline-flex;
+    padding: 5px 24px 4px;
+    background: #FFFFFF;
+    border: 1px solid #777777;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+.list-type13-align .btn-call {
+    display: inline-flex;
+    padding: 5px 13px 4px;
+    background: #FFFFFF;
+    border: 1px solid #777777;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+.list-type13-align div {
+    margin-bottom: 18px;
+}
+.list-type13_1{
+    border-top: 2px solid #000000;
+}
+.list-type13_1 li {
+    border-bottom: 1px solid #CCCCCC;
+}
+.list-type13_1 button {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 75px;
+    box-sizing: border-box;
+    background: url(../images/ico_question.svg) no-repeat 20px center;
+    border: none;
+    text-align: left;
+}
+.list-type13_1 button::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 12px;
+    height: 7px;
+    background: url(../images/ico_arrow_down.svg);
+    transition: .5s;
+}
+
+.list-type13_1 button.active::after {
+    transform: rotate(180deg);
+}
+
+.list-type13_1 div {
+    display: none;
+    padding: 0 0 0 75px;
+    background:url(../images/ico_answer.svg) no-repeat 20px 20px lightgrey;
+}
+
+/* 리스트 5 */
+.list-type5 li {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: #777777;
+}
+.list-type5 li p {
+    padding-bottom: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: #777777;
+}
+.list-type5 li ol {
+    padding-left: 16px ;
+    text-indent: -16px;
+}
+.list-type5 li ol li {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.5px;
+    color: #777777;
+}
+.list-type5 li ol li ol {
+    padding-left: 7px;
+}
+.list-type5 .padding {
+    padding-bottom: 63px;
+}
+
+/* 리스트6 */
+.list-type6 li {
+    border-radius: 0.5rem;
+    border: 1px solid #E7E7E7;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.list-type6 li p {
+    color: #000;
+    font-size: 1.4rem;
+}
+.list-type6 li b {
+    font-size: 2.1rem;
+}
+
+
+/* 리스트13 예시 */
+.list-type13_1-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-type13_1 {
+    border-top: 2px solid black;
+}
+
+.list-type13_1 li {
+    border-bottom: 1px solid gray;
+}
+
+.list-type13_1 button {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 75px;
+    box-sizing: border-box;
+    background: url(../images/ico_question.svg) no-repeat 20px center;
+    border: none;
+    text-align: left;
+}
+.list-type13_1 button::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 12px;
+    height: 7px;
+    background: url(../images/ico_arrow_down.svg);
+    transition: .5s;
+}
+
+.list-type13_1 button.active::after {
+    transform: rotate(180deg);
+}
+
+.list-type13_1 div {
+    display: none;
+    padding: 0 0 0 75px;
+    background:url(../images/ico_answer.svg) no-repeat 20px 20px lightgrey;
+}
+
+/* 리스트 11 */
+.list-type11 {
+    border-top: 2px solid #222222;
+    width: 220px;
+}
+.list-type11 >  li {
+    font-size: 15px;
+    line-height: 22px;
+    color: #575757;
+    border-bottom: 1px solid #DDDDDD;
+}
+.list-type11 >  li >  a {
+    display: block;
+    padding: 17px 15px;
+}
+.list-type11 > li > ul {
+    padding-bottom: 17px;
+}
+.list-type11 > li > ul > li {
+    border: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #575757;
+}
+.list-type11 > li > ul > li a {
+    padding: 0 16px;
+}

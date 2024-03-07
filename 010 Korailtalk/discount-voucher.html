@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인ㆍ정기권 | 코레일톡</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header>
+        <section>
+            <div class="header fix-top">
+                <h1 class="h1"><a href="javascript:void(0)">할인ㆍ정기권</a></h1>
+                <div>
+                    <button class="none"></button>
+                </div>
+                <button class="btn-menu"><span class="hide">메뉴</span></button>
+            </div>
+        </section>
+        <section>
+            <h2 class="hide">할인정기권 상품</h2>
+            <div class="tab2">
+                <nav>
+                    <ul class="fix-top2">
+                        <li><a href="#guide1" class="btn-card active">특가 상품</a></li>
+                        <li><a href="#guide2" class="btn-card">정기승차권</a></li>
+                        <li><a href="#guide3" class="btn-card">N카드</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+         <section>
+            <div class="tab">
+                <h2 class="hide">메뉴 탭</h2>
+                <nav>
+                    <ul class="header2 fix-bottom">
+                        <li><button>승차권예매</button></li>
+                        <li><button class="active">할인ㆍ정기권</button></li>
+                        <li><button>관광상품</button></li>
+                        <li><button>승차권확인</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main id="content">
+        <div class="list-type6 mobile-space mt26">
+            <section>
+                <h2 class="h2" id="guide1">특가 상품</h2>
+                <p class="txt-type1">연령, 동반 가족 등 다양한 조건에 제공되는 특가 할인</p>
+                <input type="checkbox" id="chk2_1" class="hide check-type2"><label for="chk2_1">구매 가능한 상품 보기</label>
+                <ul class="gallery-list-type1 mt10">
+                    <li>
+                        <div class="gallery-list-type1__grid">
+                            <strong>청소년 드림</strong>
+                            <button class="btn-information"><span class="hide">정보</span></button>
+                            <p>만 13~만 24세<br> 청소년에게 KTX 운임<br> 할인</p>
+                            <div class="img"></div>
+                        </div>
+                        <div class="btn-ticketing"><a href="javascript:void(0)">예매하기</a></div>
+                    </li>
+                    <li>
+                        <div class="gallery-list-type1__padding">
+                            <div class="gallery-list-type1__grid">
+                                <strong>청소년 드림</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>만 13~만 24세<br> 청소년에게 KTX 운임<br> 할인</p>
+                                <div class="img"></div>
+                            </div>
+                        </div>
+                        <div class="btn-ticketing soldout"><a href="javascript:void(0)">예매하기</a></div>
+                    </li>
+                    <li>
+                        <div class="gallery-list-type1__padding">
+                            <div class="gallery-list-type1__grid">
+                                <strong>청소년 드림</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>만 13~만 24세<br> 청소년에게 KTX 운임<br> 할인</p>
+                                <div class="img"></div>
+                            </div>
+                        </div>
+                        <div class="btn-ticketing soldout"><a href="javascript:void(0)">예매하기</a></div>
+                    </li>
+                    <li>
+                        <div class="gallery-list-type1__padding">
+                            <div class="gallery-list-type1__grid">
+                                <strong>청소년 드림</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>만 13~만 24세<br> 청소년에게 KTX 운임<br> 할인</p>
+                                <div class="img"></div>
+                            </div>
+                        </div>
+                        <div class="btn-ticketing soldout"><a href="javascript:void(0)">예매하기</a></div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="h2 mt26" id="guide2">정기승차권</h2>
+                <p class="txt-type1">구간과 기간을 지정하여 1일 2회 이용할 수 있는 할인상품</p>
+                <ul class="card-list-type1">
+                    <li>
+                        <div class="card-list-type1__padding">
+                            <div class="card-list-type1__grid">
+                                <strong>기간자유형 정기권</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>10일 이상 이용, 주중만 또는 휴일 포함 이용 선택</p>
+                            </div>
+                        </div>
+                        <div class="btn-ticketing"><a href="javascript:void(0)">예매하기</a></div>
+                    </li>
+                    <li>
+                        <div class="card-list-type1__padding">
+                            <div class="card-list-type1__grid">
+                                <strong>일반정기권</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>10일 / 1개월용, 주중(월~금) 이용, 휴일 제외</p>
+                            </div>
+                        </div>
+                        <div class="btn-ticketing"><a href="javascript:void(0)">예매하기</a></div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="h2 mt26" id="guide3">N카드</h2>
+                <p class="txt-type1">구간과 이용횟수를 선택하여 할인받는 모바일 할인상품</p>
+                <ul class="card-list-type2">
+                    <li>
+                        <div class="card-list-type2__padding">
+                            <div class="card-list-type2__grid">
+                                <strong>KTX</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>KTX 운행 전체 구간</p>
+                            </div>
+                        </div>
+                        <ul class="btn-type1">
+                            <li><a href="javascript:void(0)">1인용</a></li>
+                            <li><a href="javascript:void(0)">2인용</a></li>
+                            <li><a href="javascript:void(0)">3구간용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="card-list-type2__padding">
+                            <div class="card-list-type2__grid">
+                                <strong>ITX-청춘</strong>
+                                <button class="btn-information"><span class="hide">정보</span></button>
+                                <p>ITX-청춘 운행 구간(용산-춘천)</p>
+                            </div>
+                        </div>
+                        <ul class="btn-type1">
+                            <li><a href="javascript:void(0)">1인용</a></li>
+                            <li><a href="javascript:void(0)">2인용</a></li>
+                            <li><a href="javascript:void(0)">3구간용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <div class="megamenu__wrap">
+        <div class="megamenu" style="--zindex:1000;">
+            <div class="megamenu__header">
+                <b><span>000</span> 고객님!</b>
+                <div class="megamenu__header__btn">
+                    <button class="btn-logout"></button>
+                    <button class="btn-alarm"></button>
+                    <button class="btn-setting"></button>
+                </div>
+            </div>
+            <div class="megamenu__gnb">
+                <ul>
+                    <li>
+                        <button class="btn-megamenu">마이 페이지</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">회원정보/쿠폰ㆍ할인증</a></li>
+                            <li><a href="javascript:void(0)">장바구니</a></li>
+                            <li><a href="javascript:void(0)">승차권 확인</a></li>
+                            <li><a href="javascript:void(0)">승차권 구입이력</a></li>
+                            <li><a href="javascript:void(0)">마일리지 적립/사용내역</a></li>
+                            <li><a href="javascript:void(0)">KTX 동행자 마일리지 적립</a></li>
+                            <li><a href="javascript:void(0)">알림설정</a></li>
+                            <li><a href="javascript:void(0)">멤버십카드</a></li>
+                            <li><a href="javascript:void(0)">열차운행중지 및 지연배상 신청</a></li>
+                            <li><a href="javascript:void(0)">지연료 계좌반환 신청</a></li>
+                            <li><a href="javascript:void(0)">지연확인증 발급</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">승차권 예매</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">승차권 예매</a></li>
+                            <li><a href="javascript:void(0)">할인ㆍ정기권</a></li>
+                            <li><a href="javascript:void(0)">예약 승차권 조회ㆍ취소</a></li>
+                            <li><a href="javascript:void(0)">여행상품 예약 및 확인</a></li>
+                            <li><a href="javascript:void(0)">KTX공항버스 예매</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">승차권 반환</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">승차권 반환</a></li>
+                            <li><a href="javascript:void(0)">역 구입 승차권 반환 신청</a></li>
+                            <li><a href="javascript:void(0)">전화반환접수 전용전화 연결<br>(1544-8787)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">고객센터</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                            <li><a href="javascript:void(0)">이용안내</a></li>
+                            <li><a href="javascript:void(0)">유실물 신고</a></li>
+                            <li><a href="javascript:void(0)">고객센터 전화연결<br>상담시간(06:00~22:00) <br>(1544-7788, 1599-7878)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">철도범죄신고</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">철도범죄신고 전화연결(1588-7722)</a></li>
+                            <li><a href="javascript:void(0)">철도범죄신고 앱연결</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">KTX특송/주차장</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">KTX특송</a></li>
+                            <li><a href="javascript:void(0)">주차장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">설정</button>
+                        <ul class="megamenu__list">
+                            <li><a href="javascript:void(0)">즐겨찾는구간 설정</a></li>
+                            <li><a href="javascript:void(0)">간편구매 정보 등록</a></li>
+                            <li><a href="javascript:void(0)">토스자동결제 설정</a></li>
+                            <li><a href="javascript:void(0)">자주쓰는 카드 설정</a></li>
+                            <li><a href="javascript:void(0)">보훈번호 설정</a></li>
+                            <li><a href="javascript:void(0)">언어 설정(Language)</a></li>
+                            <li><a href="javascript:void(0)">버전 정보</a></li>
+                            <li><a href="javascript:void(0)">로그인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="megamenu__footer">
+                <b>한국철도공사</b>
+                <div class="footer__information">
+                    <b>대표 000, 대전광역시 동구 중앙로 240</b>
+                    <b>사업자등록번호 314-82-10024</b>
+                    <b>통신판매업신고 대전동구-0233호</b>
+                    <b>고객센터 1544-7788</b>
+                </div>
+                <b class="footer__txt">개인정보처리방침 <span>여객운송약관</span></b>
+                <p>COPYRIGHT ⓒ Korail All rights reserved.</p>
+            </div>
+        </div>
+        <div class="dimmed" style="--zindex:999;"></div>
+    </div>
+</body>
+</html>

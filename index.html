@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-pink">
+    <header class="header">
+        <h1 class="hide">포트폴리오</h1>
+        <nav>
+            <ul class="header__gnb" id="myMenu">
+                <li data-menuanchor="main" class="active"><a href="#main">MAIN</a></li>
+                <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+                <li data-menuanchor="portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+                <li data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="header__menu"></button>
+    </header>
+    <main id="fullpage">
+        <section class="section bg-blue">
+            <div class="main">
+                <h2>P<span>O</span>RTF<span>O</span>LI<span>O</span></h2>
+            </div>
+        </section>
+        <section class="section">
+            <div class="about">
+                <h2>ABOUT ME</h2>
+                <div class="about-detail">
+                    <div>
+                        <h3>Profile</h3>
+                        <ul class="about-detail__profile">
+                            <li>
+                                <p>NAME</p>
+                                <b>김가연</b>
+                            </li>
+                            <li>
+                                <p>AGE</p>
+                                <b>22 (2001.10.17)</b>
+                            </li>
+                            <li>
+                                <p>PHONE</p>
+                                <b>010.8974.9154</b>
+                            </li>
+                            <li>
+                                <p>E-MAIL</p>
+                                <b>endeer01@naver.com</b>
+                            </li>
+                            <li>
+                                <p>ADRRESS</p>
+                                <b>경기도 고양시 일산서구 강선로 164</b>
+                            </li>
+                        </ul>
+                        <button class="btn-more">click me!</button>
+                    </div>
+                    <div>
+                        <h3>Education</h3>
+                        <ul class="about-detail__education">
+                            <li>
+                                <p>2023-09</p>
+                                <b>하이미디어컴퓨터디자인학원<br>
+                                    (디지털디자인) Adobe XD활용
+                                    UI/UX웹디자인(웹퍼블리셔) 과정 수료</b>
+                            </li>
+                            <li>
+                                <p>2022.02</p>
+                                <b>배화여자대학 패션산업학과 졸업</b>
+                            </li>
+                            <li>
+                                <p>2020.02</p>
+                                <b>정발고등학교 졸업</b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Skills</h3>
+                        <ul class="about-detail__skill">
+                            <li>
+                                <b>HTML</b>
+                                <img src="images/img_html.png" alt="">
+                                <div class="about-speech-bubble">
+                                    웹표준과 접근성을 준수하고자 합니다
+                                </div>
+                            </li>
+                            <li>
+                                <b>CSS</b>
+                                <img src="images/img_css.png" alt="">
+                                <div class="about-speech-bubble">
+                                    디자인 결과물과 흡사하게 웹에서 구현해낼 수 있으며 반응형 웹 퍼블리싱이 가능합니다
+                                </div>
+                            </li>
+                            <li>
+                                <b>JS</b>
+                                <img src="images/img_js.png" alt="">
+                                <div class="about-speech-bubble">
+                                    기초적인 자바스크립트,제이쿼리 사용이 가능합니다
+                                </div>
+                            </li>
+                            <li>
+                                <b>Photoshop</b>
+                                <img src="images/img_photoshop.png" alt="">
+                                <div class="about-speech-bubble">
+                                    툴을 이용한 간단한 디자인 작업이 가능합니다
+                                </div>
+                            </li>
+                            <li>
+                                <b>Illustrator</b>
+                                <img src="images/img_illustrator.png" alt="">
+                                <div class="about-speech-bubble">
+                                    툴을 이용한 간단한 디자인 작업이 가능합니다
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Certificate</h3>
+                        <ul class="about-detail__certificate">
+                            <li>
+                                <p>2021.03</p>
+                                <b>GTQ 그래픽기술자격 1급 </b>
+                            </li>
+                            <li>
+                                <p>2020.03</p>
+                                <b>운전면허 2종보통</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-profile" style="--zindex:100;">
+                    <div class="about-profile__header">
+                        <h3>ABOUT ME</h3>
+                        <button class="btn-close"></button>
+                    </div>
+                    <div class="about-profile__content">
+                        <div class="about-profile__txt">
+                            <strong>KIM GAYEON.</strong>
+                            <p>
+                                안녕하세요 신입 김가연입니다.
+                            </p>
+                            <p>
+                                아직은 부족함이 많지만 가르침에 겁먹지 않고 더 많은 것을 보고 배우며 <br>
+                                꾸준히 발전해 나갈 수 있는 사람이 되겠습니다.
+                            </p>
+                            <div>
+                                <b>저는 일할 때,</b>
+                                <ul class="about-profile__hashtag">
+                                    <li>
+                                        <img src="images/ico_about1.png" alt="">
+                                        <p>#성실함</p>
+                                        <span>일을 미루지 않고 <br>최선을 다하여</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/ico_about2.png" alt="">
+                                        <p>#꼼꼼함</p>
+                                        <span>일처리는 신중하고 <br> 차분하게</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/ico_about4.png" alt="">
+                                        <p>#긍정에너지</p>
+                                        <span>다른 사람의 비판을 <br> 받아들이고 옳다고 인정하는</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/ico_about3.png" alt="">
+                                        <p>#책임감</p>
+                                        <span>맡아서 해야 할 임무를 <br> 중히 여기는</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about-profile__work">
+                            <b>이렇게 작업했습니다!</b>
+                            <div>
+                                <p>
+                                    1. HTML, CSS의 기초 배우고 연습, 컴포넌트 모듈화 기초
+                                </p>
+                                <p>
+                                   2. HTML, CSS 기초 지식을 기반으로 웹사이트 제작, 제작한 사이트의 웹표준과 웹호환성 체크
+                                </p>
+                                <p>
+                                    3. 모바일 웹 기초 배우고 UI 예제 제작, StyleGuide 제작
+                                </p>
+                                <p>
+                                    4. 모바일 웹 기초를 기반으로 모바일 사이트 제작, 제작한 사이트의 웹표준과 웹호환성 체크
+                                </p>
+                                <p>
+                                    5. 반응형 웹 기초 배우고 UI 예제 제작
+                                </p>
+                                <p>
+                                    6. 반응형 웹 기초를 기반으로 반응형 웹 사이트 제작, 제작한 사이트의 웹표준과 웹호환성 체크
+                                </p>
+                                <p>
+                                    7. 한국형 웹 콘텐츠 지침 2.1 교육
+                                </p>
+                                <p>
+                                    8. 위의 지식을 기반으로 OpenWAX/ ARC Toolkit/ CCA와 같은 접근성 도구를 활용하여
+                                    만들어진 사이트의 접근성을 자가진단, 그동안 내가 제작한 사이트의 접근성 고도화 작업
+                                </p>
+                                <p>
+                                    9. JAVASCRIPT, JQUERY 기초 교육 및 Swiper, AOS와 같은 library 활용방법
+                                </p>
+                                <p>
+                                    10. 그동안 제작했던 사이트에 기초적인 스크립트 구현
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dimmed" style="--zindex:99;"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="portfolio">
+                <div class="tab">
+                    <div class="portfolio-nav">
+                        <h2>PORTFOLIO</h2>
+                        <ul class="portfolio-gnb">
+                            <li><button class="active">ALL</button></li>
+                            <li><button>WEB</button></li>
+                            <li><button>MOBILE</button></li>
+                            <li><button>RESPONSIVE</button></li>
+                            <li><button>PRACTICE</button></li>
+                            <li><button>MORE</button></li>
+                        </ul>
+                    </div>
+                    <div class="swiper portfolio-list all active">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide basic-practice">
+                                <div class="portfolio__content">
+                                    <img src="images/img_practice.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#컴퍼넌트 모듈화 기초</span>
+                                        <strong>기초반 HTML & CSS & JS <br>UI 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-05-08~2023-05-19 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide website">
+                                <div class="portfolio__content">
+                                    <img src="images/img_website.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#피그마 #웹 프로젝트</span>
+                                        <strong>교육기업 <br>웹 사이트 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-05-22~2023-05-26 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide kyungdong">
+                                <div class="portfolio__content">
+                                    <img src="images/img_kyungdong.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#클론 코딩 #웹 프로젝트</span>
+                                        <strong>경동 <br>웹 사이트 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-05-30~2023-06-02<br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mobile-practice">
+                                <div class="portfolio__content">
+                                    <img src="images/img_mobile-practice.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#모바일 웹 컴퍼넌트 모듈화 기초</span>
+                                        <strong>응용반 콘텐츠 <br>모바일 웹 UI 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-06-05~2023-06-09 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mobile-web">
+                                <div class="portfolio__content">
+                                    <img src="images/img_mobile.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#피그마 #모바일 프로젝트</span>
+                                        <strong>커뮤니케이션 서비스 <br> 모바일 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-06-12~2023-06-15 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide korail">
+                                <div class="portfolio__content">
+                                    <img src="images/img_korail.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#클론 코딩 #모바일 프로젝트</span>
+                                        <strong>코레일 톡 <br>모바일 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-06-19~2023-06-23 <br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide responsive-practice">
+                                <div class="portfolio__content">
+                                    <img src="images/img_responsive-practice.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#반응형 웹 컴퍼넌트 모듈화 기초</span>
+                                        <strong>응용반 콘텐츠 <br>반응형 웹 UI 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-00-00~2023-00-00 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide corporate-web">
+                                <div class="portfolio__content">
+                                    <img src="images/img_corporate.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#피그마 #반응형 웹 프로젝트</span>
+                                        <strong>기업소개 <br>반응형 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-07-03~2023-07-06 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide hanjin">
+                                <div class="portfolio__content">
+                                    <img src="images/img_hanjin.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#클론 코딩 #반응형 웹 프로젝트</span>
+                                        <strong>한진칼 <br>반응형 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-07-10~2023-07-14 <br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide web-accessibility">
+                                <div class="portfolio__content">
+                                    <img src="images/img_web-accessibility.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#한국형 웹 콘텐츠 접근성 지침 2.1 교육</span>
+                                        <strong>라우드소싱 사이트 <br>웹 접근성 자가진단</strong>
+                                        <b>
+                                            제작기간 : 2023-07-20<br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide detailed-page">
+                                <div class="portfolio__content">
+                                    <img src="images/img_detailed.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#포토샵 기초 #툴 작업</span>
+                                        <strong>상세페이지 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-04-27~2023-05-03<br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-swiper">
+                            <button class="btn-prev">PREV</button>
+                            <div class="swiper-pagination"></div>
+                            <button class="btn-next">NEXT</button>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-list web">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide website">
+                                <div class="portfolio__content">
+                                    <img src="images/img_website.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#피그마 #웹 프로젝트</span>
+                                        <strong>교육기업 <br>웹 사이트 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-05-22~2023-05-26 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide kyungdong">
+                                <div class="portfolio__content">
+                                    <img src="images/img_kyungdong.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#클론 코딩 #웹 프로젝트</span>
+                                        <strong>경동 <br>웹 사이트 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-05-30~2023-06-02<br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-swiper">
+                            <button class="btn-prev">PREV</button>
+                            <div class="swiper-pagination"></div>
+                            <button class="btn-next">NEXT</button>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-list mobile">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide mobile-web">
+                                <div class="portfolio__content">
+                                    <img src="images/img_mobile.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#피그마 #모바일 프로젝트</span>
+                                        <strong>커뮤니케이션 서비스 <br> 모바일 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-06-12~2023-06-15 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide korail">
+                                <div class="portfolio__content">
+                                    <img src="images/img_korail.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#클론 코딩 #모바일 프로젝트</span>
+                                        <strong>코레일 톡 <br>모바일 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-06-19~2023-06-23 <br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-swiper">
+                            <button class="btn-prev">PREV</button>
+                            <div class="swiper-pagination"></div>
+                            <button class="btn-next">NEXT</button>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-list responsive">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide corporate-web">
+                                <div class="portfolio__content">
+                                    <img src="images/img_corporate.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#피그마 #반응형 웹 프로젝트</span>
+                                        <strong>기업소개 <br>반응형 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-07-03~2023-07-06 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide hanjin">
+                                <div class="portfolio__content">
+                                    <img src="images/img_hanjin.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#클론 코딩 #반응형 웹 프로젝트</span>
+                                        <strong>한진칼 <br>반응형 웹 구축</strong>
+                                        <b>
+                                            제작기간 : 2023-07-10~2023-07-14 <br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-swiper">
+                            <button class="btn-prev">PREV</button>
+                            <div class="swiper-pagination"></div>
+                            <button class="btn-next">NEXT</button>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-list practice">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide basic-practice">
+                                <div class="portfolio__content">
+                                    <img src="images/img_practice.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#컴퍼넌트 모듈화 기초</span>
+                                        <strong>기초반 HTML & CSS & JS <br>UI 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-05-08~2023-05-19 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide mobile-practice">
+                                <div class="portfolio__content">
+                                    <img src="images/img_mobile-practice.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#모바일 웹 컴퍼넌트 모듈화 기초</span>
+                                        <strong>응용반 콘텐츠 <br>모바일 웹 UI 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-06-05~2023-06-09 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide responsive-practice">
+                                <div class="portfolio__content">
+                                    <img src="images/img_responsive-practice.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#반응형 웹 컴퍼넌트 모듈화 기초</span>
+                                        <strong>응용반 콘텐츠 <br>반응형 웹 UI 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-00-00~2023-00-00 <br>
+                                            참여율 : 100%
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-swiper">
+                            <button class="btn-prev">PREV</button>
+                            <div class="swiper-pagination"></div>
+                            <button class="btn-next">NEXT</button>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-list more">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide web-accessibility">
+                                <div class="portfolio__content">
+                                    <img src="images/img_web-accessibility.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#한국형 웹 콘텐츠 접근성 지침 2.1 교육</span>
+                                        <strong>라우드소싱 사이트 <br>웹 접근성 자가진단</strong>
+                                        <b>
+                                            제작기간 : 2023-07-20<br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide detailed-page">
+                                <div class="portfolio__content">
+                                    <img src="images/img_detailed.png" alt="">
+                                    <div class="portfolio__detail" style="--zindex:29;">
+                                        <span>#포토샵 기초 #툴 작업</span>
+                                        <strong>상세페이지 제작</strong>
+                                        <b>
+                                            제작기간 : 2023-04-27~2023-05-03<br>
+                                            참여율 : 100% (개인 작업)
+                                        </b>
+                                        <div class="btn-detail">
+                                            <button class="btn-push">detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-swiper">
+                            <button class="btn-prev">PREV</button>
+                            <div class="swiper-pagination"></div>
+                            <button class="btn-next">NEXT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-detail">
+                    <div class="popup basic-practice" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>HTML & CSS & JS practice</h3>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li><a href="002%20table/table.html" target="basic-portfolio">표 제작</a></li>
+                                            <li><a href="003%20list/list.html" target="basic-portfolio">리스트 제작</a></li>
+                                            <li><a href="004%20form/form.html" target="basic-portfolio">폼 제작</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe ">
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="basic-portfolio" src="002%20table/table.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup website" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>Website</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>웹 디자인 시안을 웹 표준에 근거하여 개발하고 사용 언어의 숙련도 향상시킬 수 있었음</span>
+                                            </li>
+                                            <li>
+                                                <span>class를 사용하여 속성을 부여했을 때 스타일을 일관성 있게 적용하여 코드의 재사용성이 높아짐</span>
+                                            </li>
+                                            <li>
+                                                <span>교육 과정 중 처음으로 진행한 프로젝트여서 많은 어려움이 있었지만 웹 퍼블리싱의 기본적인 개념과 원리를 학습하고 스킬을 습득할 수 있었음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li>
+                                                <a href="006%20website/filelist.html" target="website-portfolio">파일리스트</a>
+                                            </li>
+                                            <li>
+                                                <a href="006%20website/index.html" target="website-portfolio">메인</a>
+                                            </li>
+                                            <li><a href="006%20website/learning1-1.html"
+                                                    target="website-portfolio">러닝라운지
+                                                    리스트</a></li>
+                                            <li><a href="006%20website/learning1-2.html"
+                                                    target="website-portfolio">러닝라운지
+                                                    상세보기</a></li>
+                                            <li><a href="006%20website/learning1-3.html"
+                                                    target="website-portfolio">러닝라운지
+                                                    쓰기</a></li>
+                                            <li><a href="006%20website/learning1-4.html"
+                                                    target="website-portfolio">러닝라운지
+                                                    팝업</a></li>
+                                            <li><a href="006%20website/learning2-1.html" target="website-portfolio">커뮤니티
+                                                    공지사항</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe website">
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="website-portfolio" src="006%20website/filelist.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup kyungdong" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>KYUNGDONG</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>처음으로 진행한 웹 사이트 클론코딩 프로젝트로 전체 화면을 캡쳐한 후 디자인 속성을 포토샵으로 분석하고 코딩으로 구현했음</span>
+                                            </li>
+                                            <li>
+                                                <span>CSS 속성을 잘 알지 못하고 헷갈려서 어려움이 있었는데 검색을 해보고 실험해보는 과정에서 배움을 얻고 틀린 값이 나오더라도 결과가 나온다는 것에 재미도 느낄 수 있었음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li>
+                                                <a href="007%20kyungdong/filelist.html"
+                                                    target="kyungdong-portfolio">파일리스트</a>
+                                            </li>
+                                            <li><a href="007%20kyungdong/index.html" target="kyungdong-portfolio">메인</a>
+                                            </li>
+                                            <li><a href="007%20kyungdong/megamenu.html"
+                                                    target="kyungdong-portfolio">메뉴</a>
+                                            </li>
+                                            <li><a href="007%20kyungdong/kyungdong1-1.html"
+                                                    target="kyungdong-portfolio">CEO
+                                                    인사말</a></li>
+                                            <li><a href="007%20kyungdong/kyungdong2-1.html"
+                                                    target="kyungdong-portfolio">해외자원개발</a></li>
+                                            <li><a href="007%20kyungdong/kyungdong2-2.html"
+                                                    target="kyungdong-portfolio">엔지니어링사업</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe kyungdong">
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="kyungdong-portfolio" src="007%20kyungdong/filelist.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup responsive-practice" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>RESPONSIVE WEB</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>display: none;을 사용하여 기존의 형태를 무너뜨리거나 안보이게 할 수 있었음</span>
+                                            </li>
+                                            <li>
+                                                <span>order:;을 사용하여 텍스트 또는 버튼 등의 순서를 바꿀 수 있었음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li><a href="011%20responsiveweb/index.html"
+                                                    target="responsive-portfolio">index1</a>
+                                            </li>
+                                            <li><a href="011%20responsiveweb/index_2.html"
+                                                    target="responsive-portfolio">index2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe responsive">
+                                <div class="btn-category responsive">
+                                    <button class="btn-web"></button>
+                                    <button class="btn-tablet"></button>
+                                </div>
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="responsive-portfolio" src="011%20responsiveweb/index.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup corporate-web" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>CORPORATE WEB</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>교육 과정 중 처음으로 진행한 반응형 프로젝트로 다양한 스크린 크기에 대응하는 레이아웃과 디자인을 구현하는 연습을 했음</span>
+                                            </li>
+                                            <li>
+                                                <span></span>
+                                            </li>
+                                            <li>
+                                                <span>크기변화에 따라 스타일을 조정하고 요소들의 배치 최적화할 수 있도록 했음</span>
+                                            </li>
+                                            <li>
+                                                <span>반응형 디자인 구현하며 디바이스 간의 차이점을 확인하고 이해하며 웹사이트가 원활하게 동작할 수 있도록 하는 능력을 기르기 위한 연습을 했음</span>
+                                            </li>
+                                            <li>
+                                                <span>원래의 형태를 무너뜨리고 삭제시키고 새로 만들어가는 과정에 재미를 느낄 수 있었음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li>
+                                                <a href="012%20기업웹사이트/filelist.html" target="corporate-portfolio">파일리스트</a>
+                                            </li>
+                                            <li><a href="012%20기업웹사이트/style.html"
+                                                    target="corporate-portfolio">스타일가이드</a>
+                                            </li>
+                                            <li><a href="012%20기업웹사이트/index.html" target="corporate-portfolio">메인</a>
+                                            </li>
+                                            <li><a href="012%20기업웹사이트/00_login.html"
+                                                    target="corporate-portfolio">로그인</a>
+                                            </li>
+                                            <li><a href="012%20기업웹사이트/department01_01.html"
+                                                    target="corporate-portfolio">소년소녀부_선생님과의 역사</a></li>
+                                            <li><a href="012%20기업웹사이트/department01_02.html"
+                                                    target="corporate-portfolio">소년소녀부_활동방향</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe corporate">
+                                <div class="btn-category corporate">
+                                    <button class="btn-web"></button>
+                                    <button class="btn-mobile"></button>
+                                </div>
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="corporate-portfolio" src="012%20기업웹사이트/filelist.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup hanjin" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>HANJIN KAL</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>웹 사이트 클론코딩 프로젝트 때 했던 것처럼 전체 화면을 캡쳐하는데 반응형이기 때문에 정해진 사이즈에 맞춘 3단 반응형으로 화면을 캡쳐해준 후 디자인 속성을 포토샵으로 분석하고 코딩으로 구현했음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li>
+                                                <a href="013%20hanjin/filelist.html" target="hanjin-portfolio">파일리스트</a>
+                                            </li>
+                                            <li><a href="013%20hanjin/style.html" target="hanjin-portfolio">스타일가이드</a>
+                                            </li>
+                                            <li><a href="013%20hanjin/index.html" target="hanjin-portfolio">메인</a></li>
+                                            <li><a href="013%20hanjin/greetings.html" target="hanjin-portfolio">인사말씀</a>
+                                            </li>
+                                            <li><a href="013%20hanjin/hangin-network.html"
+                                                    target="hanjin-portfolio">한진네트워크</a></li>
+                                            <li><a href="013%20hanjin/hangin-network_company.html"
+                                                    target="hanjin-portfolio">지주회사</a></li>
+                                            <li><a href="013%20hanjin/hangin-network_01.html"
+                                                    target="hanjin-portfolio">육운부문</a></li>
+                                            <li><a href="013%20hanjin/hangin-network_02.html"
+                                                    target="hanjin-portfolio">와이키키
+                                                    리조트 호텔</a></li>
+                                            <li><a href="013%20hanjin/hangin-esg_01.html"
+                                                    target="hanjin-portfolio">윤리경영</a>
+                                            </li>
+                                            <li><a href="013%20hanjin/hangin-esg_02.html"
+                                                    target="hanjin-portfolio">인재경영</a>
+                                            </li>
+                                            <li><a href="013%20hanjin/activity-news.html"
+                                                    target="hanjin-portfolio">활동소식</a>
+                                            </li>
+                                            <li><a href="013%20hanjin/group-news.html"
+                                                    target="hanjin-portfolio">그룹사소식</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe hanjin">
+                                <div class="btn-category hanjin">
+                                    <button class="btn-web"> </button>
+                                    <button class="btn-laptop"></button>
+                                    <button class="btn-tablet"></button>
+                                </div>
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="hanjin-portfolio" src="013%20hanjin/filelist.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup mobile-practice" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>MOBILE</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>모바일 웹을 구축할 때 고정된 레이아웃 구조를 사용하는 대신 항상 변형 가능한 상태로 제공해줌</span>
+                                            </li>
+                                            <li>
+                                                <span>px는 고정된 절대값의 단위로 환경에 따라 변하는 단위인 rem을 사용해줌</span>
+                                            </li>
+                                            <li>
+                                                <span>rem의 기준은 62.5%로 html 태그에서 지정된 폰트 사이즈 값을 기준으로 변환 가능함</span>
+                                            </li>
+                                            <li>
+                                                <span>flex와 다르게 두 방향(가로,세로)으로 레이아웃을 나눌 수 있는 grid를 처음으로 배우고 활용해볼 수 있었던 프로젝트였음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe mobile-practice">
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="mobilePractice-portfolio" src="008%20mobile/index.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup mobile-web" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>MOBILE WEB</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>
+                                                    교육 과정 중 처음으로 진행한 모바일 프로젝트로 모바일 화면 해상도를 고려하여 rem단위를 사용해주었음
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>스타일 가이드의 도입으로 작업의 효율성이 향상시킬 수 있었고 CSS속성과 스타일을 일관되게 적용하고 재활용이 가능해져서 작업의 속도를 줄일 수 있었음</span>
+                                            </li>
+                                            <li>
+                                                <span>스타일 가이드를 활용하여 프로젝트를 시작할 떄 전체 디자인을 미리 분석하여 시각적 이미지 및 표현을 정의하고 디자인 및 개발 프로세스를 계획하였음</span>
+                                            </li>
+                                            <li>
+                                                <span>UI의 가장 작은 원자 단위부터 시작해서 분자, 유기체로 점점 확장하며 디자인하는 아토믹 디자인을 배우고 활용해볼 수 있었음</span>
+                                            </li>
+                                            <li>
+                                                <span>작업 중에 position이나 grid 등을 사용하는 것에 여전히 어려움을 느껴 연습을 더 해야겠다고 생각했음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li>
+                                                <a href="009%20mobileweb/filelist.html"
+                                                    target="mobile-portfolio">파일리스트</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/style.html"
+                                                    target="mobile-portfolio">스타일가이드</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/index.html" target="mobile-portfolio">메인</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/Megamenu.html"
+                                                    target="mobile-portfolio">메가메뉴</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MAO-01.html"
+                                                    target="mobile-portfolio">온라인과정보기</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MAO-05.html" target="mobile-portfolio">온라인과정
+                                                    상세보기</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MMA-06.html"
+                                                    target="mobile-portfolio">기본게시판</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MMA-41.html" target="mobile-portfolio">기본게시판 >
+                                                    cop_01</a></li>
+                                            <li><a href="009%20mobileweb/MMA-44.html" target="mobile-portfolio">기본게시판 >
+                                                    cop_02</a></li>
+                                            <li><a href="009%20mobileweb/MAJ-03.html" target="mobile-portfolio">상담신청</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MAJ-08.html" target="mobile-portfolio">회원가입</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MMA-09.html" target="mobile-portfolio">글쓰기</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MAT-08.html" target="mobile-portfolio">마이크로닝
+                                                    등록</a>
+                                            </li>
+                                            <li><a href="009%20mobileweb/MMA-10.html" target="mobile-portfolio">기본게시판 >
+                                                    내용</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe mobile-web">
+                                <div class="btn-category mobile-web">
+                                    <button class="btn-web"></button>
+                                    <button class="btn-mobile"></button>
+                                </div>
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="mobile-portfolio" src="009%20mobileweb/filelist.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup korail" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>KORAIL TALK</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>웹 사이트 클론코딩 프로젝트때 했던 것처럼 전체 화면을 캡쳐한 후 디자인 속성을 포토샵으로 분석하고 코딩으로 구현했음</span>
+                                            </li>
+                                            <li>
+                                                <span>BEM 기법 사용하여 class명 짓기 사용하기 시작함</span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    class명은 팀원과 협업에 매우 중요한 요소여서 신경써줘야했는데 class명을 판단하는 것에 어려움을 느꼈지만 배우고 연습하는 것에 집중하였음
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>button과 a링크의 차이점에 대해 다시 한번 생각해보고 신경써서 코딩을 해야했음</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="file">
+                                        <button class="btn-toggle">Filelist</button>
+                                        <ul>
+                                            <li>
+                                                <a href="010%20Korailtalk/filelist.html"
+                                                    target="korail-portfolio">파일리스트</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/style.html"
+                                                    target="korail-portfolio">스타일가이드</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/index.html" target="korail-portfolio">메인</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/Megamenu.html"
+                                                    target="korail-portfolio">메가메뉴</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/notification.html"
+                                                    target="korail-portfolio">공지</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/setting.html" target="korail-portfolio">설정</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/discount-voucher.html"
+                                                    target="korail-portfolio">할인정기권</a></li>
+                                            <li><a href="010%20Korailtalk/tour-product.html"
+                                                    target="korail-portfolio">관광상품</a></li>
+                                            <li><a href="010%20Korailtalk/travel-product.html"
+                                                    target="korail-portfolio">지역별
+                                                    여행상품</a></li>
+                                            <li><a href="010%20Korailtalk/product-train.html"
+                                                    target="korail-portfolio">동해산타열차</a></li>
+                                            <li><a href="010%20Korailtalk/train-reservation.html"
+                                                    target="korail-portfolio">동해산타열차 예약</a></li>
+                                            <li><a href="010%20Korailtalk/train-check.html"
+                                                    target="korail-portfolio">열차조회</a>
+                                            </li>
+                                            <li><a href="010%20Korailtalk/ticket-information.html"
+                                                    target="korail-portfolio">승차권 정보 확인</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe korail">
+                                <div class="btn-category korail">
+                                    <button class="btn-web"></button>
+                                    <button class="btn-mobile"></button>
+                                </div>
+                                <div class="device">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe name="korail-portfolio" src="010%20Korailtalk/filelist.html"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup web-accessibility" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <div class="portfolio-content__left">
+                                <ul class="portfolio-detail__gnb">
+                                    <li>
+                                        <h3>WEB ACCESSIBILITY</h3>
+                                    </li>
+                                    <li class="review">
+                                        <button class="btn-toggle">Project-Review</button>
+                                        <ul>
+                                            <li>
+                                                <span>
+                                                    지능정보화기본법에 따라 장애인이나 고령자와 같은 사람들이 비장애인, 젊은이와 동등하게 웹에 접근하고 이용할 수 있도록 여러가지
+                                                    지침들을 준수하여 웹 콘텐츠를 제작해야한다는 사실을 배웠음
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    OpenWAX, DevTools, ARC Toolkit, CCA 의 툴을 활용하여 웹 접근성 자가진단을 함
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="portfolio__iframe">
+                                <div class="device web-accessibility">
+                                    <div class="device-header">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <iframe src="라우드소싱웹접근성자가진단.pdf"></iframe>
+                                    <div class="device-footer">
+                                        <span class="button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup detailed-page" style="--zindex:100;">
+                        <div class="portfolio-content">
+                            <button class="btn-close"></button>
+                            <ul class="detailed-page-list">
+                                <li>
+                                    <a href="images/img_sofa-pad.jpg" target="_blank">
+                                        <div class="detailed-page-list_dimmed"></div>
+                                        <div class="detailed-page-list__txt">
+                                            <b>01</b>
+                                            <h3>SOFA PAD <br> DETAILED PAGE</h3>
+                                        </div>
+                                        <div class="detailed-page-list__thumb"><img src="images/img_detailed-thumb1.jpg"
+                                                alt=""></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/img_dip-tyque.jpg" target="_blank">
+                                        <div class="detailed-page-list_dimmed"></div>
+                                        <div class="detailed-page-list__txt">
+                                            <b>02</b>
+                                            <h3>DIPTYQUE <br> DETAILED PAGE</h3>
+                                        </div>
+                                        <div class="detailed-page-list__thumb"><img src="images/img_detailed-thumb2.PNG"
+                                                alt=""></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="images/img_elle.jpg" target="_blank">
+                                        <div class="detailed-page-list_dimmed"></div>
+                                        <div class="detailed-page-list__txt">
+                                            <b>03</b>
+                                            <h3>ELLE <br> DETAILED PAGE</h3>
+                                        </div>
+                                        <div class="detailed-page-list__thumb"><img src="images/img_detailed-thumb3.PNG"
+                                                alt=""></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="contact">
+                <h2>CONTACT ME</h2>
+                <div class="contact__content">
+                    <div class="contact__content__form">
+                        <p>
+                            포트폴리오를 봐주셔서 감사합니다. <br>
+                            제 작업이 마음에 드셨거나, 문의사항이 있으시다면 언제든 편하게 연락주시기 바랍니다.
+                        </p>
+                        <form action="https://formspree.io/f/mdorgpkj" method="POST">
+                            <ul class="contact-form">
+                                <li>
+                                    <label for="name">NAME</label>
+                                    <input type="text" id="name" name="name" placeholder="이름" required>
+                                </li>
+                                <li>
+                                    <label for="email">E-MAIL</label>
+                                    <input type="email" id="email" name="email" placeholder="이메일" required>
+                                </li>
+                                <li>
+                                    <label for="message">MESSAGE</label>
+                                    <textarea name="message" id="message" placeholder="메세지" required></textarea>
+                                </li>
+                            </ul>
+                            <div class="btn-submit"><button type="submit" class="btn-push">Send Email</button></div>
+                        </form>
+                    </div>
+                    <div class="contact__content__informaion">
+                        <ul class="contact-list">
+                            <li class="name">
+                                <b>Name</b>
+                                <p>김가연</p>
+                            </li>
+                            <li class="tel">
+                                <b>Phone</b>
+                                <p>010.8974.9154</p>
+                            </li>
+                            <li class="email">
+                                <b>Email</b>
+                                <p>endeer01@naver.com</p>
+                            </li>
+                            <li class="address">
+                                <b>Location</b>
+                                <p>경기도 고양시 일산서구 일산동</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

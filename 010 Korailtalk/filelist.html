@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>코레일톡 파일리스트</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>코레일톡 퍼블리싱 현황</h1>
+            <div class="top clear">
+                <ul>
+                    <li>구분 : </li>
+                    <li><span class="state r"></span></li>
+                    <li>반응형</li>
+                    <li><span class="state w"></span></li>
+                    <li>WEB</li>
+                    <li><span class="state m"></span></li>
+                    <li>모바일&nbsp;&nbsp;&nbsp;</li>
+                    <li>상태 : </li>
+                    <li><span class="state end"></span></li>
+                    <li>완료</li>
+                    <li><span class="state ing"></span></li>
+                    <li>진행중</li>
+                    <li><span class="state modify"></span></li>
+                    <li>수정</li>
+                </ul>
+                <div class="status"><span id="progress"><em></em></span> <span id="total"></span></div>
+            </div>
+        </header>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>페이지</th>
+                        <th>파일명</th>
+                        <th>시작일</th>
+                        <th>웹표준</th>
+                        <th>호환성</th>
+                        <th>웹접근성</th>
+                        <th>구분</th>
+                        <th>상태</th>
+                        <th>참고사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="list">
+                        <td>스타일가이드(아토믹디자인)</td>
+                        <td><a href="style.html" target="_blank">style.html</a></td>
+                        <td>2023.06.19</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">- 클래스명 헷갈리고 컴포넌트 빼야될것 아닌것 구분하기 어려웠음 <br>
+                                -> btn-type1 : ul li 구조에 button이 아니라 a로 들어가야됐고 전체가 클릭돼야했음 a는 inline 요소이기 때문에 width,height/padding상하값 적용 불가능함 > 적용하기 위해 display inline-block 넣어주고 전체 클릭을 위해 width 100과 padding상하값을 넣어줌
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>MAIN</td>
+                        <td><a href="index.html" target="_blank">index.html</a></td>
+                        <td>2023.06.21</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">- 동해산타열차 페이지랑 겹쳐서 제대로 스타일가이드 뺴놨으면 편했을 것 같음<br>
+                                - 버튼에 블럭 못들어감 <br>
+                                - 맨 첫번째 li 수정 (한묶음으로)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>Megamenu</td>
+                        <td><a href="Megamenu.html" target="_blank">Megamenu.html</a></td>
+                        <td>2023.06.20</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category" colspan="6">서브페이지</th>
+                    </tr>
+                    <tr class="list">
+                        <td>공지</td>
+                        <td><a href="notification.html" target="_blank">notification.html</a></td>
+                        <td>2023.06.22</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">- 리스트에 before으로 점표현을 했는데 문장이 길어지니까 잘리고 ( -> flex를 grid로 바꿔서 크기를 줌) 글씨의 가운데로 가는 것 수정
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>설정</td>
+                        <td><a href="setting.html" target="_blank">setting.html</a></td>
+                        <td>2023.06.20</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">- 스타일가이드에 미리 디자인해놓고 제작하니까 엄청 편리하고 빠름</p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>할인ㆍ정기권</td>
+                        <td><a href="discount-voucher.html" target="_blank">discount-voucher.html</a></td>
+                        <td>2023.06.21</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">- N카드쪽에 있는 a부분이 전체가 눌려야되는데 맨처음에 코딩했을때 전체가 눌리는게 아니라서 다시/ 포지션으로 사이에 있는 선 만들때 헷갈렸음 <br>
+                            - 제목이면 h2 코딩해주기
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>관광상품</td>
+                        <td><a href="tour-product.html" target="_blank">tour-product.html</a></td>
+                        <td>2023.06.21</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">- 페이지 제작하다 보니까 스타일가이드에 컴포넌트 빼놓지 않은것들이 많았음 <br>
+                                - 다음버튼 리스트 밖에 : 피드백 수정완료 <br>
+                                - 아이콘 배경 : 피드백 수정완료
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>지역별 여행 상품</td>
+                        <td><a href="travel-product.html" target="_blank">travel-product.html</a></td>
+                        <td>2023.06.21</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - swiper를 사용하여 slide가 되게 만들어줌 <br>
+                                - 자바스크립트에서 if-else list.append('')를 활용하여 더보기 버튼을 누르면 상품 목록이 더 보일 수 있게 만들어줌
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>동해산타열차</td>
+                        <td><a href="product-train.html" target="_blank">product-train.html</a></td>
+                        <td>2023.06.22</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - 좌석 속성 부분에 input id ,label for 신경써서 코딩해줌 <br>
+                                - 좌석 속성에 div 한 부분에서 하나만 체크되어야하기 때문에 name 도 신경써서 코딩해줌
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>동해산타열차 예약</td>
+                        <td><a href="train-reservation.html" target="_blank">train-reservation.html</a></td>
+                        <td>2023.06.23</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - 노선정보, 승차권정보 둘 다 자바스크립트 listToggle을 활용하여 접힘 닫힘이 될 수 있게 해주고 arrow 아이콘이 클릭함에 따라 rotate될 수 있도록  $(this).toggleClass('active'); 를 사용해줌
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>열차조회</td>
+                        <td><a href="train-check.html" target="_blank">train-check.html</a></td>
+                        <td>2023.06.22</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em"></p>
+                        </td>
+                    </tr>
+                    <tr class="list">
+                        <td>승차권 정보 확인</td>
+                        <td><a href="ticket-information.html" target="_blank">ticket-information.html</a></td>
+                        <td>2023.06.23</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td><span class="state m"></span></td>
+                        <td><span class="state end"></span></td>
+                        <td>
+                            <p class="t_em">
+                                - 스타일가이드에 빼놓은 텍스트 타입을 활용하여 같은 타입의 텍스트에 적용해줄 수 있었음 -> class명의 재사용
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <style type="text/css">
+        * { margin: 0;padding: 0;box-sizing: border-box;list-style: none; font-style: normal;}
+        a {color: #666; text-decoration: underline;}
+        img {border: 0;}
+        label,input {vertical-align: middle;}
+        input {outline: none}
+        table {width: 100%; border-collapse: collapse;border-spacing: 0;}
+        caption {width: 100%;height: 30px;}
+        body {padding: 0 50px;font-size: 12px;font-family: 'Noto Sans KR', sans-serif;}
+        p {line-height: 1.5;}
+        .clear:after {content: '';display: block;clear: both;}
+        .wrapper {width: 100%;margin: auto;}
+        table {border-bottom: 1px solid #f4f4f4;margin-bottom: 50px;border-top: 3px solid #d2d6de;}
+        h1 {font-size: 1.5rem;font-weight: normal;margin: 40px 0 20px;}
+        h2 {font-size: 1rem;font-weight: normal;margin-bottom: 20px;}
+        hr {margin-bottom: 50px;}
+        table tr th {font-weight: normal;border-right: 1px solid #f4f4f4;border-bottom: 1px solid #f4f4f4;background-color: #fff;}
+        table tr td:first-child {width: 20%;padding-left: 15px;text-align: left; color: #000;}
+        table tr td:nth-of-type(2) {width: 17%;}
+        table tr td:nth-of-type(3) {width: 10%;}
+        table tr td:nth-of-type(4) {width: 10%;}
+        table tr td:nth-of-type(5) {width: 7%;}
+        table tr td:nth-of-type(6) {width: 7%;}
+        table tr td:nth-of-type(7) {width: 7%;}
+        table tr td:nth-of-type(8) {width: 5%;}
+        table tr td:nth-of-type(9) {width: 5%;}
+        table tr td:last-child {width: 40%;text-align: left;}
+        table tr th,
+        table tr td {padding: 10px;font-size: 13px;text-align: center;}
+        table tr th:last-child {border-right: none;}
+        table tr td {padding: 5px;font-size: 12px;border-bottom: 1px solid #f4f4f4;border-right: 1px solid #f4f4f4;color: #666;}
+        table tr td:last-child {border-right: none;}
+        table tr td a {display: block;width: 100%;height: 100%;}
+        table tr td.category {position: relative;padding: 10px;text-align: left;font-size: 15px;background-color: #f9f9f9;color: #1d1e25;}
+        table tr td.category:before {position: absolute;top: 0;left: 0;display: inline-block;width: 3px;height: 100%;background-color: #d2d6de;content: '';}
+        table tr:last-child td {border-bottom: none;}
+        .top ul {float: left;margin-bottom: 20px;}
+        .top ul li {float: left;margin-right: 10px;line-height: 25px;}
+        .top ul li:first-child,.top ul li:nth-of-type(8) {font-size: 0.8rem; font-weight: 600;}
+        .top ul li:nth-of-type(2) span,
+        .top ul li:nth-of-type(4),
+        .top ul li:nth-of-type(6),
+        .top ul li:nth-of-type(9),
+        .top ul li:nth-of-type(11) {text-align: center;border-radius: 50%;}
+        .header .list {padding: 0 0 50px 0;line-height: 30px;}
+        .state {color: #fff;display: inline-block;width: 25px;height: 25px;border-radius: 50%;line-height: 25px;}
+        .state.r {background-color: #a55eea;}
+        .state.r:before {content: 'R';}
+        .state.w {background-color: #20bf6b;}
+        .state.w:before {content: 'W';}
+        .state.m {background-color: #f7b731;}
+        .state.m:before {content: 'M';}
+        .state.end {background-color: #eb3b5a;font-weight: bold;}
+        .state.end:before {content: '완';}
+        .state.ing {background-color: #2d98da;font-weight: bold;}
+        .state.ing:before {content: '진';}
+        .state.modify {padding: 0 5px;border-radius: 30px;font-weight: bold;background-color: #39c4cd;text-align: center;}
+        .state.modify:before {content: '수정';}
+        .t_em {color: #e10e0e;}
+        .t_re {color: #046ac9;}
+        .t_pu {color: #17ae03;}
+        .t_lg {color: #c904b4;}
+        .status {float: right;width: 300px}
+        .status span {font-size: 13px;color: #000;}
+        .status #progress {overflow: hidden;float: left;display: block;width: 100%;height: 20px;margin-bottom: 5px;background: #eee;border-radius: 30px;}
+        .status #progress em {display: block;height: 100%;background: #eb3b5a;border-radius: 30px;}
+        .status #finish {color: #1352a2}
+        .status #total {display: block;}
+        .status .percent {display: block;float: right;}
+        .list.none a {text-decoration: line-through;color: #aeaeae;cursor: not-allowed;}
+        
+        *::-webkit-scrollbar {
+            width: 5px;
+            background-color: transparent;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            width: 0.5rem;
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 0.5rem;
+        }
+        
+        *::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        
+            </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script>
+            $(function() {
+                var $content = $(".content table"),
+                    total = $content.find(".list").length,
+                    finish = $content.find(".list .end").length,
+                    progress = Math.floor((finish) / total * 100);
+    
+                $("#progress em").css("width", progress + "%");
+                $("#total").html(finish + " / " + total + "page" + "<span class='percent'>진행률 " + progress + "%</span>");
+            });
+        </script>
+    </body>
+    
+    </html>
+    

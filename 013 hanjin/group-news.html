@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹사소식 | 한진칼</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header class="header">
+        <div class="header__wrap">
+            <h1 class="header__logo"><a href="index.html"><span class="hide">hanjin kal</span></a></h1>
+            <div class="header__btn">
+                <button class="btn-all-menu">전체메뉴</button>
+                <button class="btn-language">English</button>
+            </div>
+            <button class="header__responsive__menu"><span class="hide">메뉴</span></button>
+            <h2 class="hide">메뉴</h2>
+            <nav>
+                <ul class="header__gnb">
+                    <li>
+                        <a href="javascript:void(0)">한진그룹</a>
+                        <ul class="header__gnb__list" style="display: none;">
+                            <li>
+                                <a href="greetings.html">인사말씀</a>
+                                <ul>
+                                    <li><a href="greetings.html">인사말씀</a></li>
+                                    <li><a href="javascript:void(0)">경영철학</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">그룹역사</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">한진70년</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">창업회장관</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">정석 조중훈</a></li>
+                                    <li><a href="javascript:void(0)">사업은 예술이다</a></li>
+                                    <li><a href="javascript:void(0)">전기 다운로드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">한진의미래</a>
+                            </li>
+                            <li>
+                                <a href="hangin-network.html">한진네트워크</a>
+                                <ul>
+                                    <li><a href="hangin-network_company.html">지주회사</a></li>
+                                    <li><a href="javascript:void(0)">항공부문</a></li>
+                                    <li><a href="hangin-network_01.html">육운부문</a></li>
+                                    <li><a href="javascript:void(0)">관광/호텔/부동산부문</a></li>
+                                    <li><a href="javascript:void(0)">정보서비스부문</a></li>
+                                    <li><a href="javascript:void(0)">비영리법인부문</a></li>
+                                    <li><a href="hangin-network_02.html">해외법인부문</a></li>
+                                    <li><a href="javascript:void(0)">글로벌네트워크</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">한진칼</a>
+                        <ul class="header__gnb__list header-gnb2" style="display: none;">
+                            <li>
+                                <a href="javascript:void(0)">회사 소개</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">기업개요</a></li>
+                                    <li><a href="javascript:void(0)">연혁</a></li>
+                                    <li><a href="javascript:void(0)">CI</a></li>
+                                    <li><a href="javascript:void(0)">찾아오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">투자자정보</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">재무정보</a></li>
+                                    <li><a href="javascript:void(0)">주식정보</a></li>
+                                    <li><a href="javascript:void(0)">IR자료실</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">ESG경영</a>
+                        <ul class="header__gnb__list header-gnb3" style="display: none;">
+                            <li>
+                                <a href="javascript:void(0)">지속가능경영</a>
+                                <ul>
+                                    <li><a href="hangin-esg_01.html">윤리경영</a></li>
+                                    <li><a href="hangin-network_02.html">인재경영</a></li>
+                                    <li><a href="javascript:void(0)">안전경영</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">기업지배구조</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">기업지배구조헌장</a></li>
+                                    <li><a href="javascript:void(0)">이사회</a></li>
+                                    <li><a href="javascript:void(0)">위원회</a></li>
+                                    <li><a href="javascript:void(0)">정관</a></li>
+                                    <li><a href="javascript:void(0)">기타 관련 정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">사회공헌</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">나눔경영</a></li>
+                                    <li><a href="javascript:void(0)">상생경영</a></li>
+                                    <li><a href="javascript:void(0)">육영사업</a></li>
+                                    <li><a href="javascript:void(0)">의료복지</a></li>
+                                    <li><a href="activity-news.html">활동소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">환경경영</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">기후변화 대응</a></li>
+                                    <li><a href="javascript:void(0)">친환경 경영</a></li>
+                                    <li><a href="javascript:void(0)">활동소식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">한진인</a>
+                        <ul class="header__gnb__list header-gnb4" style="display: none;">
+                            <li><a href="javascript:void(0)">한진의 인재상</a></li>
+                            <li><a href="javascript:void(0)">인재육성</a></li>
+                            <li><a href="javascript:void(0)">인사제도</a></li>
+                            <li><a href="javascript:void(0)">복리후생</a></li>
+                            <li><a href="javascript:void(0)">채용정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">홍보센터</a>
+                        <ul class="header__gnb__list header-gnb5" style="display: none;">
+                            <li>
+                                <a href="group-news.html">그룹사소식</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">광고모음</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)">광고영상</a></li>
+                                    <li><a href="javascript:void(0)">지면광고</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">정기간행물</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">한진그룹 SNS</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header__box"></div>
+
+    <main id="content">
+        <div class="visual-subpage__wrap">
+            <section class="visual-subpage">
+                <div class="visual-subpage__left  visual-btn-none">
+                    <button class="btn-visual-prev"></button>
+                </div>
+                <h2 class="visual-subpage__title">그룹사소식</h2>
+                <div class="visual-subpage__right">
+                    <button class="btn-visual-next">광고모음</button>
+                </div>
+            </section>
+            <section class="list-type3__wrap">
+                <h2 class="hide">탭메뉴</h2>
+                <div class="list-type3__wrap">
+                    <div class="list-type3__box"></div>
+                    <ul class="list-type3">
+                        <li><a href="index.html" class="list-type3__home"><span class="hide">홈</span></a></li>
+                        <li>
+                            <button class="btn-tab active-tab">홍보센터</button>
+                            <ul class="list-type3__list">
+                                <li class="active"><a href="group-news.html">그룹사소식</a></li>
+                                <li><a href="javascript:void(0)">광고모음</a></li>
+                                <li><a href="javascript:void(0)">정기간행물</a></li>
+                                <li><a href="javascript:void(0)">한진그룹SNS</a></li>
+                            </ul>
+                        </li>
+                        <li><button class="btn-tab">그룹사소식</button></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="list-type3-2__wrap">
+            <h2 class="hide">탭메뉴-모바일</h2>
+            <ul class="list-type3-2">
+                <li class="list-type3-2__home"><a href="index.html"><span class="hide">홈 </span></a></li>
+                <li>
+                    <button>그룹사소식</button>
+                    <ul class="tab-menu">
+                        <li><a href="group-news.html" class="active">그룹사소식</a></li>
+                        <li><a href="javascript:void(0)">광고모음</a></li>
+                        <li><a href="javascript:void(0)">정기간행물</a></li>
+                        <li><a href="javascript:void(0)">한진그룹 SNS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <div class="group-news__content">
+            <section class="select-box">
+                <h2 class="hide">선택 및 검색어 입력</h2>
+                <select title="그룹사 선택">
+                    <option>그룹사 선택</option>
+                    <option>대한항공</option>
+                    <option>(주)한진</option>
+                    <option>진에어</option>
+                    <option>한국공항</option>
+                    <option>한진공항</option>
+                    <option>에어코리아</option>
+                    <option>한진관광</option>
+                    <option>칼호텔네트워크</option>
+                    <option>항공종합서비스</option>
+                    <option>정석기업</option>
+                    <option>한진정보통신</option>
+                    <option>토파스여행정보</option>
+                    <option>싸이버스카이</option>
+                    <option>한국글로발로지스틱스시스템</option>
+                    <option>한국항공대학교</option>
+                    <option>인하대학교</option>
+                    <option>인하공전</option>
+                    <option>인하대병원</option>
+                    <option>일우재단</option>
+                    <option>한진칼</option>
+                    <option>Waikiki Resort Hotel</option>
+                    <option>한진그룹</option>
+                </select>
+                <select title="소식구분 선택">
+                    <option>소식구분 선택</option>
+                    <option>이벤트</option>
+                    <option>보도자료</option>
+                </select>
+                <select title="전체">
+                    <option>전체</option>
+                    <option>제목</option>
+                    <option>내용</option>
+                </select>
+                <div class="select-box__search">
+                    <div>
+                        <input type="text" placeholder="검색어를 입력하세요" title="검색어 입력">
+                    </div>
+                    <div class="select-box__btn">
+                        <button class="btn-search">검색</button>
+                        <button class="btn-reset"><span class="hide">초기화</span></button>
+                    </div>
+                </div>
+            </section>
+            <section class="group-news__list">
+                <h2 class="hide">그룹사소식 정보</h2>
+                <ul class="list-type4">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news1" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    ㈜한진, 택배 종사자 및 협력사와 ‘한팀(HAN Team)’으로...
+                                </strong>
+                                <p class="list-type4__txt">
+                                    ㈜한진, 택배 종사자 및 협력사와 ‘한팀(HAN Team)’으로서비스 품질 개선 및 고객 가치 극대화⊙ 6월 22일 「HAN Team」 캠페인 온라인
+                                    선포식에 이어, 29일에는 한진택배 동서울 허브터미널에서 「서비스 품질 경영」 공동 선언 선포식 진행⊙전국 약 830개 한진택배 대리점과 약
+                                    10,000명의 한진택배기사를 대표해전국한진택배대리점협회 오문우 회장, 잠실동 소재 대리점 소속 택배기사 등 참석⊙택배 종사자 및 협력사와 함께 고객사
+                                    대상으로 익일배송 보장률, 고객불만 당일처리율 등을 높이...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-30</li>
+                                    <li>보도자료</li>
+                                    <li>(주) 한진</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news2" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    대한항공, GS칼텍스와 손잡고 바이오항공유로 하늘 난다 … 국내...
+                                </strong>
+                                <p class="list-type4__txt">
+                                    대한항공, GS칼텍스와 손잡고 바이오항공유로 하늘 난다…국내 최초 실증 연구 운항 MOU 체결 대한항공은 6월 29일 오전서울 강남구 GS타워에서
+                                    GS칼텍스와 ‘바이오항공유 실증연구 운항을 위한 업무협약(MOU)’을 맺었다. ⊙ 대한항공-GS칼텍스, 국내 최초 바이오항공유 실증 연구 운항 진행⊙
+                                    본격적인 국내 생산 앞두고 정부의 바이오항공유 기준 마련에 기여…상용화 ‘촉진’⊙ 탄소 감축·기후 변화에 선제적 대응하며 ESG경영에도 힘 써대한항공이
+                                    국내 대표 종합에너지기업 GS칼텍스와 손잡고 바이오항공유 실증 연구 운항을 시작한다고 29일 밝혔다. 국내 최초로 진행되는 이번 연구 운항 결과를
+                                    바탕으로 정부는 바이오항공유 품질 등...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-29</li>
+                                    <li>보도자료</li>
+                                    <li>대한항공</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news3" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    ㈜한진, 고객/협력사와 함께하는 「HAN Team」 캠페인으로 ...
+                                </strong>
+                                <p class="list-type4__txt">㈜한진, 고객/협력사와 함께하는「HAN Team」 캠페인으로 고객 가치 높인다⊙ ㈜한진, 택배/물류 종사자,
+                                    국내외 고객사 및 협력사 등이 한팀(HAN Team)으로서결속을 다지고, ㈜한진이 추구하는 목표와 가치를 공유하는 「HAN Team」 캠페인
+                                    추진⊙22일, 온라인 선포식을 시작으로 캠페인 컨텐츠 제작, 협력사 및 고객사참여 프로그램, 아이디어 공모전 등 고객 가치 극대화할 수 있는 활동 펼칠
+                                    계획㈜한진은 급변하는 경영 환경 속에서 지속적인 성장을 담보하기 위해 임직원, ㈜한진 사업장 내 택배/물류 종사자, 국내외 고객사...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-22</li>
+                                    <li>보도자료</li>
+                                    <li>(주) 한진</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news4.png" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    한국공항 제주사업부, 교래분교 어린이 초청 사업장 견학행사 실시
+                                </strong>
+                                <p class="list-type4__txt">
+                                    한국공항 제주사업부, 교래분교 어린이 초청 사업장 견학행사 실시﻿ 지난 14일, 한국공항 제주사업부는 제동목장 인근에 위치한 조천초등학교 교래분교 학생
+                                    15명을 초청하여 사업장 견학행사를 진행했다. 이번 행사는 학생들이 사업장의 현장을 직접 체험함으로써 견문 확대의 기회를 제공하고, 지역사회와의 상생을
+                                    통한 ESG경영 실천을 위해 마련되었다.오전에는 제동목장과 제주퓨어워터 생수공장 시설을 견학하고, 정석 비행훈련원에서 전문교관과 함께 비행기
+                                    시뮬레이터를 조종하는 특별한 시간을...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-15</li>
+                                    <li>보도자료</li>
+                                    <li>한국공항</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news5" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    ㈜한진 태국 진출. ‘람차방’ 물류센터 운영 참여
+                                </strong>
+                                <p class="list-type4__txt">
+                                    ㈜한진 태국 진출. ‘람차방’ 물류센터 운영 참여- 미얀마, 베트남 등 이어 동남아 6번째. 인도차이나 물류 거점 확대 박차 -⊙ 현지 물류기업
+                                    지분투자 통해 태국 진출, ‘람차방’항 물류센터 개장⊙CFS운영 참여를 통해 안정 수익 확보. 향후 육상운송 등 ‘원스톱 물류 시스템’ 확대 복안⊙現
+                                    인도차이나 반도 전역에 글로벌사업 활발, “태국사무소 법인 규모로 키울 것”㈜한진이 태국 물류시장에 진출함으로써 동남아 물류 거점을 확대해 나간다.
+                                    8일 태국 '람차방(Laem Chabang)'항 CFS(Container Freight Station/ 컨테이너 화물작업장) 물류센터를 개장하면서...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-09</li>
+                                    <li>보도자료</li>
+                                    <li>(주) 한진</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news6" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    ㈜한진, 인천신항 IGDC 통해 글로벌 수출입 물량 확보하여 항...
+                                </strong>
+                                <p class="list-type4__txt">
+                                    ㈜한진, 인천신항 IGDC 통해 글로벌 수출입 물량 확보하여항만물류 경쟁력 높여간다⊙ 개장 이후부터 매월 평균 약 5%의 성장률을 기록하며 개장 후부터
+                                    꾸준하게 성장 중⊙수출입 컨테이너 화물보관 및 터미널과 연계한 물류 서비스를 제공할 수 있는 역량을바탕으로 영업력을 극대화 전략이 주효⊙취급 품목은
+                                    더욱 확대되고 인천신항 HJIT와의 물동량 연계로 수출입 물류 시장에서부가가치를 창출할 수 있는 물류거점으로서 자리잡을 것으로 기대㈜한진이 지난해
+                                    10월 개장한 인천신항(인천시 연수구 소재) IGDC(Incheon Global Distribution Center, 인천글로벌물류센터)가 꾸준한
+                                    ...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-07</li>
+                                    <li>보도자료</li>
+                                    <li>(주) 한진</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news7.png" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    조원태 한진그룹 회장, ATW 2023년 올해의 항공업계 리더...
+                                </strong>
+                                <p class="list-type4__txt">
+                                    조원태 한진그룹 회장,‘ATW 2023년 올해의 항공업계 리더십상’ 수상 ⊙ 조원태 한진그룹 회장, 6월 2일 세계적 항공매체인 에어 트랜스포트
+                                    월드(Air Transport World)로부터 ‘2023년 올해의 항공업계 리더십(Excellence in Leadership)’상 수상 ⊙ 글로벌
+                                    항공업계 핵심 리더로서 성공적 역할 수행... 팬데믹 위기 속 발상의 전환과 판단력으로 새로운 도약 기회 만들어내 ⊙ 2021년 올해의 항공사상,
+                                    2022년 올해의 화물항공사상에 이은 3년 연속조원태 한진그룹 회장의 리더십이 글로벌 항공업계로부터 다시 한번 인정받았다.대한항공은 조원태 한진그룹
+                                    회장이 6월 2일(현지시간) 오후 튀르키예 이스탄불 그랜드 제바히르 호텔(Grand Cevahir Hotel)에서 열린...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-04</li>
+                                    <li>보도자료</li>
+                                    <li>한진그룹</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news8.png" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    대한항공-델타항공, 태평양 노선 조인트벤처 5주년
+                                </strong>
+                                <p class="list-type4__txt">
+                                    대한항공-델타항공, 태평양 노선 조인트벤처 5주년⊙ 양사, 6월 1일 서울 광화문 포시즌스 호텔 서울서 5주년 기념행사 개최⊙ 2018년 부터 5년 간
+                                    운항 노선 확대, 연결편 편의성 증대, 환승 연결 시간 단축 등 다방면에서 조인트 벤처 기반 협력관계 지속 대한항공은 6월 1일 델타항공과의 태평양
+                                    노선 조인트 벤처(Joint Venture) 출범 5주년 기념 행사를 서울 광화문 포시즌스 호텔 서울에서 우기홍 대한항공 사장, 피터 카터 (Peter
+                                    Carter) 델타항공 대외협력 담당 사장 등 양사 임직원 200여명이 참석한 가운데 개최했다. 조인트벤처는 양사가 하나의 회사처럼 운항 스케줄을
+                                    최적화하고 공동 마케팅 및 영업 활동을 하며 재무적인 성과도 공유하는 최고 수준의 협력관계를 말한다.대한항공과...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-06-01</li>
+                                    <li>보도자료</li>
+                                    <li>대한항공</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news9.png" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    대한항공, 호주 에어라인 레이팅스 ‘올해 화물 항공사’ 등 수상
+                                </strong>
+                                <p class="list-type4__txt">
+                                    대한항공, 호주 에어라인 레이팅스 ‘올해 화물 항공사’ 등 수상⊙ 대한항공, 에어라인 레이팅스 주관 ‘에어라인 엑셀런스 어워즈’에서 3개 부문 수상 -
+                                    올해의 화물 항공사 - 북아시아 베스트 항공사 - 올해의 톱20 항공사 4위⊙ 효율적인 화물기의 운영, 지속적인 기술 투자 및 신기재 도입을 통한 고객
+                                    서비스 경쟁력 강화로 승객 만족도 평가에서 높은 점수 획득대한항공이 반세기 넘게 축적한 여객·화물 운송 부문의 탁월한 노하우로 코로나 팬데믹을
+                                    성공적으로 극복한 노력을 전 세계 항공 업계가 인정했다.대한항공은 오스트레일리아 항공·여행 전문 매체 ‘에어라인레이팅’(AirlineRatings)이
+                                    선정하는...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-05-31</li>
+                                    <li>보도자료</li>
+                                    <li>대한항공</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/img_group_news10" alt="">
+                            <div class="list-type4__content">
+                                <strong class="list-type4__title">
+                                    ㈜한진, 우즈벡합작법인 ELS 사업 확대 본격화...유라시아 지...
+                                </strong>
+                                <p class="list-type4__txt">
+                                    ㈜한진, 우즈벡합작법인 ELS 사업 확대 본격화...유라시아 지역 물류영업 강화⊙2010년 1월 우즈벡 타슈겐트에 ELS 법인을 설립하여 국내 물류기업
+                                    중 유일하게유라시아 대륙에서 국제 트럭킹 운송사업 수행 중⊙유럽-중앙아시아 간 신규 운송 노선 확대 및 우즈벡 현지 신규 물류시장 영업 집중 등ELS
+                                    법인 사업 확대㈜한진이 글로벌 사업 강화의 일환으로 우즈벡합작법인 ELS(Eurasia Logistics Service)의 사업을 더욱
+                                    확대한다.㈜한진은 중앙아시아 지역의 물류시장 진출을 위해 지난 2010년 1월 현지 합작으로 우즈벡 타슈겐트에 ELS 법인을 설립하여 국내 물류기업
+                                    중...
+                                </p>
+                                <ul class="txt-list4">
+                                    <li>2023-05-31</li>
+                                    <li>보도자료</li>
+                                    <li>(주) 한진</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <nav class="paging">
+                    <button class="btn-prev2"><span class="hide">처음으로</span></button>
+                    <button class="btn-prev"><span class="hide">이전</span></button>
+                    <ol>
+                        <li><a href="javascript:void(0)" class="paging--active">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                        <li><a href="javascript:void(0)">7</a></li>
+                        <li><a href="javascript:void(0)">8</a></li>
+                        <li><a href="javascript:void(0)">9</a></li>
+                        <li><a href="javascript:void(0)">10</a></li>
+                    </ol>
+                    <button class="btn-next"><span class="hide">다음</span></button>
+                    <button class="btn-next2"><span class="hide">마지막으로</span></button>
+                </nav>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <h2 class="hide">약관 및 사이트 정보</h2>
+            <div class="footer__left">
+                <div class="footer__link">
+                    <a href="javascript:void(0)">법적고지</a>
+                    <a href="javascript:void(0)">이메일주소무단수집거부</a>
+                    <a href="javascript:void(0)">사이트맵</a>
+                </div>
+                <div class="footer__address">
+                    서울특별시 중구 서소문로 117
+                    <p>Tel. 02-726-6166</p>
+                </div>
+            </div>
+            <p>COPYRIGHT HANJIN KAL. All Rights Reserved.</p>
+            <div class="footer__gnb">
+                <h2 class="hide">계열사 바로가기</h2>
+                <div class="footer__gnb__list">
+                    <button>계열사 바로가기</button>
+                    <ul class="footer__gnb__content">
+                        <li>
+                            지주회사
+                            <ul>
+                                <li><a href="javascript:void(0)">한진칼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            항공부문
+                            <ul>
+                                <li><a href="javascript:void(0)">대한항공</a></li>
+                                <li><a href="javascript:void(0)">진에어</a></li>
+                                <li><a href="javascript:void(0)">한국공항</a></li>
+                                <li><a href="javascript:void(0)">에어코리아</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            육운부문
+                            <ul>
+                                <li><a href="javascript:void(0)">(주)한진</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            관광/호텔/부동산 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">한진관광</a></li>
+                                <li><a href="javascript:void(0)">칼호텔 네트워크</a></li>
+                                <li><a href="javascript:void(0)">항공종합서비스</a></li>
+                                <li><a href="javascript:void(0)">정석기업</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            정보서비스 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">한진정보통신</a></li>
+                                <li><a href="javascript:void(0)">토파스 여행정보</a></li>
+                                <li><a href="javascript:void(0)">싸이버 스카이</a></li>
+                                <li><a href="javascript:void(0)">한국글로발로지스틱스시스템</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            비영리법인 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">한국항공대학교</a></li>
+                                <li><a href="javascript:void(0)">인하대 병원</a></li>
+                                <li><a href="javascript:void(0)">일우재단</a></li>
+                                <li><a href="javascript:void(0)">인하대학교</a></li>
+                                <li><a href="javascript:void(0)">인하공업전문대학교</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            해외법인 부문
+                            <ul>
+                                <li><a href="javascript:void(0)">와이키키 리조트 호텔</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="megamenu__wrap">
+        <div class="megamenu" style="--zindex:30; display: none;">
+            <div class="megamenu-list">
+                <div class="megamenu-list__top">
+                    <p>ENGLISH</p>
+                    <button class="btn-menu-close"></button>
+                </div>
+                <ul class="megamenu-list__bottom">
+                    <li>
+                        <button class="btn-megamenu">한진그룹</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">인사말씀</a></li>
+                            <li><a href="javascript:void(0)">그룹역사</a></li>
+                            <li><a href="javascript:void(0)">창업화장관</a></li>
+                            <li><a href="javascript:void(0)">한진의미래</a></li>
+                            <li><a href="javascript:void(0)">한진네트워크</a></li>
+                            <li><a href="javascript:void(0)">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">한진칼</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">회사 소개</a></li>
+                            <li><a href="javascript:void(0)">투자자정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">ESG경영</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">지속가능경영</a></li>
+                            <li><a href="javascript:void(0)">기업지배구조</a></li>
+                            <li><a href="javascript:void(0)">사회공헌</a></li>
+                            <li><a href="javascript:void(0)">환경경영</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">한진인</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">한진의 인재상</a></li>
+                            <li><a href="javascript:void(0)">인재육성</a></li>
+                            <li><a href="javascript:void(0)">인사제도</a></li>
+                            <li><a href="javascript:void(0)">복리후생</a></li>
+                            <li><a href="javascript:void(0)">채용정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="btn-megamenu">홍보센터</button>
+                        <ul class="megamenu__gnb">
+                            <li><a href="javascript:void(0)">그룹사소식</a></li>
+                            <li><a href="javascript:void(0)">광고모음</a></li>
+                            <li><a href="javascript:void(0)">정기간행물</a></li>
+                            <li><a href="javascript:void(0)">한진그룹 SNS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dimmed" style="--zindex:29; display: none;"></div>
+    </div>
+</body>
+
+</html>

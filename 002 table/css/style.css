@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+.table-type2 {
+    border-top: 1px solid #000000;
+}
+
+.table-type2 thead {
+    border-bottom: 1px solid #000000;
+
+}
+
+.table-type2 thead th {
+    height: 45px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.table-type2 tbody tr {
+    border-bottom: 1px solid #CCCCCC;
+    transition: .3s;
+}
+.table-type2 tbody tr:hover {
+    background color: #f3f3f3;
+}
+.table-type2 tbody td {
+    height: 47px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.table-type2 .txt-left {
+    text-align: left;
+}
+.table-type2 .txt-left a:hover {
+    margin-left: 10px;
+}
+.table-type2 a {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.table-type2 .txt-grey {
+    color: #999999;
+}
+
+.table-type2 tbody th {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E51837;
+}
+
+.table-type3 td img {
+    width: 36px;
+    height: 36px;
+}
+.table-type3 td b {
+    font-size: 18px;
+    color: #000000;
+}
+.table-type3 td span {
+    font-size: 14px;
+    color: #888888;
+}
+
+
+.table-type1 {
+    border-top: 2px solid #12A3CC;
+}
+
+.table-type1 thead {
+    border-bottom: 1px solid #B2B2B2;
+    background: #FFFFFF;
+}
+
+.table-type1 thead th {
+    height: 47px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.table-type1 tbody tr {
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.table-type1 tbody td {
+    height: 64px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+}
+
+.table-type1 .txt-left {
+    text-align: left;
+}
+
+.table-type1 a {
+    text-decoration: none
+}
+.table-type1 .txt-left img {
+    vertical-align: -2px;
+}
+
+
+.table-type5 {
+    border-top: 2px solid #333333;
+}
+
+.table-type5 thead {
+    border-bottom: 1px solid #C7C7C7;
+    background: #F8F8F8;
+}
+
+.table-type5 thead th {
+    height: 65px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.table-type5 .txt-left {
+    border-left: 1px solid #C7C7C7;
+}
+.table-type5 tbody tr {
+    border-bottom: 1px solid #C7C7C7;
+    text-align: center;
+}
+
+.table-type5 tbody th {
+    border-right: 1px solid #C7C7C7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #F8F8F8;
+}
+
+.table-type5 tbody td {
+    padding: 20px;
+    height: 65px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+}
+
+
+.table-type9 {
+    border-top: 2px solid #393D46;
+}
+
+.table-type9 thead {
+    border-bottom: 1px solid #ACB0B6;
+}
+
+.table-type9 th {
+    height: 58px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.table-type9 tbody tr {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.table-type9 tbody td {
+    padding: 15px 24px;
+    border-left: 1px solid #E1E1E1;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6A6A6A;
+}
+
+.table-type9 tbody b {
+    font-weight: 700;
+}
+
+.table-type9 tbody th {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #6A6A6A;
+}
+
+.table-type9 .border {
+    border-bottom: 1px solid #9499A4;
+}
+
+.table-type9 .txt-center {
+    text-align: center;
+}
+
+
+.table-type11 {
+    border-top: 2px solid #BD0000;
+}
+
+.table-type11 thead th {
+    border-bottom: 1px solid #E4E4E4;
+    height: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #585858;
+}
+.table-type11 tbody tr {
+    height: 47px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.table-type11 tbody td {
+    padding: 13px 20px;
+    text-align: right;
+    border-left: 1px solid #E4E4E4;
+}
+.table-type11 tbody .txt-right{
+    text-align: center;
+}
+.table-type11 tbody th {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #585858;
+    background: #FAFAFA;
+}
+.table-type11 tbody .txt-left {
+    border-left: 1px solid #E4E4E4;
+}
+.table-type11 span {
+    padding-left: 63px;
+}
+
+
+.table-type4 {
+    border-top: 1px solid #767676;
+}
+.table-type4 tr {
+    border-bottom: 1px solid #E0E0E0;
+}
+.table-type4 th {
+    color: #444444;
+    background: #F6F6F6;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 53px;
+}
+.table-type4 td {
+    padding: 17px 15px ;
+    color: #666666;
+    font-size: 13px;
+    line-height: 19px;
+}
+.table-type4 .btn-information {
+    width: 21px;
+    height: 21px;
+    border: none;
+    cursor: pointer;
+    background: url(../images/ico_information.svg);
+    vertical-align: -3px;
+}
+.table-type4 .border {
+    border-bottom: 1px solid #767676;
+}
+
+
+.table-type6 {
+    border-top: 2px solid #333333;
+}
+.table-type6 th{
+    padding: 17px 20px;
+    background: #EDEDED;
+    border-right: 1px solid #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    text-align: left;
+}
+.table-type6 tr{
+    border-bottom: 1px solid #C7C7C7;
+}
+.table-type6 .btn-help {
+    width: 15px;
+    height: 15px;
+    border: none;
+    cursor: pointer;
+    background: url(../images/ico_question.svg);
+    vertical-align: -1px;
+}
+.table-type6 .btn-window {
+    display: inline-flex;
+    align-items: center;
+    padding:0 29px 0 11px;
+    height: 25px;
+    background: url(../images/ico_window.svg) no-repeat right 9px center;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+.table-type6 td {
+    padding: 17px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #555555;
+}
